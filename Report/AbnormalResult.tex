@@ -1,0 +1,52 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+                &\multicolumn{2}{c}{CAPM}             &\multicolumn{2}{c}{4Factor}          \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+\hline
+Bullish Market  &    1.803         &    1.668         &    1.992         &    1.694         \\
+                &   (1.11)         &   (1.22)         &   (1.18)         &   (1.15)         \\
+[1em]
+High Book-to-Market&    2.395         &    1.877         &    1.922         &    1.529         \\
+                &   (1.53)         &   (1.44)         &   (1.23)         &   (1.19)         \\
+[1em]
+High P/E        &    0.225         &                  &   -0.416         &                  \\
+                &   (0.13)         &                  &  (-0.22)         &                  \\
+[1em]
+Large           &   -7.073\sym{*}  &   -4.872\sym{*}  &   -7.013\sym{*}  &   -4.424         \\
+                &  (-2.64)         &  (-2.25)         &  (-2.27)         &  (-1.82)         \\
+[1em]
+High Free Float &    0.197         &   -0.226         &    0.102         &   -0.761         \\
+                &   (0.17)         &  (-0.20)         &   (0.08)         &  (-0.58)         \\
+[1em]
+High Free Market Cap&    0.965         &   -0.152         &    1.056         &    0.137         \\
+                &   (0.34)         &  (-0.06)         &   (0.33)         &   (0.05)         \\
+[1em]
+High Volatility &   -3.391         &   -2.141         &   -3.732         &   -2.115         \\
+                &  (-1.68)         &  (-1.35)         &  (-1.74)         &  (-1.25)         \\
+[1em]
+High Debt Ratio &   -2.391         &   -0.334         &   -1.738         &   -0.377         \\
+                &  (-0.81)         &  (-0.16)         &  (-0.58)         &  (-0.18)         \\
+[1em]
+High Leverage Ratio&    2.964         &    1.401         &    2.470         &    0.872         \\
+                &   (0.94)         &   (0.60)         &   (0.78)         &   (0.36)         \\
+[1em]
+Resereves       &    2.182         &    2.153         &    1.477         &    1.607         \\
+                &   (1.01)         &   (1.19)         &   (0.70)         &   (0.88)         \\
+[1em]
+Cash \& Resereves&    2.814         &    2.478         &    2.316         &    2.490         \\
+                &   (1.71)         &   (1.73)         &   (1.44)         &   (1.67)         \\
+[1em]
+Revaluation     &    26.02\sym{***}&    21.69\sym{***}&    27.77\sym{***}&    24.74\sym{***}\\
+                &   (4.44)         &   (4.38)         &   (4.40)         &   (4.89)         \\
+[1em]
+Constant        &    4.589         &    4.317\sym{*}  &    5.063         &    4.068         \\
+                &   (1.61)         &   (2.21)         &   (1.61)         &   (1.90)         \\
+\hline
+Observations    &      651         &      857         &      651         &      857         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}
