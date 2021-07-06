@@ -27,7 +27,15 @@
 %\settextfont{XB Zar}
 %\setdigitfont{XB Zar}
 \usepackage{array}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=black,      
+	urlcolor=black,
+	citecolor = blue
+}
 
+\usepackage{natbib}
 
 \addtobeamertemplate{block begin}{}{\justifying} 
 \renewcommand{\today}{\ifcase \month \or January\or February\or March\or %
@@ -59,7 +67,7 @@ December\fi, \number \year}
 
 \title[Capital Raise]{Stock market reaction to capital raise announcements:}
 \subtitle{Evidence from Tehran Stock Exchange}
-\author[Aghajanzadeh, Heidari \&Ebrahimnejad]{S.M. Aghajanzadeh \qquad M. Heidari \qquad A. Ebrahimnejad }
+\author[Aghajanzadeh, Heidari \&Abedifar]{S.M. Aghajanzadeh \qquad M. Heidari \qquad P. Abedifar }
 \institute[]{Tehran Institute for Advanced Studies }
 \centering
 
@@ -365,6 +373,38 @@ $
 \section{Literature}
 
 \begin{frame}
+	\scriptsize
+	\begin{itemize}
+		\item Price reaction to equity issue announcements in high equity issue volume (HOT) periods is lower on average than in low equity issue volume (COLD) periods. [\cite{bayless1996there}]
+		
+		\item Firms significantly under perform all of benchmarks
+		over the five years following the equity issues. 
+		[\cite{jegadeesh2000long}]
+		\begin{itemize}
+			\tiny
+			\item Similar levels of under performance for both small firms and large firms, and both growth firms and value
+			firms. 
+			\item Factor-model benchmarks are miss specified
+		\end{itemize}
+	\item  Under performance is concentrated primarily in small issuing
+	firms with low book to market ratios. [\cite{brav2000abnormal}]
+	\item Price reaction to right issues for listed Indian firms is a positive but statistically insignificant.[\cite{marisetty2008price}]
+	\begin{itemize}
+		\tiny
+		\item The price reaction is significantly more negative for firms with a family group affiliation
+		compared to firms with no family group affiliation
+	\end{itemize}
+	\item When shareholders approve issuances, average announcement returns are positive \tiny[\cite{holderness2018equity}]
+	\begin{itemize}
+		\tiny
+		\item  Agency problems affect equity issuances and challenge existing adverse selection, market timing, and
+		signaling explanations.
+	\end{itemize}
+	\end{itemize}
+	
+\end{frame}
+\normalsize
+\begin{frame}{Iran}
 \begin{figure}
 \centering
 \includegraphics[width=0.65\linewidth]{Soltani}
@@ -1158,6 +1198,18 @@ $
 %}
 %\end{table}
 %\end{frame}
+
+
+	\tiny
+\begin{frame}[allowframebreaks]{References}
+	
+	{		
+		\bibliographystyle{apalike}
+		\bibliography{Ref}
+	}
+\end{frame}
+
+\normalsize
 
 
 \appendix

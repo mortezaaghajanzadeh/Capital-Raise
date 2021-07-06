@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.5.13)  19 MAY 2021 13:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.5.13)  6 JUL 2021 14:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -855,40 +855,49 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@cols=\count332
 \TX@ftn=\toks47
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 36.
+
+(c:/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip81
+\bibsep=\skip82
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count333
+)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 21.90005pt
-(hyperref)                replaced by space on input line 62.
+(hyperref)                replaced by space on input line 70.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 21.90005pt
-(hyperref)                replaced by space on input line 62.
+(hyperref)                replaced by space on input line 70.
 
 (c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count333
+\l__kernel_color_stack_int=\count334
 \l__pdf_internal_box=\box81
 )
 (./CapitalRaise - Slide.aux)
 \openout1 = `"CapitalRaise - Slide.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -926,16 +935,16 @@ LaTeX Font Info:    ... okay on input line 66.
 
 (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count334
+\scratchcounter=\count335
 \scratchdimen=\dimen325
 \scratchbox=\box82
-\nofMPsegments=\count335
-\nofMParguments=\count336
+\nofMPsegments=\count336
+\nofMParguments=\count337
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count337
+\MPscratchCnt=\count338
 \MPscratchDim=\dimen326
-\MPnumerator=\count338
-\makeMPintoPDFobject=\count339
+\MPnumerator=\count339
+\makeMPintoPDFobject=\count340
 \everyMPtoPDFconversion=\toks49
 ) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -948,7 +957,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box83
-Package hyperref Info: Link coloring OFF on input line 66.
+Package hyperref Info: Link coloring ON on input line 74.
 
 (c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -959,68 +968,68 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count340
+\c@section@level=\count341
 )
-LaTeX Info: Redefining \ref on input line 66.
-LaTeX Info: Redefining \pageref on input line 66.
-LaTeX Info: Redefining \nameref on input line 66.
+LaTeX Info: Redefining \ref on input line 74.
+LaTeX Info: Redefining \pageref on input line 74.
+LaTeX Info: Redefining \nameref on input line 74.
 
 (./CapitalRaise - Slide.out) (./CapitalRaise - Slide.out)
 \@outlinefile=\write6
 \openout6 = `"CapitalRaise - Slide.out"'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 66.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 74.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 66.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 74.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 66.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 74.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 66.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 74.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 66.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 66.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 74.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 74.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 66.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 74.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 66.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 66.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 74.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 74.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 66.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 74.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 66.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 66.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 74.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 74.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 66.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 74.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 66.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 74.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 66.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 74.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 66.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 74.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 66.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 74.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 66.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 74.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 66.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 74.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 66.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 74.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 66.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 66.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 74.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 74.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 6
-6.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 7
+4.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 6
-6.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 7
+4.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 66.
+ut line 74.
 
 (c:/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-En
 glish.dict
@@ -1046,7 +1055,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 66.
+LaTeX Info: Redefining \selectfont on input line 74.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1056,20 +1065,20 @@ Package caption Info: End \AtBeginDocument code.
  - Slide.toc) [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 99.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 107
+.
 
 (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 99.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 107
+.
 
 (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 99.
+ut line 107.
 
 (c:/texlive/2020/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -1087,13 +1096,13 @@ f>
 (epstopdf)                    size: 8053 bytes
 (epstopdf)             Command: <repstopdf --outfile=MedianCapRaiseAdjusted-eps
 -converted-to.pdf MedianCapRaiseAdjusted.eps>
-(epstopdf)             \includegraphics on input line 112.
+(epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
-<MedianCapRaiseAdjusted-eps-converted-to.pdf, id=199, 397.485pt x 289.08pt>
+<MedianCapRaiseAdjusted-eps-converted-to.pdf, id=203, 397.485pt x 289.08pt>
 File: MedianCapRaiseAdjusted-eps-converted-to.pdf Graphic file (type pdf)
 <use MedianCapRaiseAdjusted-eps-converted-to.pdf>
 Package pdftex.def Info: MedianCapRaiseAdjusted-eps-converted-to.pdf  used on i
-nput line 112.
+nput line 120.
 (pdftex.def)             Requested size: 239.60567pt x 174.26096pt.
  [4
 
@@ -1107,13 +1116,13 @@ Package epstopdf Info: Source file: <MeanCapRaiseAdjusted.eps>
 (epstopdf)                    size: 8109 bytes
 (epstopdf)             Command: <repstopdf --outfile=MeanCapRaiseAdjusted-eps-c
 onverted-to.pdf MeanCapRaiseAdjusted.eps>
-(epstopdf)             \includegraphics on input line 120.
+(epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
-<MeanCapRaiseAdjusted-eps-converted-to.pdf, id=236, 397.485pt x 289.08pt>
+<MeanCapRaiseAdjusted-eps-converted-to.pdf, id=240, 397.485pt x 289.08pt>
 File: MeanCapRaiseAdjusted-eps-converted-to.pdf Graphic file (type pdf)
 <use MeanCapRaiseAdjusted-eps-converted-to.pdf>
 Package pdftex.def Info: MeanCapRaiseAdjusted-eps-converted-to.pdf  used on inp
-ut line 120.
+ut line 128.
 (pdftex.def)             Requested size: 239.60567pt x 174.26096pt.
  [5
 
@@ -1126,13 +1135,13 @@ Package epstopdf Info: Source file: <SumCapRaiseAdjusted.eps>
 (epstopdf)                    size: 8190 bytes
 (epstopdf)             Command: <repstopdf --outfile=SumCapRaiseAdjusted-eps-co
 nverted-to.pdf SumCapRaiseAdjusted.eps>
-(epstopdf)             \includegraphics on input line 128.
+(epstopdf)             \includegraphics on input line 136.
 Package epstopdf Info: Output file is already uptodate.
-<SumCapRaiseAdjusted-eps-converted-to.pdf, id=272, 397.485pt x 289.08pt>
+<SumCapRaiseAdjusted-eps-converted-to.pdf, id=276, 397.485pt x 289.08pt>
 File: SumCapRaiseAdjusted-eps-converted-to.pdf Graphic file (type pdf)
 <use SumCapRaiseAdjusted-eps-converted-to.pdf>
 Package pdftex.def Info: SumCapRaiseAdjusted-eps-converted-to.pdf  used on inpu
-t line 128.
+t line 136.
 (pdftex.def)             Requested size: 239.60567pt x 174.26096pt.
  [6
 
@@ -1145,13 +1154,13 @@ Package epstopdf Info: Source file: <MedianPercent.eps>
 (epstopdf)                    size: 7575 bytes
 (epstopdf)             Command: <repstopdf --outfile=MedianPercent-eps-converte
 d-to.pdf MedianPercent.eps>
-(epstopdf)             \includegraphics on input line 138.
+(epstopdf)             \includegraphics on input line 146.
 Package epstopdf Info: Output file is already uptodate.
-<MedianPercent-eps-converted-to.pdf, id=309, 397.485pt x 289.08pt>
+<MedianPercent-eps-converted-to.pdf, id=313, 397.485pt x 289.08pt>
 File: MedianPercent-eps-converted-to.pdf Graphic file (type pdf)
 <use MedianPercent-eps-converted-to.pdf>
 Package pdftex.def Info: MedianPercent-eps-converted-to.pdf  used on input line
- 138.
+ 146.
 (pdftex.def)             Requested size: 239.60567pt x 174.26096pt.
 
 [7
@@ -1165,12 +1174,12 @@ Package epstopdf Info: Source file: <Number.eps>
 (epstopdf)                    size: 7488 bytes
 (epstopdf)             Command: <repstopdf --outfile=Number-eps-converted-to.pd
 f Number.eps>
-(epstopdf)             \includegraphics on input line 146.
+(epstopdf)             \includegraphics on input line 154.
 Package epstopdf Info: Output file is already uptodate.
-<Number-eps-converted-to.pdf, id=346, 397.485pt x 289.08pt>
+<Number-eps-converted-to.pdf, id=350, 397.485pt x 289.08pt>
 File: Number-eps-converted-to.pdf Graphic file (type pdf)
 <use Number-eps-converted-to.pdf>
-Package pdftex.def Info: Number-eps-converted-to.pdf  used on input line 146.
+Package pdftex.def Info: Number-eps-converted-to.pdf  used on input line 154.
 (pdftex.def)             Requested size: 239.60567pt x 174.26096pt.
  [8
 
@@ -1183,12 +1192,12 @@ Package epstopdf Info: Source file: <Number2.eps>
 (epstopdf)                    size: 9398 bytes
 (epstopdf)             Command: <repstopdf --outfile=Number2-eps-converted-to.p
 df Number2.eps>
-(epstopdf)             \includegraphics on input line 155.
+(epstopdf)             \includegraphics on input line 163.
 Package epstopdf Info: Output file is already uptodate.
-<Number2-eps-converted-to.pdf, id=382, 397.485pt x 289.08pt>
+<Number2-eps-converted-to.pdf, id=386, 397.485pt x 289.08pt>
 File: Number2-eps-converted-to.pdf Graphic file (type pdf)
 <use Number2-eps-converted-to.pdf>
-Package pdftex.def Info: Number2-eps-converted-to.pdf  used on input line 155.
+Package pdftex.def Info: Number2-eps-converted-to.pdf  used on input line 163.
 (pdftex.def)             Requested size: 239.60567pt x 174.26096pt.
 
 [9
@@ -1202,12 +1211,12 @@ Package epstopdf Info: Source file: <Hist.eps>
 (epstopdf)                    size: 10347 bytes
 (epstopdf)             Command: <repstopdf --outfile=Hist-eps-converted-to.pdf 
 Hist.eps>
-(epstopdf)             \includegraphics on input line 170.
+(epstopdf)             \includegraphics on input line 178.
 Package epstopdf Info: Output file is already uptodate.
-<Hist-eps-converted-to.pdf, id=418, 397.485pt x 289.08pt>
+<Hist-eps-converted-to.pdf, id=422, 397.485pt x 289.08pt>
 File: Hist-eps-converted-to.pdf Graphic file (type pdf)
 <use Hist-eps-converted-to.pdf>
-Package pdftex.def Info: Hist-eps-converted-to.pdf  used on input line 170.
+Package pdftex.def Info: Hist-eps-converted-to.pdf  used on input line 178.
 (pdftex.def)             Requested size: 239.60567pt x 174.26096pt.
  [10
 
@@ -1227,20 +1236,22 @@ Package pdftex.def Info: Hist-eps-converted-to.pdf  used on input line 170.
 ]
 (./CapitalRaise - Slide.toc) [17
 
+] [18
+
 ]
-<Soltani.png, id=690, 552.8655pt x 328.22626pt>
+<Soltani.png, id=735, 552.8655pt x 328.22626pt>
 File: Soltani.png Graphic file (type png)
 <use Soltani.png>
-Package pdftex.def Info: Soltani.png  used on input line 373.
+Package pdftex.def Info: Soltani.png  used on input line 413.
 (pdftex.def)             Requested size: 222.48985pt x 132.08449pt.
- [18
+ [19
 
  <./Soltani.png>]
-(./CapitalRaise - Slide.toc) [19
-
-] [20
+(./CapitalRaise - Slide.toc) [20
 
 ] [21
+
+] [22
 
 ]
 Package epstopdf Info: Source file: <AbReturn.eps>
@@ -1251,67 +1262,67 @@ Package epstopdf Info: Source file: <AbReturn.eps>
 (epstopdf)                    size: 10540 bytes
 (epstopdf)             Command: <repstopdf --outfile=AbReturn-eps-converted-to.
 pdf AbReturn.eps>
-(epstopdf)             \includegraphics on input line 440.
+(epstopdf)             \includegraphics on input line 480.
 Package epstopdf Info: Output file is already uptodate.
-<AbReturn-eps-converted-to.pdf, id=822, 397.485pt x 289.08pt>
+<AbReturn-eps-converted-to.pdf, id=866, 397.485pt x 289.08pt>
 File: AbReturn-eps-converted-to.pdf Graphic file (type pdf)
 <use AbReturn-eps-converted-to.pdf>
-Package pdftex.def Info: AbReturn-eps-converted-to.pdf  used on input line 440.
+Package pdftex.def Info: AbReturn-eps-converted-to.pdf  used on input line 480.
 
 (pdftex.def)             Requested size: 239.60567pt x 174.26096pt.
- [22
+ [23
 
- <./AbReturn-eps-converted-to.pdf>] [23
+ <./AbReturn-eps-converted-to.pdf>] [24
 
 ]
-<AbReturnRevalution.png, id=894, 717.68124pt x 521.95pt>
+<AbReturnRevalution.png, id=939, 717.68124pt x 521.95pt>
 File: AbReturnRevalution.png Graphic file (type png)
 <use AbReturnRevalution.png>
-Package pdftex.def Info: AbReturnRevalution.png  used on input line 506.
+Package pdftex.def Info: AbReturnRevalution.png  used on input line 546.
 (pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
 
-Overfull \vbox (1.40683pt too high) detected at line 506
+Overfull \vbox (1.40683pt too high) detected at line 546
  []
 
-[24
+[25
 
- <./AbReturnRevalution.png (PNG copy)>] [25
+ <./AbReturnRevalution.png (PNG copy)>] [26
 
 ]
-<AbReturnSaving.png, id=961, 717.68124pt x 521.95pt>
+<AbReturnSaving.png, id=1005, 717.68124pt x 521.95pt>
 File: AbReturnSaving.png Graphic file (type png)
 <use AbReturnSaving.png>
-Package pdftex.def Info: AbReturnSaving.png  used on input line 562.
+Package pdftex.def Info: AbReturnSaving.png  used on input line 602.
 (pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
 
-Overfull \vbox (1.40683pt too high) detected at line 562
- []
-
-[26
-
- <./AbReturnSaving.png (PNG copy)>]
-<AbReturnCash.png, id=996, 717.68124pt x 521.95pt>
-File: AbReturnCash.png Graphic file (type png)
-<use AbReturnCash.png>
-Package pdftex.def Info: AbReturnCash.png  used on input line 575.
-(pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
-
-Overfull \vbox (1.40683pt too high) detected at line 575
+Overfull \vbox (1.40683pt too high) detected at line 602
  []
 
 [27
 
- <./AbReturnCash.png (PNG copy)>]
-<AbReturnHybrid.png, id=1031, 717.68124pt x 521.95pt>
-File: AbReturnHybrid.png Graphic file (type png)
-<use AbReturnHybrid.png>
-Package pdftex.def Info: AbReturnHybrid.png  used on input line 589.
+ <./AbReturnSaving.png (PNG copy)>]
+<AbReturnCash.png, id=1040, 717.68124pt x 521.95pt>
+File: AbReturnCash.png Graphic file (type png)
+<use AbReturnCash.png>
+Package pdftex.def Info: AbReturnCash.png  used on input line 615.
 (pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
 
-Overfull \vbox (1.40683pt too high) detected at line 589
+Overfull \vbox (1.40683pt too high) detected at line 615
  []
 
 [28
+
+ <./AbReturnCash.png (PNG copy)>]
+<AbReturnHybrid.png, id=1076, 717.68124pt x 521.95pt>
+File: AbReturnHybrid.png Graphic file (type png)
+<use AbReturnHybrid.png>
+Package pdftex.def Info: AbReturnHybrid.png  used on input line 629.
+(pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
+
+Overfull \vbox (1.40683pt too high) detected at line 629
+ []
+
+[29
 
  <./AbReturnHybrid.png (PNG copy)>]
 Package epstopdf Info: Source file: <AbReturn_year.eps>
@@ -1322,15 +1333,15 @@ Package epstopdf Info: Source file: <AbReturn_year.eps>
 (epstopdf)                    size: 17982 bytes
 (epstopdf)             Command: <repstopdf --outfile=AbReturn_year-eps-converte
 d-to.pdf AbReturn_year.eps>
-(epstopdf)             \includegraphics on input line 601.
+(epstopdf)             \includegraphics on input line 641.
 Package epstopdf Info: Output file is already uptodate.
-<AbReturn_year-eps-converted-to.pdf, id=1067, 397.485pt x 289.08pt>
+<AbReturn_year-eps-converted-to.pdf, id=1111, 397.485pt x 289.08pt>
 File: AbReturn_year-eps-converted-to.pdf Graphic file (type pdf)
 <use AbReturn_year-eps-converted-to.pdf>
 Package pdftex.def Info: AbReturn_year-eps-converted-to.pdf  used on input line
- 601.
+ 641.
 (pdftex.def)             Requested size: 290.9531pt x 211.60889pt.
- [29
+ [30
 
  <./AbReturn_year-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <AbReturn_year_Revaluation.eps>
@@ -1342,16 +1353,16 @@ Package epstopdf Info: Source file: <AbReturn_year_Revaluation.eps>
 (epstopdf)                    size: 14018 bytes
 (epstopdf)             Command: <repstopdf --outfile=AbReturn_year_Revaluation-
 eps-converted-to.pdf AbReturn_year_Revaluation.eps>
-(epstopdf)             \includegraphics on input line 613.
+(epstopdf)             \includegraphics on input line 653.
 Package epstopdf Info: Output file is already uptodate.
-<AbReturn_year_Revaluation-eps-converted-to.pdf, id=1106, 397.485pt x 289.08pt>
+<AbReturn_year_Revaluation-eps-converted-to.pdf, id=1150, 397.485pt x 289.08pt>
 
 File: AbReturn_year_Revaluation-eps-converted-to.pdf Graphic file (type pdf)
 <use AbReturn_year_Revaluation-eps-converted-to.pdf>
 Package pdftex.def Info: AbReturn_year_Revaluation-eps-converted-to.pdf  used o
-n input line 613.
+n input line 653.
 (pdftex.def)             Requested size: 290.9531pt x 211.60889pt.
- [30
+ [31
 
  <./AbReturn_year_Revaluation-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <AbReturn_year_NoRevaluation.eps>
@@ -1363,125 +1374,132 @@ to.pdf>
 (epstopdf)                    size: 18020 bytes
 (epstopdf)             Command: <repstopdf --outfile=AbReturn_year_NoRevaluatio
 n-eps-converted-to.pdf AbReturn_year_NoRevaluation.eps>
-(epstopdf)             \includegraphics on input line 624.
+(epstopdf)             \includegraphics on input line 664.
 Package epstopdf Info: Output file is already uptodate.
-<AbReturn_year_NoRevaluation-eps-converted-to.pdf, id=1144, 397.485pt x 289.08p
+<AbReturn_year_NoRevaluation-eps-converted-to.pdf, id=1190, 397.485pt x 289.08p
 t>
 File: AbReturn_year_NoRevaluation-eps-converted-to.pdf Graphic file (type pdf)
 <use AbReturn_year_NoRevaluation-eps-converted-to.pdf>
 Package pdftex.def Info: AbReturn_year_NoRevaluation-eps-converted-to.pdf  used
- on input line 624.
+ on input line 664.
 (pdftex.def)             Requested size: 290.9531pt x 211.60889pt.
- [31
-
- <./AbReturn_year_NoRevaluation-eps-converted-to.pdf>]
-<volume.png, id=1184, 717.68124pt x 521.95pt>
-File: volume.png Graphic file (type png)
-<use volume.png>
-Package pdftex.def Info: volume.png  used on input line 634.
-(pdftex.def)             Requested size: 239.60567pt x 174.25899pt.
  [32
 
- <./volume.png (PNG copy)>]
-<volume_Revaluation.png, id=1217, 717.68124pt x 521.95pt>
-File: volume_Revaluation.png Graphic file (type png)
-<use volume_Revaluation.png>
-Package pdftex.def Info: volume_Revaluation.png  used on input line 643.
+ <./AbReturn_year_NoRevaluation-eps-converted-to.pdf>]
+<volume.png, id=1228, 717.68124pt x 521.95pt>
+File: volume.png Graphic file (type png)
+<use volume.png>
+Package pdftex.def Info: volume.png  used on input line 674.
 (pdftex.def)             Requested size: 239.60567pt x 174.25899pt.
  [33
 
- <./volume_Revaluation.png (PNG copy)>]
-<volume_NoRevaluation.png, id=1248, 717.68124pt x 521.95pt>
-File: volume_NoRevaluation.png Graphic file (type png)
-<use volume_NoRevaluation.png>
-Package pdftex.def Info: volume_NoRevaluation.png  used on input line 652.
+ <./volume.png (PNG copy)>]
+<volume_Revaluation.png, id=1262, 717.68124pt x 521.95pt>
+File: volume_Revaluation.png Graphic file (type png)
+<use volume_Revaluation.png>
+Package pdftex.def Info: volume_Revaluation.png  used on input line 683.
 (pdftex.def)             Requested size: 239.60567pt x 174.25899pt.
  [34
 
+ <./volume_Revaluation.png (PNG copy)>]
+<volume_NoRevaluation.png, id=1293, 717.68124pt x 521.95pt>
+File: volume_NoRevaluation.png Graphic file (type png)
+<use volume_NoRevaluation.png>
+Package pdftex.def Info: volume_NoRevaluation.png  used on input line 692.
+(pdftex.def)             Requested size: 239.60567pt x 174.25899pt.
+ [35
+
  <./volume_NoRevaluation.png (PNG copy)>]
-<Relvolume.png, id=1280, 717.68124pt x 521.95pt>
+<Relvolume.png, id=1324, 717.68124pt x 521.95pt>
 File: Relvolume.png Graphic file (type png)
 <use Relvolume.png>
-Package pdftex.def Info: Relvolume.png  used on input line 662.
+Package pdftex.def Info: Relvolume.png  used on input line 702.
 (pdftex.def)             Requested size: 239.60567pt x 174.25899pt.
 
-[35
+[36
 
  <./Relvolume.png (PNG copy)>]
-<Relvolume_Revaluation.png, id=1313, 717.68124pt x 521.95pt>
+<Relvolume_Revaluation.png, id=1357, 717.68124pt x 521.95pt>
 File: Relvolume_Revaluation.png Graphic file (type png)
 <use Relvolume_Revaluation.png>
-Package pdftex.def Info: Relvolume_Revaluation.png  used on input line 669.
+Package pdftex.def Info: Relvolume_Revaluation.png  used on input line 709.
 (pdftex.def)             Requested size: 239.60567pt x 174.25899pt.
- [36
+ [37
 
  <./Relvolume_Revaluation.png (PNG copy)>]
-<Relvolume_NoRevaluation.png, id=1344, 717.68124pt x 521.95pt>
+<Relvolume_NoRevaluation.png, id=1390, 717.68124pt x 521.95pt>
 File: Relvolume_NoRevaluation.png Graphic file (type png)
 <use Relvolume_NoRevaluation.png>
-Package pdftex.def Info: Relvolume_NoRevaluation.png  used on input line 676.
+Package pdftex.def Info: Relvolume_NoRevaluation.png  used on input line 716.
 (pdftex.def)             Requested size: 239.60567pt x 174.25899pt.
-[37
+[38
 
  <./Relvolume_NoRevaluation.png (PNG copy)>]
-<IndImb.png, id=1377, 717.68124pt x 521.95pt>
+<IndImb.png, id=1421, 717.68124pt x 521.95pt>
 File: IndImb.png Graphic file (type png)
 <use IndImb.png>
-Package pdftex.def Info: IndImb.png  used on input line 689.
+Package pdftex.def Info: IndImb.png  used on input line 729.
 (pdftex.def)             Requested size: 154.03183pt x 112.01794pt.
-<InsImb.png, id=1378, 717.68124pt x 521.95pt>
+<InsImb.png, id=1422, 717.68124pt x 521.95pt>
 File: InsImb.png Graphic file (type png)
 <use InsImb.png>
-Package pdftex.def Info: InsImb.png  used on input line 689.
-(pdftex.def)             Requested size: 154.03183pt x 112.01794pt.
- [38
-
- <./IndImb.png (PNG copy)> <./InsImb.png (PNG copy)>]
-<IndImb_Revaluation.png, id=1410, 717.68124pt x 521.95pt>
-File: IndImb_Revaluation.png Graphic file (type png)
-<use IndImb_Revaluation.png>
-Package pdftex.def Info: IndImb_Revaluation.png  used on input line 697.
-(pdftex.def)             Requested size: 154.03183pt x 112.01794pt.
-<InsImb_Revaluation.png, id=1411, 717.68124pt x 521.95pt>
-File: InsImb_Revaluation.png Graphic file (type png)
-<use InsImb_Revaluation.png>
-Package pdftex.def Info: InsImb_Revaluation.png  used on input line 697.
+Package pdftex.def Info: InsImb.png  used on input line 729.
 (pdftex.def)             Requested size: 154.03183pt x 112.01794pt.
  [39
 
- <./IndImb_Revaluation.png (PNG copy)> <./InsImb_Revaluation.png (PNG copy)>]
-<IndImb_NoRevaluation.png, id=1442, 717.68124pt x 521.95pt>
-File: IndImb_NoRevaluation.png Graphic file (type png)
-<use IndImb_NoRevaluation.png>
-Package pdftex.def Info: IndImb_NoRevaluation.png  used on input line 705.
+ <./IndImb.png (PNG copy)> <./InsImb.png (PNG copy)>]
+<IndImb_Revaluation.png, id=1454, 717.68124pt x 521.95pt>
+File: IndImb_Revaluation.png Graphic file (type png)
+<use IndImb_Revaluation.png>
+Package pdftex.def Info: IndImb_Revaluation.png  used on input line 737.
 (pdftex.def)             Requested size: 154.03183pt x 112.01794pt.
-<InsImb_NoRevaluation.png, id=1443, 717.68124pt x 521.95pt>
-File: InsImb_NoRevaluation.png Graphic file (type png)
-<use InsImb_NoRevaluation.png>
-Package pdftex.def Info: InsImb_NoRevaluation.png  used on input line 705.
+<InsImb_Revaluation.png, id=1455, 717.68124pt x 521.95pt>
+File: InsImb_Revaluation.png Graphic file (type png)
+<use InsImb_Revaluation.png>
+Package pdftex.def Info: InsImb_Revaluation.png  used on input line 737.
 (pdftex.def)             Requested size: 154.03183pt x 112.01794pt.
  [40
 
- <./IndImb_NoRevaluation.png (PNG copy)> <./InsImb_NoRevaluation.png (PNG copy)
->] (./CapitalRaise - Slide.toc) [41
+ <./IndImb_Revaluation.png (PNG copy)> <./InsImb_Revaluation.png (PNG copy)>]
+<IndImb_NoRevaluation.png, id=1487, 717.68124pt x 521.95pt>
+File: IndImb_NoRevaluation.png Graphic file (type png)
+<use IndImb_NoRevaluation.png>
+Package pdftex.def Info: IndImb_NoRevaluation.png  used on input line 745.
+(pdftex.def)             Requested size: 154.03183pt x 112.01794pt.
+<InsImb_NoRevaluation.png, id=1488, 717.68124pt x 521.95pt>
+File: InsImb_NoRevaluation.png Graphic file (type png)
+<use InsImb_NoRevaluation.png>
+Package pdftex.def Info: InsImb_NoRevaluation.png  used on input line 745.
+(pdftex.def)             Requested size: 154.03183pt x 112.01794pt.
+ [41
 
-] [42
+ <./IndImb_NoRevaluation.png (PNG copy)> <./InsImb_NoRevaluation.png (PNG copy)
+>] (./CapitalRaise - Slide.toc) [42
+
+] [43
 
 ]
-[43
-
-] [44
+[44
 
 ] [45
 
 ] [46
 
+] [47
+
+] (./CapitalRaise - Slide.bbl
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\translate ' on input line 1.
+
+) [48
+
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\translate ' on input line 1164.
+(hyperref)                removing `\translate ' on input line 1216.
 
-(./CapitalRaise - Slide.toc) [47
+(./CapitalRaise - Slide.toc) [49
 
 ]
 Package epstopdf Info: Source file: <AbReturn_4Factor.eps>
@@ -1492,81 +1510,81 @@ Package epstopdf Info: Source file: <AbReturn_4Factor.eps>
 (epstopdf)                    size: 10831 bytes
 (epstopdf)             Command: <repstopdf --outfile=AbReturn_4Factor-eps-conve
 rted-to.pdf AbReturn_4Factor.eps>
-(epstopdf)             \includegraphics on input line 1179.
+(epstopdf)             \includegraphics on input line 1231.
 Package epstopdf Info: Output file is already uptodate.
-<AbReturn_4Factor-eps-converted-to.pdf, id=1698, 397.485pt x 289.08pt>
+<AbReturn_4Factor-eps-converted-to.pdf, id=1772, 397.485pt x 289.08pt>
 File: AbReturn_4Factor-eps-converted-to.pdf Graphic file (type pdf)
 <use AbReturn_4Factor-eps-converted-to.pdf>
 Package pdftex.def Info: AbReturn_4Factor-eps-converted-to.pdf  used on input l
-ine 1179.
+ine 1231.
 (pdftex.def)             Requested size: 239.60567pt x 174.26096pt.
- [48
+ [50
 
  <./AbReturn_4Factor-eps-converted-to.pdf>]
-<AbReturnRevalution_4Factor.png, id=1736, 717.68124pt x 521.95pt>
+<AbReturnRevalution_4Factor.png, id=1811, 717.68124pt x 521.95pt>
 File: AbReturnRevalution_4Factor.png Graphic file (type png)
 <use AbReturnRevalution_4Factor.png>
-Package pdftex.def Info: AbReturnRevalution_4Factor.png  used on input line 119
-0.
+Package pdftex.def Info: AbReturnRevalution_4Factor.png  used on input line 124
+2.
 (pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
 
-Overfull \vbox (1.40683pt too high) detected at line 1190
- []
-
-[49
-
- <./AbReturnRevalution_4Factor.png (PNG copy)>]
-<AbReturnSaving_4Factor.png, id=1769, 717.68124pt x 521.95pt>
-File: AbReturnSaving_4Factor.png Graphic file (type png)
-<use AbReturnSaving_4Factor.png>
-Package pdftex.def Info: AbReturnSaving_4Factor.png  used on input line 1202.
-(pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
-
-Overfull \vbox (1.40683pt too high) detected at line 1202
- []
-
-[50
-
- <./AbReturnSaving_4Factor.png (PNG copy)>]
-<AbReturnCash_4Factor.png, id=1802, 717.68124pt x 521.95pt>
-File: AbReturnCash_4Factor.png Graphic file (type png)
-<use AbReturnCash_4Factor.png>
-Package pdftex.def Info: AbReturnCash_4Factor.png  used on input line 1213.
-(pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
-
-Overfull \vbox (1.40683pt too high) detected at line 1213
+Overfull \vbox (1.40683pt too high) detected at line 1242
  []
 
 [51
 
- <./AbReturnCash_4Factor.png (PNG copy)>]
-<AbReturnHybrid_4Factor.png, id=1833, 717.68124pt x 521.95pt>
-File: AbReturnHybrid_4Factor.png Graphic file (type png)
-<use AbReturnHybrid_4Factor.png>
-Package pdftex.def Info: AbReturnHybrid_4Factor.png  used on input line 1224.
+ <./AbReturnRevalution_4Factor.png (PNG copy)>]
+<AbReturnSaving_4Factor.png, id=1843, 717.68124pt x 521.95pt>
+File: AbReturnSaving_4Factor.png Graphic file (type png)
+<use AbReturnSaving_4Factor.png>
+Package pdftex.def Info: AbReturnSaving_4Factor.png  used on input line 1254.
 (pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
 
-Overfull \vbox (1.40683pt too high) detected at line 1224
+Overfull \vbox (1.40683pt too high) detected at line 1254
  []
 
 [52
 
+ <./AbReturnSaving_4Factor.png (PNG copy)>]
+<AbReturnCash_4Factor.png, id=1875, 717.68124pt x 521.95pt>
+File: AbReturnCash_4Factor.png Graphic file (type png)
+<use AbReturnCash_4Factor.png>
+Package pdftex.def Info: AbReturnCash_4Factor.png  used on input line 1265.
+(pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
+
+Overfull \vbox (1.40683pt too high) detected at line 1265
+ []
+
+[53
+
+ <./AbReturnCash_4Factor.png (PNG copy)>]
+<AbReturnHybrid_4Factor.png, id=1907, 717.68124pt x 521.95pt>
+File: AbReturnHybrid_4Factor.png Graphic file (type png)
+<use AbReturnHybrid_4Factor.png>
+Package pdftex.def Info: AbReturnHybrid_4Factor.png  used on input line 1276.
+(pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
+
+Overfull \vbox (1.40683pt too high) detected at line 1276
+ []
+
+[54
+
  <./AbReturnHybrid_4Factor.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1227.
+(hyperref)                removing `math shift' on input line 1279.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 1227.
+(hyperref)                removing `\alpha' on input line 1279.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1227.
+(hyperref)                removing `math shift' on input line 1279.
 
-(./CapitalRaise - Slide.toc) [53
+(./CapitalRaise - Slide.toc) [55
 
-] [54
+] [56
 
 ]
 Package epstopdf Info: Source file: <AbReturn_WithoutAlpha.eps>
@@ -1578,70 +1596,70 @@ Package epstopdf Info: Source file: <AbReturn_WithoutAlpha.eps>
 (epstopdf)                    size: 12662 bytes
 (epstopdf)             Command: <repstopdf --outfile=AbReturn_WithoutAlpha-eps-
 converted-to.pdf AbReturn_WithoutAlpha.eps>
-(epstopdf)             \includegraphics on input line 1252.
+(epstopdf)             \includegraphics on input line 1304.
 Package epstopdf Info: Output file is already uptodate.
-<AbReturn_WithoutAlpha-eps-converted-to.pdf, id=1930, 397.485pt x 289.08pt>
+<AbReturn_WithoutAlpha-eps-converted-to.pdf, id=2005, 397.485pt x 289.08pt>
 File: AbReturn_WithoutAlpha-eps-converted-to.pdf Graphic file (type pdf)
 <use AbReturn_WithoutAlpha-eps-converted-to.pdf>
 Package pdftex.def Info: AbReturn_WithoutAlpha-eps-converted-to.pdf  used on in
-put line 1252.
+put line 1304.
 (pdftex.def)             Requested size: 239.60567pt x 174.26096pt.
- [55
+ [57
 
  <./AbReturn_WithoutAlpha-eps-converted-to.pdf>]
-<AbReturnRevalution_WithoutAlpha.png, id=1970, 717.68124pt x 521.95pt>
+<AbReturnRevalution_WithoutAlpha.png, id=2044, 717.68124pt x 521.95pt>
 File: AbReturnRevalution_WithoutAlpha.png Graphic file (type png)
 <use AbReturnRevalution_WithoutAlpha.png>
 Package pdftex.def Info: AbReturnRevalution_WithoutAlpha.png  used on input lin
-e 1263.
+e 1315.
 (pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
 
-Overfull \vbox (1.40683pt too high) detected at line 1263
- []
-
-[56
-
- <./AbReturnRevalution_WithoutAlpha.png (PNG copy)>]
-<AbReturnSaving_WithoutAlpha.png, id=2004, 717.68124pt x 521.95pt>
-File: AbReturnSaving_WithoutAlpha.png Graphic file (type png)
-<use AbReturnSaving_WithoutAlpha.png>
-Package pdftex.def Info: AbReturnSaving_WithoutAlpha.png  used on input line 12
-75.
-(pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
-
-Overfull \vbox (1.40683pt too high) detected at line 1275
- []
-
-[57
-
- <./AbReturnSaving_WithoutAlpha.png (PNG copy)>]
-<AbReturnCash_WithoutAlpha.png, id=2037, 717.68124pt x 521.95pt>
-File: AbReturnCash_WithoutAlpha.png Graphic file (type png)
-<use AbReturnCash_WithoutAlpha.png>
-Package pdftex.def Info: AbReturnCash_WithoutAlpha.png  used on input line 1286
-.
-(pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
-
-Overfull \vbox (1.40683pt too high) detected at line 1286
+Overfull \vbox (1.40683pt too high) detected at line 1315
  []
 
 [58
 
- <./AbReturnCash_WithoutAlpha.png (PNG copy)>]
-<AbReturnHybrid_WithoutAlpha.png, id=2069, 717.68124pt x 521.95pt>
-File: AbReturnHybrid_WithoutAlpha.png Graphic file (type png)
-<use AbReturnHybrid_WithoutAlpha.png>
-Package pdftex.def Info: AbReturnHybrid_WithoutAlpha.png  used on input line 12
-97.
+ <./AbReturnRevalution_WithoutAlpha.png (PNG copy)>]
+<AbReturnSaving_WithoutAlpha.png, id=2077, 717.68124pt x 521.95pt>
+File: AbReturnSaving_WithoutAlpha.png Graphic file (type png)
+<use AbReturnSaving_WithoutAlpha.png>
+Package pdftex.def Info: AbReturnSaving_WithoutAlpha.png  used on input line 13
+27.
 (pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
 
-Overfull \vbox (1.40683pt too high) detected at line 1297
+Overfull \vbox (1.40683pt too high) detected at line 1327
  []
 
 [59
 
+ <./AbReturnSaving_WithoutAlpha.png (PNG copy)>]
+<AbReturnCash_WithoutAlpha.png, id=2111, 717.68124pt x 521.95pt>
+File: AbReturnCash_WithoutAlpha.png Graphic file (type png)
+<use AbReturnCash_WithoutAlpha.png>
+Package pdftex.def Info: AbReturnCash_WithoutAlpha.png  used on input line 1338
+.
+(pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
+
+Overfull \vbox (1.40683pt too high) detected at line 1338
+ []
+
+[60
+
+ <./AbReturnCash_WithoutAlpha.png (PNG copy)>]
+<AbReturnHybrid_WithoutAlpha.png, id=2143, 717.68124pt x 521.95pt>
+File: AbReturnHybrid_WithoutAlpha.png Graphic file (type png)
+<use AbReturnHybrid_WithoutAlpha.png>
+Package pdftex.def Info: AbReturnHybrid_WithoutAlpha.png  used on input line 13
+49.
+(pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
+
+Overfull \vbox (1.40683pt too high) detected at line 1349
+ []
+
+[61
+
  <./AbReturnHybrid_WithoutAlpha.png (PNG copy)>] (./CapitalRaise - Slide.toc) [
-60
+62
 
 ]
 Package epstopdf Info: Source file: <AbReturn_Market.eps>
@@ -1652,92 +1670,92 @@ Package epstopdf Info: Source file: <AbReturn_Market.eps>
 (epstopdf)                    size: 12469 bytes
 (epstopdf)             Command: <repstopdf --outfile=AbReturn_Market-eps-conver
 ted-to.pdf AbReturn_Market.eps>
-(epstopdf)             \includegraphics on input line 1310.
+(epstopdf)             \includegraphics on input line 1362.
 Package epstopdf Info: Output file is already uptodate.
-<AbReturn_Market-eps-converted-to.pdf, id=2136, 397.485pt x 289.08pt>
+<AbReturn_Market-eps-converted-to.pdf, id=2211, 397.485pt x 289.08pt>
 File: AbReturn_Market-eps-converted-to.pdf Graphic file (type pdf)
 <use AbReturn_Market-eps-converted-to.pdf>
 Package pdftex.def Info: AbReturn_Market-eps-converted-to.pdf  used on input li
-ne 1310.
+ne 1362.
 (pdftex.def)             Requested size: 239.60567pt x 174.26096pt.
- [61
+ [63
 
  <./AbReturn_Market-eps-converted-to.pdf>]
-<AbReturnRevalution_Market.png, id=2176, 717.68124pt x 521.95pt>
+<AbReturnRevalution_Market.png, id=2250, 717.68124pt x 521.95pt>
 File: AbReturnRevalution_Market.png Graphic file (type png)
 <use AbReturnRevalution_Market.png>
-Package pdftex.def Info: AbReturnRevalution_Market.png  used on input line 1321
+Package pdftex.def Info: AbReturnRevalution_Market.png  used on input line 1373
 .
 (pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
 
-Overfull \vbox (1.40683pt too high) detected at line 1321
- []
-
-[62
-
- <./AbReturnRevalution_Market.png (PNG copy)>]
-<AbReturnSaving_Market.png, id=2210, 717.68124pt x 521.95pt>
-File: AbReturnSaving_Market.png Graphic file (type png)
-<use AbReturnSaving_Market.png>
-Package pdftex.def Info: AbReturnSaving_Market.png  used on input line 1333.
-(pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
-
-Overfull \vbox (1.40683pt too high) detected at line 1333
- []
-
-[63
-
- <./AbReturnSaving_Market.png (PNG copy)>]
-<AbReturnCash_Market.png, id=2243, 717.68124pt x 521.95pt>
-File: AbReturnCash_Market.png Graphic file (type png)
-<use AbReturnCash_Market.png>
-Package pdftex.def Info: AbReturnCash_Market.png  used on input line 1344.
-(pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
-
-Overfull \vbox (1.40683pt too high) detected at line 1344
+Overfull \vbox (1.40683pt too high) detected at line 1373
  []
 
 [64
 
- <./AbReturnCash_Market.png (PNG copy)>]
-<AbReturnHybrid_Market.png, id=2275, 717.68124pt x 521.95pt>
-File: AbReturnHybrid_Market.png Graphic file (type png)
-<use AbReturnHybrid_Market.png>
-Package pdftex.def Info: AbReturnHybrid_Market.png  used on input line 1355.
+ <./AbReturnRevalution_Market.png (PNG copy)>]
+<AbReturnSaving_Market.png, id=2283, 717.68124pt x 521.95pt>
+File: AbReturnSaving_Market.png Graphic file (type png)
+<use AbReturnSaving_Market.png>
+Package pdftex.def Info: AbReturnSaving_Market.png  used on input line 1385.
 (pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
 
-Overfull \vbox (1.40683pt too high) detected at line 1355
+Overfull \vbox (1.40683pt too high) detected at line 1385
  []
 
 [65
 
- <./AbReturnHybrid_Market.png (PNG copy)>] (./CapitalRaise - Slide.toc)
+ <./AbReturnSaving_Market.png (PNG copy)>]
+<AbReturnCash_Market.png, id=2317, 717.68124pt x 521.95pt>
+File: AbReturnCash_Market.png Graphic file (type png)
+<use AbReturnCash_Market.png>
+Package pdftex.def Info: AbReturnCash_Market.png  used on input line 1396.
+(pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
+
+Overfull \vbox (1.40683pt too high) detected at line 1396
+ []
+
 [66
 
+ <./AbReturnCash_Market.png (PNG copy)>]
+<AbReturnHybrid_Market.png, id=2349, 717.68124pt x 521.95pt>
+File: AbReturnHybrid_Market.png Graphic file (type png)
+<use AbReturnHybrid_Market.png>
+Package pdftex.def Info: AbReturnHybrid_Market.png  used on input line 1407.
+(pdftex.def)             Requested size: 222.48985pt x 161.81079pt.
+
+Overfull \vbox (1.40683pt too high) detected at line 1407
+ []
+
+[67
+
+ <./AbReturnHybrid_Market.png (PNG copy)>] (./CapitalRaise - Slide.toc)
+[68
+
 ]
-<Amihud.png, id=2341, 717.68124pt x 521.95pt>
+<Amihud.png, id=2415, 717.68124pt x 521.95pt>
 File: Amihud.png Graphic file (type png)
 <use Amihud.png>
-Package pdftex.def Info: Amihud.png  used on input line 1368.
+Package pdftex.def Info: Amihud.png  used on input line 1420.
 (pdftex.def)             Requested size: 239.60567pt x 174.25899pt.
- [67
+ [69
 
  <./Amihud.png (PNG copy)>]
-<Amihud_Revaluation.png, id=2373, 717.68124pt x 521.95pt>
+<Amihud_Revaluation.png, id=2447, 717.68124pt x 521.95pt>
 File: Amihud_Revaluation.png Graphic file (type png)
 <use Amihud_Revaluation.png>
-Package pdftex.def Info: Amihud_Revaluation.png  used on input line 1378.
+Package pdftex.def Info: Amihud_Revaluation.png  used on input line 1430.
 (pdftex.def)             Requested size: 239.60567pt x 174.25899pt.
- [68
+ [70
 
  <./Amihud_Revaluation.png (PNG copy)>]
-<Amihud_NoRevaluation.png, id=2403, 717.68124pt x 521.95pt>
+<Amihud_NoRevaluation.png, id=2477, 717.68124pt x 521.95pt>
 File: Amihud_NoRevaluation.png Graphic file (type png)
 <use Amihud_NoRevaluation.png>
-Package pdftex.def Info: Amihud_NoRevaluation.png  used on input line 1386.
+Package pdftex.def Info: Amihud_NoRevaluation.png  used on input line 1438.
 (pdftex.def)             Requested size: 239.60567pt x 174.25899pt.
 
-[69
+[71
 
  <./Amihud_NoRevaluation.png (PNG copy)>]
 \tf@nav=\write7
@@ -1749,22 +1767,22 @@ Package pdftex.def Info: Amihud_NoRevaluation.png  used on input line 1386.
 \tf@snm=\write9
 \openout9 = `"CapitalRaise - Slide.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1392.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1392.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1444.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1444.
  (./CapitalRaise - Slide.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1392.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1392.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1444.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1444.
 
 Package rerunfilecheck Info: File `"CapitalRaise - Slide".out' has not changed.
 
-(rerunfilecheck)             Checksum: 9EF1A5C6B929E9677D0F3A67BD99941F;829.
+(rerunfilecheck)             Checksum: E0700039E749412B574451DA3CDB9A06;876.
  ) 
 Here is how much of TeX's memory you used:
- 24085 strings out of 480608
- 480039 string characters out of 5907536
- 719807 words of memory out of 5000000
- 39155 multiletter control sequences out of 15000+600000
- 545542 words of font info for 71 fonts, out of 8000000 for 9000
+ 24468 strings out of 480608
+ 485147 string characters out of 5907536
+ 725611 words of memory out of 5000000
+ 39521 multiletter control sequences out of 15000+600000
+ 545893 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,18n,67p,811b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
@@ -1783,10 +1801,10 @@ pe1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.
 pfb>
-Output written on "CapitalRaise - Slide.pdf" (69 pages, 2752150 bytes).
+Output written on "CapitalRaise - Slide.pdf" (71 pages, 2763381 bytes).
 PDF statistics:
- 2542 PDF objects out of 2984 (max. 8388607)
- 2353 compressed objects within 24 object streams
- 221 named destinations out of 1000 (max. 500000)
- 439 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2618 PDF objects out of 2984 (max. 8388607)
+ 2426 compressed objects within 25 object streams
+ 231 named destinations out of 1000 (max. 500000)
+ 447 words of extra memory for PDF output out of 10000 (max. 10000000)
 
