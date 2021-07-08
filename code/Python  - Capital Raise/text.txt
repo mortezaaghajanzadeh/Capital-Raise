@@ -1,0 +1,586 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>اطلاعیه های ناشران | ناشران هم‌رده</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Change the Color of Address Bar -->
+    <meta name="theme-color" content="#033361"><!-- Chrome, Firefox OS and Opera -->
+    <meta name="msapplication-navbutton-color" content="#033361"><!-- Windows Phone -->
+    <meta name="apple-mobile-web-app-capable" content="yes"><!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <meta name="keywords" content="سامانه جامع اطلاع رسانی ناشران، کدال، کدال۳۶۰ ، نماد، اطلاعیه های کدال، بازار سرمایه، سازمان بورس و اوراق بهادار، اطلاعات و صورت های مالی، مجامع، افزایش سرمایه، پروفایل اطلاعیه، ناشران، اطلاعیه های مشابه، ناشران هم رده ، انتشار الکترونیکی،">
+
+    <link rel="icon" href="/static/design/images/favicon.ico">
+    <link href="/static/common/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/static/common/css/bootstrap-rtl.min.css" rel="stylesheet"/>
+    <link href="/static/common/css/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/common/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/static/common/css/jquery-ui.min.css"/>
+    <link href="/static/plugins/datepicker/bootstrap-datepicker.min.css" rel="stylesheet"/>
+    <link href="/static/autosuggest.css" rel="stylesheet" type="text/css"/>
+    
+    <link href="/static/design/styles/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/design/styles/slick-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/design/styles/custom.css?version=19" rel="stylesheet"/>
+    
+    
+
+    <!-- Search Console -->
+    <meta name="google-site-verification" content="r03LOh25TAPBxE0eL_3DtuMVUO6rWXUrYrSgm63uqqA"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145921198-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-145921198-1');
+    </script>
+
+
+</head>
+
+<body class="ltr">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="content">
+
+    
+    
+
+
+
+
+<!-- ==============header ============== -->
+<header class="header-index ">
+    <div class="container position-raletive">
+        <div class="toolbar-container">
+            <div class="top-toolbar">
+                
+
+
+
+
+<!-- ==============Language ============== -->
+
+    <div class="lang" class="img-responsive">
+        <a class="switchen">
+            <span class="login-text">English </span>
+            <span class="lang-fa">EN</span>
+        </a>
+    </div>
+
+<!-- ==============end of Language============== -->
+
+<script src="/static/common/js/jquery-3.4.1.min.js"></script>
+
+<script type="text/javascript">
+    $('.switchfa').click(function () {
+        address = location.pathname;
+        address = '/fa' + address.substr(3);
+        window.location.href = address;
+    });
+
+    $('.switchen').click(function () {
+        var langid = window.location.pathname.split('/')[1];
+        address = location.pathname;
+        address = '/en' + address.substr(3);
+        window.location.href = address;
+    });
+
+</script>
+                
+
+
+
+
+<!-- ==============Logout ============== -->
+
+
+    
+        <div class="logout" class="img-responsive">
+            
+                <a class="switchen"  href="/fa/user/login">
+                    <span class="login-text" >ورود </span>
+                    <span class="login-img"><i class="icon-lock"></i></span>
+                </a>
+            
+        </div>
+    
+
+<script>
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+            </div>
+        </div>
+        <div class="logo-holder">
+                <h2>
+                    <a title="کدال ۳۶۰" href="/fa/">
+                        سامانه جامع اطلاع رسانی ناشران
+                        
+                            <img class="name1 img-responsive margin-auto" src="/static/design/images/name1.png"
+                                 alt="کدال ۳۶۰"/>
+                        
+                    </a>
+                </h2>
+        </div>
+    </div>
+</header>
+<!-- ==============end of header ============== -->
+
+
+<nav class="services navbar navbar-default nav-translate" id="navbar">
+
+    <div class="full-width menu-container">
+        <div class="container">
+            <div class=" navbar-bg">
+            <h2>
+                <a title="کدال ۳۶۰" href="/fa/">
+                    
+                    <img class="nav-logo " src="/static/design/images/nav-logo.jpg"  alt="کدال ۳۶۰">
+                    
+                </a>
+            </h2>
+                <a class="ico-nav advanced-search-a "
+                   href="/fa/search/"> جستجوی پیشرفته</a>
+                <a class=" ico-nav  notification-ico" href="/fa/alert_service"  >
+                    <span class="link-ico"><i class="icon-bell"></i></span>
+                    سرویس گوش به زنگ
+                </a>
+                <a class=" ico-nav publisher-ico" href="/fa/publishers" >
+                    <span class="link-ico"><i class="icon-speech"></i></span>
+                    لیست ناشران
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+<!-- =============Navigation ============== -->
+<div class="full-width navigation">
+    <img src="/static/design/images/footer-shadow.png" class="img-responsive margin-auto table-shadow"/>
+    <div class="container">
+        <ul id="navigation-page">
+             <i class="icon-home"></i>
+            
+                <li><a href="/fa/">خانه</a><i class="fa fa-angle-arrow" aria-hidden="true"></i></li>
+            
+            <li><a href="">اطلاعیه های ناشران | ناشران هم‌رده</a><i class="fa fa-angle-arrow" aria-hidden="true"></i></li>
+        </ul>
+    </div>
+</div>
+<!-- ==============end of Navigation ============== -->
+
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-lg-2 statement-col top-row ">
+                <div class="row">
+                    <div class="logo">
+                        <a class="logo-img" href="//www.alborzinsurance.ir" target="_blank">
+                        <img src="/media//logo/البرز.png" class="img-responsive default-logo" alt="لوگوی شرکت"/>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a class="logo-name" href="/fa/publisher/1055/"  >بیمه البرز
+                            <small class="symbol-name">(البرز)&nbsp;
+                            </small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-lg-10 detail-col top-row">
+                <div class="row ">
+                    <div class=" col-xs-12 title-section">
+                        <h1>اطلاعیه ناشر</h1>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xs-12">
+                        <div class="title-section3">
+                            
+                                <h2>البرز - آگهی ثبت افزایش سرمایه </h2>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row statement-content">
+                <div class="col-xs-12 col-sm-3 col-lg-2 menu-div">
+                    <div class="row">
+                        <nav>
+                            <div class="nav-side-menu">
+                                <div class="brand">منوی اطلاعیه</div>
+                                <i class="toggle-btn" data-toggle="collapse"
+                                   data-target="#menu-content"></i>
+
+                                <div class="menu-list">
+                                    <ul id="menu-content" class="menu menu-content collapse out">
+                                        <li class="selected" id="view_statement">
+                                            <div>
+                                                <i class="icon-doc"></i>
+                                            </div>
+                                            <a onclick=sc.loadViewStatement()><span>نمایش اطلاعیه</span></a>
+                                        </li>
+                                        <li id="similar_statements">
+                                            <div class="similar-statements">
+                                                <i class="icon-docs"></i>
+                                            </div>
+                                            <a onclick=sc.loadRelatedStatements()><span>اطلاعیه‌های مشابه</span><br>
+                                                <small>(10 اطلاعیه آخر)</small>
+                                            </a>
+                                        </li>
+                                        <li id="similar_publishers">
+                                            <div>
+                                                <i class="icon-layers"></i>
+                                            </div>
+                                            <a onclick=sc.loadSimilarPublishers()><span>ناشران هم‌رده</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div id="subcontent" class="col-xs-12 col-sm-9 col-lg-10 left-col padd1 "></div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+<!-- ==============Footer ============== -->
+<footer xmlns="http://www.w3.org/1999/html">
+    <div class="main">
+        <div class="container">
+            <img src="/static/design/images/footer-shadow.png" class="img-responsive footer-shadow"/>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 section">
+                    <div class="logo-container">
+                        <div class="center-logo">
+                            <h2>
+                                
+                                    <a href="https://www.rayanbourse.ir/" target="_blank">
+                                <span class="img-responsive logo-footer logo-footer1"
+                                      alt="شرکت رایان بورس"/>
+                                    </a>
+                                
+                            </h2>
+
+                            <div class="e-namad">
+                                <img src="https://trustseal.enamad.ir/logo.aspx?id=129103&p=QnPyuyivbyEPX2UM" alt=""
+                                     onclick="window.open('https://trustseal.enamad.ir/Verify.aspx?id=129103&p=QnPyuyivbyEPX2UM', &quot;Popup&quot;,&quot;toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30&quot;)"
+                                     style="cursor:Pointer" id="QnPyuyivbyEPX2UM">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 section">
+                    <div class="footer-part">
+                        <h4>تماس با ما</h4>
+                        <p>
+                            <i class="icon-cursor"></i> آدرس: تهران، میدان ونک، خیابان ملاصدرا، ساختمان مهر، پلاک ۲۳۵، طبقه ۵، واحد ۱۱
+                        </p>
+                        <p>
+                            <i class="icon-call-end"></i> تلفن: <span
+                                class="not-txt"> ٤١٧٢١٠٠٠ -٠٢١ </span>
+                        </p>
+                        <p><i class="icon-envelope"></i> ایمیل: <a href="mailto:info@rayanbourse.ir"
+                                                                                 class="not-txt">info@rayanbourse.ir</a>
+                        </p>
+                        <p><i class="icon-globe"></i>وب سایت: <a class="not-txt"
+                                                                               href="https://www.rayanbourse.ir/"
+                                                                               target="_blank">www.rayanbourse.ir</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12  col-sm-6 col-md-6 col-lg-2 section">
+                    <div class="footer-part">
+                        <h4>پیوندهای اصلی</h4>
+                        <ul class="footer-list">
+                            <li><img src="/static/design/images/arrow-big.png"><a
+                                    href="/fa/publishers">لیست ناشران</a></li>
+                            <li><img src="/static/design/images/arrow-big.png"><a
+                                    href="/fa/alert_service">سرویس گوش به زنگ</a></li>
+
+                            <li><img src="/static/design/images/arrow-big.png"><a
+                                    href="/fa/terms_conditions">قوانین و شرایط</a></li>
+                            <li><img src="/static/design/images/arrow-big.png"><a
+                                    href="/fa/privacy">حریم خصوصی </a></li>
+                            <li><img src="/static/design/images/arrow-big.png"><a
+                                    href="/fa/about_us">درباره ما  </a></li>
+                            <li><img src="/static/design/images/arrow-big.png"><a
+                                    href="/fa/contact_us">تماس با ما </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12  col-sm-6 col-md-6 col-lg-2 section">
+                    <div class="footer-part">
+                        <h4>سامانه‌های مرتبط</h4>
+                        <ul class="footer-list">
+                            <li><img src="/static/design/images/arrow-big.png"><a
+                                    href="http://cfi.codal.ir/fa" target="_blank">نهادهای مالی</a>
+                            </li>
+                            <li><img src="/static/design/images/arrow-big.png"><a href="https://billing.seo.ir"
+                                                                                         target="_blank">صورتحساب</a>
+                            </li>
+                            <li><img src="/static/design/images/arrow-big.png"><a href="https://sanam.codal.ir/"
+                                                                                         target="_blank">سنم </a>
+                            </li>
+                            <li><img src="/static/design/images/arrow-big.png"><a href="http://www.tedan.ir/fa/"
+                                                                                         target="_blank">تدان </a>
+                            </li>
+                            <li><img src="/static/design/images/arrow-big.png"><a href="https://codal.ir/"
+                                                                                         target="_blank">کدال</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sitelicense">
+        <div class="container">
+            <div class="row block-sitelicense">
+                <div class="col-md-6 col-sm-6  col-xs-12 ">
+                    <span>کلیه حقوق (۱۳۹۶) سامانه متعلق به 
+                        <a target="_blank" href="http://www.SEO.ir/">سازمان بورس و اوراق بهادار </a>می‌باشد.
+                        </br> توسعه این سامانه به عهده 
+                        <a href="https://www.rayanbourse.ir/" target="_blank">شرکت رایان بورس</a>
+                        است.
+
+                    Version: 990220
+                    </span>
+                </div>
+                <div class="col-md-6 col-sm-6  col-xs-12 ">
+
+                    
+                        <a target="_blank" href="http://www.SEO.ir/">
+                            <img src="/static/design/images/stock-logo.png" class="img-responsive stock-logo"
+                                 alt="سازمان بورس و اوراق بهادار">
+                        </a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ==============end of Footer============== -->
+
+
+
+</body>
+
+
+
+<script>var abzar = '<i class="icon-arrow-up"></i>';</script>
+<script src="/static/common/js/jquery-3.4.1.min.js"></script>
+<script src="/static/plugins/slick.min.js"></script>
+<script src="/static/common/js/jquery-ui.min.js"></script>
+<script src="/static/common/js/bootstrap.min.js"></script>
+<script src="/static/common/js/bootstrap.min.js"></script>
+<script src="/static/design/js/scrollTop.js"></script>
+<script src="/static/design/js/design.js?version=19"></script>
+<script src="/static/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+
+    <script src="/static/plugins/datepicker/bootstrap-datepicker.fa.min.js"></script>
+
+<script src="/static/plugins/jquery.bootpag.js"></script>
+<script src="/static/plugins/typeahead/typeahead.bundle.js"></script>
+<script src="/static/plugins/jquery.validate.min.js"></script>
+<script src="/static/plugins/additional-methods.min.js"></script>
+<script src="/static/plugins/jquery.maskedinput.js"></script>
+<script src="/static/plugins/jquery.mark.min.js"></script>
+
+
+<script type="text/javascript">
+    /*Add Thousands Separator To Numbers */
+    function addCommas(nStr) {
+        nStr += '';
+        x = nStr.split('.');
+        x1 = x[0];
+        x2 = x.length > 1 ? '.' + x[1] : '';
+        var rgx = /(\d+)(\d{3})/;
+        while (rgx.test(x1)) {
+            x1 = x1.replace(rgx, '$1' + ',' + '$2');
+        }
+        return x1 + x2;
+    }
+
+    $(document).ready(function () {
+
+        $('.responsive').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 9,
+            slidesToScroll: 9,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 5,
+
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }
+            ]
+        });
+
+        /*Make Navbar And FilterRow To Stick At The Top Of Screen*/
+        $(window).scroll(function () {
+            scroll = $(window).scrollTop();
+            if (scroll >= 91) $('#navbar').addClass('sticky');
+            else $('#navbar').removeClass('sticky');
+            if (scroll >= 210) {
+                $('#filterRow').addClass('sticky');
+                $('#filterContent').addClass('container');
+
+            }
+            else {
+                $('#filterRow').removeClass('sticky');
+                $('#filterContent').removeClass('container ');
+
+            }
+        });
+
+        /*Make NumberRowsFilter To Stick At The Bottom Of Screen*/
+        $('#numberRowsFilter').change(function (e) {
+            var select = e.target;
+            var option = select.options[select.selectedIndex];
+            if (!$(option).hasClass('default')) {
+                $('#pagination').addClass('sticky');
+                $("#sidebarCollapse").css("bottom", "74px");
+                $("#topcontrol").css("bottom", "74px");
+            } else {
+                $('#pagination').removeClass('sticky');
+                $("#sidebarCollapse").css("bottom", "25px");
+                $("#topcontrol").css("bottom", "25px");
+            }
+        });
+
+
+    });
+
+</script>
+
+
+    <script src="/static/plugins/messages_fa.js"></script>
+
+
+    <script>
+        var sc = {
+            loadSimilarPublishers: function () {
+                $.get("similar_publisher", function (d) {
+                    $("#subcontent").html(d);
+                    menuheight();
+                    equalheight('.similar-publisher li a');
+                })
+            },
+            loadRelatedStatements: function () {
+                $.get("related_statement", function (d) {
+                    $("#subcontent").html(d);
+                    menuheight();
+                    equalheight('.similar-list li a');
+                })
+            },
+            loadViewStatement: function () {
+                $.get("view", function (d) {
+                    $("#subcontent").html(d);
+                    menuheight();
+                })
+            }
+        };
+
+        /*Set menu height to content*/
+        function menuheight() {
+            if ($(window).width() > 767) {
+                var maxHeight = -1;
+                $(".menu-div").height("auto");
+                var i = 0;
+                $(".statement-content > div").each(function () {
+                    i++;
+                    maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+                })
+                $(".menu-div").height(maxHeight);
+            } else {
+                $(".menu-div").height("auto");
+            }
+        }
+
+        $(window).resize(function () {
+            menuheight();
+        });
+        /*Set selected menu */
+        $(document).ready(function () {
+            $("ul.menu li").click(function () {
+                $("ul.menu li").removeClass('selected');
+                $(this).addClass('selected');
+            });
+        });
+        sc.loadViewStatement();
+
+    </script>
+
+</html>
+
+
