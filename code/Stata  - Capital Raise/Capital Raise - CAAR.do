@@ -1,8 +1,8 @@
 cls
 clear
-import excel "H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\CAAR.xlsx", sheet("Sheet1") firstrow
+import excel "G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\CAAR.xlsx", sheet("Sheet1") firstrow
 
- cd "G:\Dropbox\Dropbox\Capital Raise\Report"
+ cd "D:\Dropbox\Capital Raise\Capital-Raise\Report"
 
  
 
@@ -21,7 +21,10 @@ graph export 95-5AbReturn.eps,replace
  
  
 egen e =  max(CAAR) if RaiseType == "Total"
-gen g  = round(e,1) 
+gen g  = round(e,1) + 0.5
+
+
+
 
 
 
@@ -105,12 +108,12 @@ graph export AbReturnSaving.eps,replace
 /*4Factor*/
 cls
 clear
-import excel "H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\CAAR_4Factor.xlsx", sheet("Sheet1") firstrow
+import excel "G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\CAAR_4Factor.xlsx", sheet("Sheet1") firstrow
 
 
+ cd "D:\Dropbox\Capital Raise\Capital-Raise\Report"
 
- cd "G:\Dropbox\Dropbox\Capital Raise\Report"
-
+ 
  
  line CAAR EPeriod if RaiseType == "Total"|| rarea CAAR_05 CAAR_95 EPeriod if RaiseType == "Total", color(gs15)|| line CAAR_95 EPeriod if RaiseType == "Total", lpattern(dash_dot ) color(maroon )|| line CAAR_05 EPeriod if RaiseType == "Total" , lpattern(dash_dot ) color(navy ) || line CAAR EPeriod if RaiseType == "Total", legend(label(5 "Mean") label(3 "95Percentile") label(4 "5Percentile") order(5 3 4)  col(3) ) note("This figure graphs the CAAR from 20 period before event ") title("CAAR After Capital Raise") ytitle("Percent") ylabe(,angle(0)) xtitle("Period") xlab(-20(10)100) 
 
@@ -159,7 +162,7 @@ graph export AbReturnRevalution_4Factor.eps,replace
 drop g e
  
 egen  e =  max(CAAR) if RaiseType == "JustRO"
-gen g  = round(e,1)
+gen g  = round(e,1)+0.5
 
  
  
@@ -211,11 +214,12 @@ graph export AbReturnSaving_4Factor.eps,replace
 /*Without alpha*/
 cls
 clear
-import excel "H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\CAAR_WithoutAlpha.xlsx", sheet("Sheet1") firstrow
+import excel "G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\CAAR_WithoutAlpha.xlsx", sheet("Sheet1") firstrow
 
 
+ cd "D:\Dropbox\Capital Raise\Capital-Raise\Report"
 
- cd "G:\Dropbox\Dropbox\Capital Raise\Report"
+ 
 
  
  line CAAR EPeriod if RaiseType == "Total"|| rarea CAAR_05 CAAR_95 EPeriod if RaiseType == "Total", color(gs15)|| line CAAR_95 EPeriod if RaiseType == "Total", lpattern(dash_dot ) color(maroon )|| line CAAR_05 EPeriod if RaiseType == "Total" , lpattern(dash_dot ) color(navy ) || line CAAR EPeriod if RaiseType == "Total", legend(label(5 "Mean") label(3 "95Percentile") label(4 "5Percentile") order(5 3 4)  col(3) ) note("This figure graphs the CAAR from 20 period before event ") title("CAAR After Capital Raise") ytitle("Percent") ylabe(,angle(0)) xtitle("Period") xlab(-20(10)100) 
@@ -314,11 +318,13 @@ graph export AbReturnSaving_WithoutAlpha.eps,replace
 /*From Market*/
 cls
 clear
-import excel "H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\CAAR_Market.xlsx", sheet("Sheet1") firstrow
+import excel "G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\CAAR_Market.xlsx", sheet("Sheet1") firstrow
 
 
 
- cd "G:\Dropbox\Dropbox\Capital Raise\Report"
+ cd "D:\Dropbox\Capital Raise\Capital-Raise\Report"
+
+ 
 
  
  line CAAR EPeriod if RaiseType == "Total"|| rarea CAAR_05 CAAR_95 EPeriod if RaiseType == "Total", color(gs15)|| line CAAR_95 EPeriod if RaiseType == "Total", lpattern(dash_dot ) color(maroon )|| line CAAR_05 EPeriod if RaiseType == "Total" , lpattern(dash_dot ) color(navy ) || line CAAR EPeriod if RaiseType == "Total", legend(label(5 "Mean") label(3 "95Percentile") label(4 "5Percentile") order(5 3 4)  col(3) ) note("This figure graphs the CAAR from 20 period before event ") title("CAAR After Capital Raise") ytitle("Percent") ylabe(,angle(0)) xtitle("Period") xlab(-20(10)100) 
@@ -417,11 +423,13 @@ graph export AbReturnSaving_Market.eps,replace
 /*From Market*/
 cls
 clear
-import excel "H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\TradeSumm.xlsx", sheet("Sheet1") firstrow
+import excel "G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\TradeSumm.xlsx", sheet("Sheet1") firstrow
 
 
 
- cd "G:\Dropbox\Dropbox\Capital Raise\Report"
+ cd "D:\Dropbox\Capital Raise\Capital-Raise\Report"
+
+ 
  
  
  

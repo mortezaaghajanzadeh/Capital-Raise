@@ -5,9 +5,9 @@
 /**/
 clear
 cls
-import excel "H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\QVDate.xlsx", sheet("Sheet1") firstrow
+import excel "G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\QVDate.xlsx", sheet("Sheet1") firstrow
 
-cd "G:\Dropbox\Dropbox\Capital Raise\Report"
+ cd "D:\Dropbox\Capital Raise\Capital-Raise\Report"
 
 generate var1 = "Spring" in 1
 
@@ -19,7 +19,9 @@ replace var1 = "Winter" in 4
 
 gen axis = _n
 
+
 labmask axis, values(var1)
+
 
 graph bar Sum, over(axis)  ylab(,angle(hori)) ytitle("Number") title("Number of Capital Raise in Quarter")
 graph export QNumber.png,replace
@@ -48,9 +50,11 @@ graph export QNumber3.eps,replace
 /**/
 
 clear
-import excel "H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\SummaryCapitalData.xlsx", sheet("Sheet1") firstrow
+import excel "G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\SummaryCapitalData.xlsx", sheet("Sheet1") firstrow
 
- cd "G:\Dropbox\Dropbox\Capital Raise\Report"
+// add infaltion manualy
+
+ cd "D:\Dropbox\Capital Raise\Capital-Raise\Report"
 
 twoway bar Number year, xlab(1383(1)1398,angle(vertical)) title("Number of Capital Raise ") ytitle("Number") ylab(0(20)140,angle(hori))
 
@@ -96,7 +100,7 @@ graph export MedianCapRaise.png,replace
 graph export MedianCapRaise.eps,replace
 
 
-gen MedianCapRaiseAdjusted = MedianCapRaise * var12
+gen MedianCapRaiseAdjusted = MedianCapRaise / var12
 
 twoway bar MedianCapRaiseAdjusted year , xlab(1383(1)1398,angle(vertical)) ylab(0(20)100)   title("Median of Raised Capital (adjusted by CPI base on 1398)") ytitle("Billion Tomans")
 
@@ -117,9 +121,9 @@ graph export MeanCapRaise.png,replace
 graph export MeanCapRaise.eps,replace
 
 
-gen MeanCapRaiseAdjusted = MeanCapRaise * var12
+gen MeanCapRaiseAdjusted = MeanCapRaise / var12
 
-twoway bar MeanCapRaiseAdjusted year , xlab(1383(1)1398,angle(vertical))  ylab(0(100)600)  title("Mean of Raised Capital (adjusted by CPI base on 1398)") ytitle("Billion Tomans")
+twoway bar MeanCapRaiseAdjusted year , xlab(1383(1)1398,angle(vertical))  ylab(0(250)1000)  title("Mean of Raised Capital (adjusted by CPI base on 1398)") ytitle("Billion Tomans")
 
 
 graph export MeanCapRaiseAdjusted.png,replace
@@ -137,7 +141,7 @@ twoway bar Sum year , xlab(1383(1)1398,angle(vertical))   title("Sum of Raised C
 graph export SumCapRaise.png,replace
 graph export SumCapRaise.eps,replace
 
-gen SumAdjusted = Sum * var11
+gen SumAdjusted = Sum / var12
 
 twoway bar SumAdjusted year , xlab(1383(1)1398,angle(vertical))   title("Sum of Raised Capital (adjusted by CPI base on 1398)") ytitle("Thousand Billion Tomans ")
 
@@ -147,8 +151,8 @@ graph export SumCapRaiseAdjusted.eps,replace
 
 
 clear
-import excel "H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\vdata2.xlsx", sheet("Sheet1") firstrow
- cd "G:\Dropbox\Dropbox\Capital Raise\Report"
+import excel "G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\vdata2.xlsx", sheet("Sheet1") firstrow
+cd "D:\Dropbox\Capital Raise\Capital-Raise\Report"
 
 
 twoway histogram B ,color(navy*.5) bin(13)  || kdensity B ,title("Density of Capital Raise on Firm level") ytitle("Density" ) note("This figure graphs the histogram of number of capital raise for each firm.")  legend(label(2 "Kernel Density")) xlab(1(1)13)

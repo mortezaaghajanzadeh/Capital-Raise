@@ -3,7 +3,7 @@ import pandas as pd
 import re
 import numpy as np
 
-path = r"H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
+path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
 d = path + "CapitalRaise.parquet"
 Data = pd.read_parquet(d)
 
@@ -183,7 +183,7 @@ print(len(df))
 
 
 # %%
-path = r"H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\\"
+path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\\"
 n2 = path + "\\Rahavard Novin - 70-97" + ".parquet"
 df2 = pd.read_parquet(n2)
 t = (
@@ -202,7 +202,7 @@ df = df.merge(t, on=["name", "Year"], how="left")
 
 
 # %%
-index = r"H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\IRX6XTPI0009.xls"
+index = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\IRX6XTPI0009.xls"
 index = pd.read_excel(index)[["<CLOSE>", "<COL14>"]].rename(
     columns={"<COL14>": "jalaliDate", "<CLOSE>": "index"}
 )
@@ -225,7 +225,7 @@ df["Bad"] = df.YearQarter.map(mapdict)
 
 
 # %%
-path = r"H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\\"
+path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\\"
 
 n2 = path + "\\balance sheet - 9811" + ".xlsx"
 df2 = pd.read_excel(n2)
@@ -262,7 +262,7 @@ mapdict = dict(zip(fkey, df2.LeverageRatio))
 df["LeverageRatio"] = df.set_index(["name", "Year"]).index.map(mapdict)
 
 #%%
-path = r"H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\\"
+path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\\"
 df2 = pd.read_csv(path + "BlockHolders - 800308-990528 - Annual" + ".csv")
 a = df2.groupby(["symbol", "year"]).Percent.sum()
 df2 = df2.groupby(["symbol", "year"]).first()
@@ -274,12 +274,12 @@ mapdict = dict(zip(fkey, df2.free))
 df["freeFloat"] = df.set_index(["name", "Year"]).index.map(mapdict)
 df["freeMarketCap"] = df["freeFloat"] * df["MarketCap"] / 100
 #%%
-path = r"H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\\"
+path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\\"
 df2 = pd.read_csv(path + "Stocks_Prices_1399-09-24.csv")
 id = df2[["name", "stock_id"]].drop_duplicates()
 col = "name"
 id[col] = id[col].apply(lambda x: convert_ar_characters(x))
-path = r"H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
+path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
 df2 = pd.read_csv(path + "adjPrices_1399-11-06.csv")
 df2.Date = df2.Date.apply(vv)
 df2 = df2.drop(columns="Unnamed: 0").rename(columns={"ID": "stock_id", "Date": "date"})
@@ -317,7 +317,7 @@ df = gg.apply(Leverage)
 
 
 #%%
-path = r"H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
+path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
 d = path + "CapitalRaise_Analyze.xlsx"
 df.to_excel(d, index=False)
 

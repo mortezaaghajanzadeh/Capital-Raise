@@ -1,13 +1,15 @@
 #%%
 import pandas as pd
 
-path = r"H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
+path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
 d = path + "CapitalRaise.parquet"
 Data = pd.read_parquet(d)
 
 Data["year"] = round(Data["ExtOrdGMDate"] / 10000).astype(int)
-# Data = Data[Data.year != 1399]
-
+print(len(Data))
+Data = Data[Data.JustPremium != 1]
+print(len(Data))
+# Data = Data[Data.year > 1390]
 #%%
 
 

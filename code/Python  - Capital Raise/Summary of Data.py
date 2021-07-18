@@ -41,7 +41,7 @@ def vv2(row):
 
 
 # %%
-path = r"H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
+path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
 df = pd.read_excel(path + "SDate.xlsx")
 df.columns
 
@@ -132,6 +132,7 @@ a
 
 
 # %%
+a = a.T
 a[["Sum"]].plot.bar(stacked=True, figsize=(20, 10), legend=False)
 plt.title("Number of Capital Raise")
 # txt= "Note: Number of Capital Raise from each source "
@@ -148,7 +149,7 @@ plt.xlabel("Year Quarter")
 
 # %%
 
-a[["Cash", "Saving", "Hybrid", "Revaluation", "Premium"]].plot.bar(
+a[["Cash", "Reserves", "Hybrid", "Revaluation", "Premium"]].plot.bar(
     stacked=True, figsize=(20, 10)
 )
 plt.title("Number of Capital Raise")

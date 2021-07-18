@@ -39,7 +39,7 @@ def vv2(row):
     return int(X[0] + X[1] + X[2])
 
 
-path = r"H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
+path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
 
 
 # %%
@@ -64,6 +64,7 @@ df = df[
         "JustRO",
         "JustSaving",
         "JustPremium",
+        "JustRevaluation",
         "Hybrid",
         "%CapRaised",
         "%PremiumCapRaising",
@@ -100,6 +101,7 @@ df = df[
         "JustRO",
         "JustSaving",
         "JustPremium",
+        "JustRevaluation",
         "Hybrid",
         "%CapRaised",
         "%PremiumCapRaising",
@@ -126,6 +128,7 @@ df = df[
         "JustRO",
         "JustSaving",
         "JustPremium",
+        "JustRevaluation",
         "Hybrid",
         "%CapRaised",
         "%PremiumCapRaising",
@@ -216,7 +219,7 @@ ndf = pd.DataFrame()
 NotCapitalData = []
 gg = mdf.groupby("name")
 for symbol in list(gg.groups.keys()):
-    print(symbol, end="\r", flush=True)
+    print(symbol)
     d = gg.get_group(symbol)
     if len(d) < 30:
         continue
@@ -349,7 +352,7 @@ gg = data.groupby("name")
 data["RelVolume"] = gg.volume.apply(divide_to_mean)
 
 #%%
-path1 = r"H:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\\"
+path1 = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\\"
 df = pd.read_excel(path1 + "Factors-Daily" + ".xlsx")
 for t in ["SMB", "HML", "Winner_Loser"]:
     print(t)

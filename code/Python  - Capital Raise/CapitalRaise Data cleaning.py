@@ -28,7 +28,7 @@ def _multiple_replace(mapping, text):
 
 
 # %%
-path3 = r"G:\Hard Data\Capital Raise\\"
+path3 = r"D:\Hard Data\Capital Raise\\"
 n8 = path3 + "Name-ISN-Code-Latinname-Symbol-Industry-Sub_industry.xlsx"
 symbolfirm = pd.read_excel(n8)[["Symbol", "Firm"]]
 symbolfirm["Symbol"] = symbolfirm["Symbol"].apply(lambda x: convert_ar_characters(x))
@@ -36,7 +36,7 @@ symbolfirm["Firm"] = symbolfirm["Firm"].apply(lambda x: convert_ar_characters(x)
 
 
 # %%
-path3 = r"G:\Hard Data\Capital Raise\\"
+path3 = r"D:\Hard Data\Capital Raise\\"
 n8 = path3 + "FirmSymbol.xlsx"
 symbolfirm1 = pd.read_excel(n8).rename(columns={"name": "Symbol"})
 symbolfirm1["Symbol"] = symbolfirm1["Symbol"].apply(lambda x: convert_ar_characters(x))
@@ -51,7 +51,7 @@ symbolfirm.loc[symbolfirm.Firm.str[-1] == " ", "Firm"] = symbolfirm.loc[
 
 
 # %%
-path1 = r"G:\Hard Data\Capital Raise\افزایش سرمایه\\"
+path1 = r"D:\Hard Data\Capital Raise\افزایش سرمایه\\"
 n1 = path1 + "full share capital increase.xlsx"
 df1 = pd.read_excel(n1)
 df1 = df1[~df1["CapBefore"].isnull()]
@@ -129,7 +129,7 @@ df5.head()
 
 
 # %%
-path2 = r"G:\Hard Data\Capital Raise\Share Capital Increase\\"
+path2 = r"D:\Hard Data\Capital Raise\Share Capital Increase\\"
 n6 = path2 + "Shareholders' Capital-84-97.xlsx"
 
 df6 = pd.read_excel(n6)
@@ -138,7 +138,7 @@ df6.head()
 
 
 # %%
-path3 = r"G:\Hard Data\Capital Raise\Rights Offerings\\"
+path3 = r"D:\Hard Data\Capital Raise\Rights Offerings\\"
 n3 = path3 + "Rights Offerings 1389 to 1397.xlsx"
 df7 = pd.DataFrame()
 for i in range(1383, 1398):
@@ -248,9 +248,6 @@ df4["file"] = 4
 df5["file"] = 5
 df6["file"] = 6
 df7["file"] = 7
-
-
-# %%
 df = (
     df1.append(df2)
     .append(df3)
@@ -260,6 +257,45 @@ df = (
     .append(df7)
     .sort_values(by=["Symbol", "ExtOrdGMDate"])
 )
+#%%
+
+path4 = r"D:\Hard Data\Capital Raise\Raw Data\\"
+
+mdf = pd.read_excel(path4 + "Capital Raised - codal crawl.xlsx")
+mdf = mdf[mdf.BeforeCap > 0]
+mdf['SavingCapRaising'] = mdf.profit + mdf.reserve
+mdf = mdf.rename(
+    columns ={
+        'name':'Symbol',
+        "EXORDate" : "ExtOrdGMDate" ,
+        "RegisterDate":"RegDate",
+        "BeforeCap":"CapBefore",
+        "AfterCap":"CapAfter",
+        "cash":"ROCapRaising",
+        "revaluation":"Revaluation",
+        "premium":"PremiumCapRaising"
+    }
+    ).drop(
+        columns = ['profit','reserve']
+    )
+for i in ['ROCapRaising','Revaluation','PremiumCapRaising','SavingCapRaising'] :
+    mdf["%"+i] =   mdf[i]/(mdf.CapAfter - mdf.CapBefore)*100
+    
+mdf['file'] = 0
+
+mdf['year'] = mdf.ExtOrdGMDate.apply( lambda x : float(x.split('/')[0]) )
+mdf["Symbol"] = mdf["Symbol"].apply(lambda x: convert_ar_characters(x))
+
+df = (
+    df.append(mdf
+              ).sort_values(by=["Symbol", "ExtOrdGMDate"])
+)
+
+
+
+
+# %%
+
 df.Firm = df.Firm.str.replace("سر.", "سرمایه گذاری")
 df.loc[df.year.isnull(), "year"] = df[df.year.isnull()]["ExtOrdGMDate"].str[:4]
 df.Symbol = df.Symbol.replace(np.nan, "")
@@ -356,23 +392,23 @@ df = df.sort_values(by=["Symbol", "Firm", "ExtOrdGMDate"])
 df.head()
 
 df = df.reset_index(drop=True)
-# df['Revaluation'] = 0
-# def reval(g):
-#     g.loc[g.index.isin(g[(g.CapAfter == g.CapBefore)].index + 1),'Revaluation'] = 1
-#     return g
-# df  = df.groupby('Symbol').apply(reval)
 
+#%%
 df["JustRO"] = 0
-df.loc[df["%ROCapRaising"] == 100, "JustRO"] = 1
+df.loc[df["%ROCapRaising"] > 99.99999999, "JustRO"] = 1
 df["JustSaving"] = 0
-df.loc[df["%SavingCapRaising"] == 100, "JustSaving"] = 1
+df.loc[df["%SavingCapRaising"]  > 99.99999999, "JustSaving"] = 1
 df["JustPremium"] = 0
-df.loc[df["%PremiumCapRaising"] == 100, "JustPremium"] = 1
+df.loc[df["%PremiumCapRaising"]  > 99.99999999, "JustPremium"] = 1
+df["JustRevaluation"] = 0
+df.loc[df["%Revaluation"]  > 99.99999999, "JustRevaluation"] = 1
+
 df["Hybrid"] = 0
 df.loc[
-    (df["%PremiumCapRaising"] != 100)
-    & (df["%SavingCapRaising"] != 100)
-    & (df["%ROCapRaising"] != 100),
+    (df["%PremiumCapRaising"]  < 99.99999999)
+    & (df["%SavingCapRaising"] < 99.999999990)
+    & (df["%Revaluation"] < 99.999999990)
+    & (df["%ROCapRaising"] < 99.99999999),
     "Hybrid",
 ] = 1
 
@@ -388,10 +424,12 @@ df = df[
         "JustSaving",
         "JustPremium",
         "Hybrid",
+        "JustRevaluation",
         "%CapRaised",
         "%PremiumCapRaising",
         "%ROCapRaising",
         "%SavingCapRaising",
+        "%Revaluation",
         "BookValue",
         "CapRaised",
         "Costs",
@@ -408,6 +446,7 @@ df = df[
         "OnlyRO",
         "PremiumCapRaising",
         "ROCapRaising",
+        "Revaluation",
         "RegDate",
         "SavedDevelopmentPlanCapRaising",
         "SavedSafetyCapRaising",
@@ -444,8 +483,10 @@ def vv2(row):
 
 
 df8 = pd.read_excel(
-    r"G:\Hard Data\Capital Raise\\" + "tajdidArzyabi.xlsx", "all")
-df8 = df8.rename(columns={df8.columns[1]: "RegDate", df8.columns[0]: "Firm"}).drop(
+    r"D:\Hard Data\Capital Raise\\" + "tajdidArzyabi.xlsx", "all")
+df8 = df8.rename(
+    columns={df8.columns[1]: "RegDate", df8.columns[0]: "Firm"}
+    ).drop(
     columns=df8.columns[2]
 )
 df8 = df8[df8.RegDate != "nan"]
@@ -460,7 +501,7 @@ def vv2(row):
     return int(X[0] + X[1] + X[2])
 
 
-df8 = pd.read_excel(r"G:\Hard Data\Capital Raise\\" + "tajdidArzyabi.xlsx", "all")
+df8 = pd.read_excel(r"D:\Hard Data\Capital Raise\\" + "tajdidArzyabi.xlsx", "all")
 df8 = df8.rename(columns={df8.columns[1]: "RegDate", df8.columns[0]: "Firm"}).drop(
     columns=df8.columns[2]
 )
@@ -532,7 +573,7 @@ def vv2(row):
 
 
 df9 = pd.read_excel(
-    r"G:\Hard Data\Capital Raise\\" + "TajdidArziabi_9912.xlsx")
+    r"D:\Hard Data\Capital Raise\\" + "TajdidArziabi_9912.xlsx")
 # df9 = df9.rename(columns = {df9.columns[1]:"RegDate",df9.columns[0]:"Firm"}).drop(columns = df9.columns[2])
 df9 = df9.drop(columns=["finYear", "registered_date.1"])
 
@@ -560,12 +601,14 @@ len(tt)
 fkey = zip(tt.Symbol, tt.year)
 mapingdict = dict(zip(fkey, [1] * 91))
 df["year"] = df.year.astype(int)
-df["Revaluation"] = df.set_index(["Symbol", "year"]).index.map(mapingdict)
-df.loc[df.Revaluation.isnull(), "Revaluation"] = 0
+df["Revaluation2"] = df.set_index(["Symbol", "year"]).index.map(mapingdict)
+df.loc[df.Revaluation2.isnull(), "Revaluation2"] = 0
 
-
-# %%
-df[df.Symbol == "خمهر"][["Revaluation", "year", "Symbol", "JustSaving"]]
+#%%
+df['Revaluation']= 0
+df.loc[df.Revaluation2 == 1,'Revaluation' ] = 1
+df.loc[df.JustRevaluation == 1,'Revaluation' ] = 1
+df.loc[df['%Revaluation']>0,'Revaluation'] = 1
 
 
 # %%
@@ -596,7 +639,7 @@ df[df.Symbol == "خمهر"][["Revaluation", "year", "Symbol", "JustSaving"]]
 
 
 #%%
-n = r"G:\Hard Data\Capital Raise\\" + "TajdidArziabi_9912.xlsx"
+n = r"D:\Hard Data\Capital Raise\\" + "TajdidArziabi_9912.xlsx"
 df9 = pd.read_excel(n)
 
 df9 = df9[['symbol', 'registered_date',
@@ -643,7 +686,7 @@ a.loc[
 # %%
 df = pd.DataFrame()
 df = df.append(a)
-df.to_excel(r"G:\Hard Data\Capital Raise" + "\Capital Rise - 71-99.xlsx", index=False)
+df.to_excel(r"D:\Hard Data\Capital Raise" + "\Capital Rise - 71-99.xlsx", index=False)
 
 
 # %%
