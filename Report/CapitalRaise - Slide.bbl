@@ -1,14 +1,82 @@
 \begin{thebibliography}{}
 
-\bibitem[Bayless and Chaplinsky, 1996]{bayless1996there}
-Bayless, M. and Chaplinsky, S. (1996).
-\newblock Is there a window of opportunity for seasoned equity issuance?
-\newblock {\em The Journal of Finance}, 51(1):253--278.
+\bibitem[Adaoglu, 2006]{adaoglu2006market}
+Adaoglu, C. (2006).
+\newblock Market reaction to “unsweetened” and “sweetened” rights
+  offerings in an emerging european stock market.
+\newblock {\em Journal of Multinational Financial Management}, 16(3):249--268.
 
-\bibitem[Brav et~al., 2000]{brav2000abnormal}
-Brav, A., Geczy, C., and Gompers, P.~A. (2000).
-\newblock Is the abnormal return following equity issuances anomalous?
-\newblock {\em Journal of financial economics}, 56(2):209--249.
+\bibitem[Ambarish et~al., 1987]{ambarish1987efficient}
+Ambarish, R., John, K., and Williams, J. (1987).
+\newblock Efficient signalling with dividends and investments.
+\newblock {\em The Journal of Finance}, 42(2):321--343.
+
+\bibitem[Black, 1986]{black1986noise}
+Black, F. (1986).
+\newblock Noise.
+\newblock {\em The journal of finance}, 41(3):528--543.
+
+\bibitem[Boehmer et~al., 2021]{BOEHMER2021}
+Boehmer, E., Jones, C.~M., Zhang, X., and Zhang, X. (2021).
+\newblock Tracking retail investor activity.
+\newblock {\em The Journal of Finance}, n/a(n/a):n/a.
+
+\bibitem[Bond and Zhong, 2016]{bond2016buying}
+Bond, P. and Zhong, H. (2016).
+\newblock Buying high and selling low: Stock repurchases and persistent
+  asymmetric information.
+\newblock {\em The Review of Financial Studies}, 29(6):1409--1452.
+
+\bibitem[Cohen et~al., 2002]{cohen2002underreacts}
+Cohen, R.~B., Gompers, P.~A., and Vuolteenaho, T. (2002).
+\newblock Who underreacts to cash-flow news? evidence from trading between
+  individuals and institutions.
+\newblock {\em Journal of financial Economics}, 66(2-3):409--462.
+
+\bibitem[Constantinides and Grundy, 1989]{constantinides1989optimal}
+Constantinides, G.~M. and Grundy, B.~D. (1989).
+\newblock Optimal investment with stock repurchase and financing as signals.
+\newblock {\em The Review of Financial Studies}, 2(4):445--465.
+
+\bibitem[Cronqvist and Nilsson, 2005]{cronqvist2005choice}
+Cronqvist, H. and Nilsson, M. (2005).
+\newblock The choice between rights offerings and private equity placements.
+\newblock {\em Journal of Financial economics}, 78(2):375--407.
+
+\bibitem[DeAngelo and Masulis, 1980]{deangelo1980optimal}
+DeAngelo, H. and Masulis, R.~W. (1980).
+\newblock Optimal capital structure under corporate and personal taxation.
+\newblock {\em Journal of financial economics}, 8(1):3--29.
+
+\bibitem[Dierkens, 1991]{dierkens1991information}
+Dierkens, N. (1991).
+\newblock Information asymmetry and equity issues.
+\newblock {\em Journal of financial and quantitative analysis}, 26(2):181--199.
+
+\bibitem[Downes and Heinkel, 1982]{downes1982signaling}
+Downes, D.~H. and Heinkel, R. (1982).
+\newblock Signaling and the valuation of unseasoned new issues.
+\newblock {\em The Journal of Finance}, 37(1):1--10.
+
+\bibitem[Eckbo and Masulis, 1992a]{ECKBO1992293}
+Eckbo, B. and Masulis, R.~W. (1992a).
+\newblock Adverse selection and the rights offer paradox.
+\newblock {\em Journal of Financial Economics}, 32(3):293--332.
+
+\bibitem[Eckbo and Masulis, 1992b]{eckbo1992adverse}
+Eckbo, B.~E. and Masulis, R.~W. (1992b).
+\newblock Adverse selection and the rights offer paradox.
+\newblock {\em Journal of financial economics}, 32(3):293--332.
+
+\bibitem[Griffin et~al., 2003]{griffin2003dynamics}
+Griffin, J.~M., Harris, J.~H., and Topaloglu, S. (2003).
+\newblock The dynamics of institutional and individual trading.
+\newblock {\em The Journal of Finance}, 58(6):2285--2320.
+
+\bibitem[Hansen and Pinkerton, 1982]{hansen1982direct}
+Hansen, R.~S. and Pinkerton, J.~M. (1982).
+\newblock Direct equity financing: A resolution of a paradox.
+\newblock {\em The Journal of Finance}, 37(3):651--665.
 
 \bibitem[Holderness, 2018]{holderness2018equity}
 Holderness, C.~G. (2018).
@@ -16,15 +84,95 @@ Holderness, C.~G. (2018).
   approval around the world.
 \newblock {\em Journal of Financial Economics}, 129(3):415--439.
 
-\bibitem[Jegadeesh, 2000]{jegadeesh2000long}
-Jegadeesh, N. (2000).
-\newblock Long-term performance of seasoned equity offerings: Benchmark errors
-  and biases in expectations.
-\newblock {\em Financial Management}, pages 5--30.
+\bibitem[Jensen, 1986]{jensen1986agency}
+Jensen, M.~C. (1986).
+\newblock Agency costs of free cash flow, corporate finance, and takeovers.
+\newblock {\em The American economic review}, 76(2):323--329.
 
-\bibitem[Marisetty et~al., 2008]{marisetty2008price}
-Marisetty, V.~B., Marsden, A., and Veeraraghavan, M. (2008).
-\newblock Price reaction to rights issues in the indian capital market.
-\newblock {\em Pacific-Basin Finance Journal}, 16(3):316--340.
+\bibitem[Kaniel et~al., 2012]{kaniel2012individual}
+Kaniel, R., Liu, S., Saar, G., and Titman, S. (2012).
+\newblock Individual investor trading and return patterns around earnings
+  announcements.
+\newblock {\em The Journal of Finance}, 67(2):639--680.
+
+\bibitem[Kaniel et~al., 2008]{kaniel2008individual}
+Kaniel, R., Saar, G., and Titman, S. (2008).
+\newblock Individual investor trading and stock returns.
+\newblock {\em The Journal of finance}, 63(1):273--310.
+
+\bibitem[Kyle, 1985]{kyle1985continuous}
+Kyle, A.~S. (1985).
+\newblock Continuous auctions and insider trading.
+\newblock {\em Econometrica: Journal of the Econometric Society}, pages
+  1315--1335.
+
+\bibitem[Lasfer, 1997]{lasfer1997motivation}
+Lasfer, M.~A. (1997).
+\newblock On the motivation for paying scrip dividends.
+\newblock {\em Financial Management}, pages 62--80.
+
+\bibitem[Leland and Pyle, 1977]{leland1977informational}
+Leland, H.~E. and Pyle, D.~H. (1977).
+\newblock Informational asymmetries, financial structure, and financial
+  intermediation.
+\newblock {\em The journal of Finance}, 32(2):371--387.
+
+\bibitem[Limpaphayom and Ngamwutikul, 2004]{limpaphayom2004ownership}
+Limpaphayom, P. and Ngamwutikul, A. (2004).
+\newblock Ownership structure and post-issue operating performance of firms
+  conducting seasoned equity offerings in thailand.
+\newblock {\em Journal of Economics and Finance}, 28(3):307--332.
+
+\bibitem[Loderer and Zimmermann, 1988]{loderer1988stock}
+Loderer, C. and Zimmermann, H. (1988).
+\newblock Stock offerings in a different institutional setting: The swiss case,
+  1973--1983.
+\newblock {\em Journal of Banking \& Finance}, 12(3):353--378.
+
+\bibitem[Miller and Rock, 1985]{miller1985dividend}
+Miller, M.~H. and Rock, K. (1985).
+\newblock Dividend policy under asymmetric information.
+\newblock {\em The Journal of finance}, 40(4):1031--1051.
+
+\bibitem[Modigliani and Miller, 1958]{modigliani1958cost}
+Modigliani, F. and Miller, M.~H. (1958).
+\newblock The cost of capital, corporation finance and the theory of
+  investment.
+\newblock {\em The American economic review}, 48(3):261--297.
+
+\bibitem[Modigliani and Miller, 1963]{modigliani1963corporate}
+Modigliani, F. and Miller, M.~H. (1963).
+\newblock Corporate income taxes and the cost of capital: a correction.
+\newblock {\em The American economic review}, 53(3):433--443.
+
+\bibitem[Myers and Majluf, 1984]{myers1984corporate}
+Myers, S.~C. and Majluf, N.~S. (1984).
+\newblock Corporate financing and investment decisions when firms have
+  information that investors do not have.
+\newblock {\em Journal of financial economics}, 13(2):187--221.
+
+\bibitem[Nguyen et~al., 2017]{nguyen2017stock}
+Nguyen, V., Tran, A., and Zeckhauser, R. (2017).
+\newblock Stock splits to profit insider trading: Lessons from an emerging
+  market.
+\newblock {\em Journal of International Money and Finance}, 74:69--87.
+
+\bibitem[Quyhn-Nhu, 2009]{quyhn2009leverage}
+Quyhn-Nhu, D. (2009).
+\newblock Leverage, growth opportunities and stock price response to new
+  financing.
+\newblock {\em International Journal of Business and Management}, 4(9):35--49.
+
+\bibitem[Raymar, 1993]{raymar1993financing}
+Raymar, S. (1993).
+\newblock The financing and investment of a levered firm under asymmetric
+  information.
+\newblock {\em Journal of Financial Research}, 16(4):321--336.
+
+\bibitem[Ross, 1977]{ross1977determination}
+Ross, S.~A. (1977).
+\newblock The determination of financial structure: the incentive-signalling
+  approach.
+\newblock {\em The bell journal of economics}, pages 23--40.
 
 \end{thebibliography}

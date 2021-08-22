@@ -341,6 +341,53 @@ gg = data.groupby("name")
 data["Market_return"] = gg["Index"].pct_change(periods=1) * 100
 data = data[~data.Market_return.isnull()]
 data = data.rename(columns={"close": "close_price"})
+# %%
+def addDash(row):
+    row = str(row)
+    X = [1, 1, 1]
+    X[0] = row[0:4]
+    X[1] = row[4:6]
+    X[2] = row[6:8]
+    return X[0] + "-" + X[1] + "-" + X[2]
+
+
+def removeSlash(row):
+    X = row.split("/")
+    if len(X[1]) < 2:
+        X[1] = "0" + X[1]
+    if len(X[2]) < 2:
+        X[2] = "0" + X[2]
+    return int(X[0] + X[1] + X[2])
+
+
+industry = pd.read_csv(path + "indexes_1400-04-09.csv")
+industry["date"] = industry.date.apply(removeSlash)
+# industry["date"] = industry.date.apply(addDash)
+mlist = ["overall_index", "EWI"]
+industry = industry[~industry.index_id.isin(mlist)]
+industry["index_id"] = industry["index_id"].astype(float)
+industry = industry.set_index(["index_id", "date"])
+mapdict = dict(zip(industry.index, industry["index"]))
+data["industry_index"] = data.set_index(["group_id", "jalaliDate"]).index.map(mapdict)
+data.isnull().sum()
+gg = data.groupby("name")
+data["Industry_return"] = gg["Index"].pct_change(periods=1) * 100
+data = data[~data.Industry_return.isnull()]
+# %%
+gg = data.groupby(["date", "group_id"])
+
+
+def marketCapAndWeight(g):
+    print(g.name[0])
+    g["MarketCap"] = g.close_price * g.CapBefore
+    g["Weight"] = g.MarketCap / (g.MarketCap.sum())
+    return g
+
+
+data2 = gg.apply(marketCapAndWeight)
+data = pd.DataFrame()
+data = data.append(data2)
+
 #%%
 def divide_to_mean(g):
     print(g.name, end="\r", flush=True)
@@ -366,7 +413,8 @@ for t in ["SMB", "HML", "Winner_Loser"]:
     gg = data.groupby("name")
     data[t] = gg[t].pct_change(periods=1) * 100
 
-# %%
+
+#%%
 data.isnull().sum().to_frame()
 data = data.dropna()
 
@@ -384,7 +432,7 @@ def ABnormal(g, Rlag):
     print(g.name)
     a = pd.DataFrame()
     a = a.append(g)
-    a = a[~a.ER.isnull()]
+    a = a.dropna()
     a = a.reset_index(drop=True).reset_index().rename(columns={"index": "Period"})
     a["Period"] = a["Period"].astype(int)
     a["AbnormalReturn"] = np.nan
@@ -397,11 +445,48 @@ def ABnormal(g, Rlag):
     a["Beta_CAPM"] = np.nan
     a["Alpha_CAPM"] = np.nan
 
+    a["Beta_CAPMIndustry"] = np.nan
+    a["Alpha_CAPMIndustry"] = np.nan
+    a["BetaI_CAPMIndustry"] = np.nan
+
+    a["Beta_Market"] = np.nan
+    a["Alpha_Market"] = np.nan
+    a["Beta_MarketIndustry"] = np.nan
+    a["Alpha_MarketIndustry"] = np.nan
+    a["BetaI_MarketIndustry"] = np.nan
+
+    a["AbnormalReturn_Industry"] = np.nan
+    a["AbnormalReturn_WithoutAlpha_Industry"] = np.nan
+    a["AbnormalReturn_MarketIndustry"] = np.nan
+    a["AbnormalReturn_MarketModel"] = np.nan
+    a["AbnormalReturn_WithoutAlpha_MarketModel"] = np.nan
+    a["AbnormalReturn_MarketModel_Industry"] = np.nan
+    a["AbnormalReturn_WithoutAlpha_MarketModel_Industry"] = np.nan
+
     a["betaM_FOUR"] = np.nan
     a["betaS_FOUR"] = np.nan
     a["betaH_FOUR"] = np.nan
     a["betaW_FOUR"] = np.nan
     a["Alpha_FOUR"] = np.nan
+
+    a["AbnormalReturn2"] = np.nan
+    a["AbnormalReturn_Market2"] = np.nan
+    a["AbnormalReturn_WithoutAlpha2"] = np.nan
+
+    a["Beta_CAPM2"] = np.nan
+    a["Alpha_CAPM2"] = np.nan
+
+    a["Beta_CAPMIndustry2"] = np.nan
+    a["Alpha_CAPMIndustry2"] = np.nan
+    a["BetaI_CAPMIndustry2"] = np.nan
+
+    a["Beta_Market2"] = np.nan
+    a["Alpha_Market2"] = np.nan
+    a["Beta_MarketIndustry2"] = np.nan
+    a["Alpha_MarketIndustry2"] = np.nan
+    a["BetaI_MarketIndustry2"] = np.nan
+    
+    
     nEvent = 0
     for i in a[a.Event == a.t]["Period"]:
         nEvent += 1
@@ -428,10 +513,12 @@ def ABnormal(g, Rlag):
             a.Period == i
         ]["Revaluation"].iloc[0]
 
-        if len(a.loc[a.EPeriod < -1 * Rlag]) < 30:
+        estimation_window = a.loc[a.EPeriod < -1 * Rlag]
+        if len(estimation_window) < 30:
             continue
 
-        alpha, beta = ols(a.loc[a.EPeriod < -1 * Rlag])
+        # CAPM
+        alpha, beta = ols(estimation_window)
 
         a.loc[
             (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "AbnormalReturn"
@@ -450,7 +537,85 @@ def ABnormal(g, Rlag):
 
         a.loc[(a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Beta_CAPM"] = beta
 
-        alpha, betaM, betaS, betaH, betaW = ols4(a.loc[a.EPeriod < -1 * Rlag])
+        # CAPM + Industry
+
+        alpha, beta, betaI = olsIndustry(estimation_window)
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "AbnormalReturn_Industry"
+        ] = tempt["Return"] - (
+            tempt["RiskFree"] + alpha + beta * tempt["EMR"] + betaI * tempt["EIR"]
+        )
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)),
+            "AbnormalReturn_WithoutAlpha_Industry",
+        ] = tempt["Return"] - (
+            tempt["RiskFree"] + beta * tempt["EMR"] + betaI * tempt["EIR"]
+        )
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)),
+            "AbnormalReturn_MarketIndustry",
+        ] = tempt["Return"] - (2 * tempt["RiskFree"] + tempt["EMR"] + tempt["EIR"])
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Alpha_CAPMIndustry"
+        ] = alpha
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Beta_CAPMIndustry"
+        ] = beta
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "BetaI_CAPMIndustry"
+        ] = betaI
+
+        # Market Model
+        alpha, beta = olsMarket(estimation_window)
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)),
+            "AbnormalReturn_MarketModel",
+        ] = tempt["Return"] - (alpha + beta * tempt["Market_return"])
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)),
+            "AbnormalReturn_WithoutAlpha_MarketModel",
+        ] = tempt["Return"] - (beta * tempt["Market_return"])
+
+        a.loc[(a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Alpha_Market"] = alpha
+
+        a.loc[(a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Beta_Market"] = beta
+
+        # Market Model + Industry
+
+        alpha, beta, betaI = olsMarketIndustry(estimation_window)
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)),
+            "AbnormalReturn_MarketModel_Industry",
+        ] = tempt["Return"] - (
+            alpha + beta * tempt["Market_return"] + betaI * tempt["Industry_return"]
+        )
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)),
+            "AbnormalReturn_WithoutAlpha_MarketModel_Industry",
+        ] = tempt["Return"] - (
+            beta * tempt["Market_return"] + betaI * tempt["Industry_return"]
+        )
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Alpha_MarketIndustry"
+        ] = alpha
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Beta_MarketIndustry"
+        ] = beta
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "BetaI_MarketIndustry"
+        ] = betaI
+
+        # 4Factor
+        alpha, betaM, betaS, betaH, betaW = ols4(estimation_window)
 
         a.loc[
             (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "AbnormalReturn_4Factor"
@@ -472,6 +637,112 @@ def ABnormal(g, Rlag):
 
         a.loc[(a.Period >= (i - lag)) & (a.Period <= (i + lag)), "betaW_FOUR"] = betaW
 
+        #
+        #
+        #
+
+        estimation_window = a.loc[(a.EPeriod < -1 * Rlag) | (a.EPeriod > 1.5 * Rlag)]
+
+        # CAPM
+        alpha, beta = ols(estimation_window)
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "AbnormalReturn2"
+        ] = tempt["Return"] - (tempt["RiskFree"] + alpha + beta * tempt["EMR"])
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)),
+            "AbnormalReturn_WithoutAlpha2",
+        ] = tempt["Return"] - (tempt["RiskFree"] + beta * tempt["EMR"])
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "AbnormalReturn_Market2"
+        ] = tempt["Return"] - (tempt["RiskFree"] + tempt["EMR"])
+
+        a.loc[(a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Alpha_CAPM2"] = alpha
+
+        a.loc[(a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Beta_CAPM2"] = beta
+
+        # CAPM + Industry
+
+        alpha, beta, betaI = olsIndustry(estimation_window)
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)),
+            "AbnormalReturn_Industry2",
+        ] = tempt["Return"] - (
+            tempt["RiskFree"] + alpha + beta * tempt["EMR"] + betaI * tempt["EIR"]
+        )
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)),
+            "AbnormalReturn_WithoutAlpha_Industry2",
+        ] = tempt["Return"] - (
+            tempt["RiskFree"] + beta * tempt["EMR"] + betaI * tempt["EIR"]
+        )
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)),
+            "AbnormalReturn_MarketIndustry2",
+        ] = tempt["Return"] - (2 * tempt["RiskFree"] + tempt["EMR"] + tempt["EIR"])
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Alpha_CAPMIndustry2"
+        ] = alpha
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Beta_CAPMIndustry2"
+        ] = beta
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "BetaI_CAPMIndustry2"
+        ] = betaI
+
+        # Market Model
+        alpha, beta = olsMarket(estimation_window)
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)),
+            "AbnormalReturn_MarketModel2",
+        ] = tempt["Return"] - (alpha + beta * tempt["Market_return"])
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)),
+            "AbnormalReturn_WithoutAlpha_MarketModel2",
+        ] = tempt["Return"] - (beta * tempt["Market_return"])
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Alpha_Market2"
+        ] = alpha
+
+        a.loc[(a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Beta_Market2"] = beta
+
+        # Market Model + Industry
+
+        alpha, beta, betaI = olsMarketIndustry(estimation_window)
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)),
+            "AbnormalReturn_MarketModel_Industry2",
+        ] = tempt["Return"] - (
+            alpha + beta * tempt["Market_return"] + betaI * tempt["Industry_return"]
+        )
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)),
+            "AbnormalReturn_WithoutAlpha_MarketMOdel_Industry2",
+        ] = tempt["Return"] - (
+            beta * tempt["Market_return"] + betaI * tempt["Industry_return"]
+        )
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Alpha_MarketIndustry2"
+        ] = alpha
+
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "Beta_MarketIndustry2"
+        ] = beta
+        a.loc[
+            (a.Period >= (i - lag)) & (a.Period <= (i + lag)), "BetaI_MarketIndustry2"
+        ] = betaI
+
     return a[(~a["EPeriod"].isnull())]
 
 
@@ -481,6 +752,32 @@ def ols(tempt):
     beta = model.params[1]
     alpha = model.params[0]
     return alpha, beta
+
+
+def olsIndustry(tempt):
+    y, x = "ER", ["EMR", "EIR"]
+    model = sm.OLS(tempt[y], sm.add_constant(tempt[x])).fit()
+    betaI = model.params[2]
+    beta = model.params[1]
+    alpha = model.params[0]
+    return alpha, beta, betaI
+
+
+def olsMarket(tempt):
+    y, x = "Return", "Market_return"
+    model = sm.OLS(tempt[y], sm.add_constant(tempt[x])).fit()
+    beta = model.params[1]
+    alpha = model.params[0]
+    return alpha, beta
+
+
+def olsMarketIndustry(tempt):
+    y, x = "Return", ["Market_return", "Industry_return"]
+    model = sm.OLS(tempt[y], sm.add_constant(tempt[x])).fit()
+    betaI = model.params[2]
+    beta = model.params[1]
+    alpha = model.params[0]
+    return alpha, beta, betaI
 
 
 def ols4(tempt):
@@ -495,19 +792,30 @@ def ols4(tempt):
 
 
 #%%
+
 ARdata = pd.DataFrame()
 ARdata = ARdata.append(data)
 ARdata["Return"] = ARdata.groupby("name")["close_price"].pct_change(periods=1) * 100
 ARdata["ER"] = ARdata["Return"] - ARdata["RiskFree"]
 ARdata["EMR"] = ARdata["Market_return"] - ARdata["RiskFree"]
+ARdata["Industry_return"] = (
+    ARdata["Industry_return"] - ARdata["Weight"] * ARdata["Return"]
+) / (1 - ARdata["Weight"])
+ARdata["EIR"] = ARdata["Industry_return"] - ARdata["RiskFree"]
+ARdata.loc[ARdata.Weight == 1.0, "Industry_return"] = 0
+ARdata.loc[ARdata.Weight == 1.0, "EIR"] = 0
 gg = ARdata.groupby("name")
+g = gg.get_group("آکنتور")
+g
+
+#%%
+dddd = ABnormal(g, 20)
 
 
+#%%
 ## Lag
 
 ARdata = gg.apply(ABnormal, Rlag=20).reset_index(drop=True)
-
-##
 ARdata = ARdata.sort_values(by=["name", "t"])
 ARdata.isnull().sum()
 
@@ -534,6 +842,30 @@ Data["CAR"] = gg["AbnormalReturn"].cumsum()
 Data["CAR_Market"] = gg["AbnormalReturn_Market"].cumsum()
 Data["CAR_WithoutAlpha"] = gg["AbnormalReturn_WithoutAlpha"].cumsum()
 Data["CAR_4Factor"] = gg["AbnormalReturn_4Factor"].cumsum()
+
+Data["CAR_Industry"] = gg["AbnormalReturn_Industry"].cumsum()
+Data["CAR_WithoutAlpha_Industry"] = gg["AbnormalReturn_WithoutAlpha_Industry"].cumsum()
+Data["CAR_MarketIndustry"] = gg["AbnormalReturn_MarketIndustry"].cumsum()
+Data["CAR_MarketModel"] = gg["AbnormalReturn_MarketModel"].cumsum()
+Data["CAR_WithoutAlpha_MarketModel"] = gg[
+    "AbnormalReturn_WithoutAlpha_MarketModel"
+].cumsum()
+Data["CAR_MarketModel_Industry"] = gg["AbnormalReturn_MarketModel_Industry"].cumsum()
+Data["CAR_WithoutAlpha_MarketModel_Industry"] = gg[
+    "AbnormalReturn_WithoutAlpha_MarketModel_Industry"
+].cumsum()
+
+Data['CAR_AbnormalReturn2'] = gg['AbnormalReturn2'].cumsum()
+Data['CAR_AbnormalReturn_Market2'] = gg['AbnormalReturn_Market2'].cumsum()
+Data['CAR_AbnormalReturn_WithoutAlpha2'] = gg['AbnormalReturn_WithoutAlpha2'].cumsum()
+Data['CAR_AbnormalReturn_4Factor2'] = gg['AbnormalReturn_4Factor2'].cumsum()
+Data['CAR_AbnormalReturn_Industry2'] = gg['AbnormalReturn_Industry2'].cumsum()
+Data['CAR_AbnormalReturn_WithoutAlpha_Industry2'] = gg['AbnormalReturn_WithoutAlpha_Industry2'].cumsum()
+Data['CAR_AbnormalReturn_MarketIndustry2'] = gg['AbnormalReturn_MarketIndustry2'].cumsum()
+Data['CAR_AbnormalReturn_MarketModel2'] = gg['AbnormalReturn_MarketModel2'].cumsum()
+Data['CAR_AbnormalReturn_WithoutAlpha_MarketModel2'] = gg['AbnormalReturn_WithoutAlpha_MarketModel2'].cumsum()
+Data['CAR_AbnormalReturn_MarketModel_Industry2'] = gg['AbnormalReturn_MarketModel_Industry2'].cumsum()
+Data['CAR_AbnormalReturn_WithoutAlpha_MarketMOdel_Industry2'] = gg['AbnormalReturn_WithoutAlpha_MarketMOdel_Industry2'].cumsum()
 Data["RaiseType"] = np.nan
 Data.loc[Data.JustRO == 1, "RaiseType"] = "JustRO"
 Data.loc[Data.JustSaving == 1, "RaiseType"] = "JustSaving"

@@ -3,44 +3,57 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: CapitalRaise - Slide.aux
 The style file: apalike.bst
 Database file #1: Ref.bib
-You've used 5 entries,
+Repeated entry---line 631 of file Ref.bib
+ : @article{ambarish1987efficient
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 651 of file Ref.bib
+ : @article{ambarish1987efficient
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 693 of file Ref.bib
+ : @article{dierkens1991information
+ :                                 ,
+I'm skipping whatever remains of this entry
+You've used 32 entries,
             1935 wiz_defined-function locations,
-            507 strings with 4575 characters,
-and the built_in function-call counts, 2029 in all, are:
-= -- 207
-> -- 63
-< -- 4
-+ -- 20
-- -- 20
-* -- 175
-:= -- 348
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 35
-chr.to.int$ -- 5
-cite$ -- 5
-duplicate$ -- 75
-empty$ -- 151
-format.name$ -- 27
-if$ -- 397
-int.to.chr$ -- 1
+            678 strings with 8560 characters,
+and the built_in function-call counts, 12927 in all, are:
+= -- 1331
+> -- 401
+< -- 28
++ -- 137
+- -- 126
+* -- 1136
+:= -- 2182
+add.period$ -- 96
+call.type$ -- 32
+change.case$ -- 223
+chr.to.int$ -- 31
+cite$ -- 32
+duplicate$ -- 473
+empty$ -- 964
+format.name$ -- 188
+if$ -- 2538
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 5
-newline$ -- 28
-num.names$ -- 15
-pop$ -- 24
+missing$ -- 32
+newline$ -- 163
+num.names$ -- 96
+pop$ -- 140
 preamble$ -- 1
-purify$ -- 35
+purify$ -- 223
 quote$ -- 0
-skip$ -- 60
+skip$ -- 378
 stack$ -- 0
-substring$ -- 179
-swap$ -- 10
-text.length$ -- 1
+substring$ -- 1175
+swap$ -- 57
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 30
+type$ -- 192
 warning$ -- 0
-while$ -- 21
+while$ -- 129
 width$ -- 0
-write$ -- 67
+write$ -- 418
+(There were 3 error messages)

@@ -1,13 +1,13 @@
 \beamer@sectionintoc {1}{Data}{2}{0}{1}
-\beamer@sectionintoc {2}{Abnormal Return}{11}{0}{2}
-\beamer@sectionintoc {3}{Literature}{17}{0}{3}
-\beamer@sectionintoc {4}{Abnormal Return Results}{20}{0}{4}
-\beamer@subsectionintoc {4}{1}{Abnormal Return}{23}{0}{4}
-\beamer@subsectionintoc {4}{2}{Volume}{33}{0}{4}
-\beamer@subsectionintoc {4}{3}{Relative Volume}{36}{0}{4}
-\beamer@subsectionintoc {4}{4}{Buy-sell Imbalances}{39}{0}{4}
-\beamer@sectionintoc {5}{Abnormal Return Analysis}{42}{0}{5}
-\beamer@sectionintoc {7}{Appendix I : 4 Factor Abnormal Return}{49}{1}{6}
-\beamer@sectionintoc {8}{Appendix II : CAPM ($ \alpha = 0 $)}{55}{1}{7}
-\beamer@sectionintoc {9}{Appendix II : Market}{62}{1}{8}
-\beamer@sectionintoc {10}{Appendix II : Amihud}{68}{1}{9}
+\beamer@sectionintoc {2}{Abnormal Return}{10}{0}{2}
+\beamer@sectionintoc {3}{Literature}{16}{0}{3}
+\beamer@sectionintoc {4}{Abnormal Return Results}{26}{0}{4}
+\beamer@subsectionintoc {4}{1}{Abnormal Return}{29}{0}{4}
+\beamer@subsectionintoc {4}{2}{Volume}{39}{0}{4}
+\beamer@subsectionintoc {4}{3}{Relative Volume}{42}{0}{4}
+\beamer@subsectionintoc {4}{4}{Buy-sell Imbalances}{45}{0}{4}
+\beamer@sectionintoc {5}{Abnormal Return Analysis}{48}{0}{5}
+\beamer@sectionintoc {7}{Appendix I : 4 Factor Abnormal Return}{58}{1}{6}
+\beamer@sectionintoc {8}{Appendix II : CAPM ($ \alpha = 0 $)}{64}{1}{7}
+\beamer@sectionintoc {9}{Appendix II : Market}{71}{1}{8}
+\beamer@sectionintoc {10}{Appendix II : Amihud}{77}{1}{9}

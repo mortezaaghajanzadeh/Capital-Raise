@@ -4,13 +4,113 @@ import pandas as pd
 path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
 d = path + "CapitalRaise.parquet"
 Data = pd.read_parquet(d)
+# Data.to_excel(path + "CapitalRaise.xlsx",index = False)
 
 Data["year"] = round(Data["ExtOrdGMDate"] / 10000).astype(int)
 print(len(Data))
 Data = Data[Data.JustPremium != 1]
 print(len(Data))
+print(list(Data))
 # Data = Data[Data.year > 1390]
 #%%
+mlist = [
+    "name",
+    "EPeriod",
+    "jalaliDate",
+    "date",
+    "title",
+    "stock_id",
+    "group_name",
+    "group_id",
+    "baseVol",
+    "value",
+    "volume",
+    "quantity",
+    "High",
+    "Low",
+    "Open",
+    "Last",
+    "Volume",
+    "t",
+    "CapBefore",
+    "CapAfter",
+    "ExtOrdGMDate",
+    "Event",
+    "JustRO",
+    "JustSaving",
+    "JustPremium",
+    "Hybrid",
+    "Revaluation",
+    "Index",
+    "RiskFree",
+    "Market_return",
+    "RelVolume",
+    "SMB",
+    "HML",
+    "Winner_Loser",
+    "industry_index",
+    "Industry_return",
+    "MarketCap",
+    "Weight",
+    "Amihud",
+    "NetInd",
+    "TotalInd",
+    "NetIns",
+    "TotalIns",
+    "IndlImbalance",
+    "InslImbalance",
+    "CAR",
+    "CAR_Market",
+    "CAR_WithoutAlpha",
+    "CAR_4Factor",
+    "CAR_Industry",
+    "CAR_WithoutAlpha_Industry",
+    "CAR_MarketIndustry",
+    "CAR_MarketModel",
+    "CAR_WithoutAlpha_MarketModel",
+    "CAR_MarketModel_Industry",
+    "CAR_WithoutAlpha_MarketModel_Industry",
+    "CAR_AbnormalReturn2",
+    "CAR_AbnormalReturn_Market2",
+    "CAR_AbnormalReturn_WithoutAlpha2",
+    "CAR_AbnormalReturn_4Factor2",
+    "CAR_AbnormalReturn_Industry2",
+    "CAR_AbnormalReturn_WithoutAlpha_Industry2",
+    "CAR_AbnormalReturn_MarketIndustry2",
+    "CAR_AbnormalReturn_MarketModel2",
+    "CAR_AbnormalReturn_WithoutAlpha_MarketModel2",
+    "CAR_AbnormalReturn_MarketModel_Industry2",
+    "CAR_AbnormalReturn_WithoutAlpha_MarketMOdel_Industry2",
+    "RaiseType",
+    "year",
+]
+Data[mlist].to_excel(path + "CapitalRaise.xlsx",index = False)
+
+#%%
+mlist = [
+    "CAR",
+    "CAR_Market",
+    "CAR_WithoutAlpha",
+    "CAR_4Factor",
+    "CAR_Industry",
+    "CAR_WithoutAlpha_Industry",
+    "CAR_MarketIndustry",
+    "CAR_MarketModel",
+    "CAR_WithoutAlpha_MarketModel",
+    "CAR_MarketModel_Industry",
+    "CAR_WithoutAlpha_MarketModel_Industry",
+    "CAR_AbnormalReturn2",
+    "CAR_AbnormalReturn_Market2",
+    "CAR_AbnormalReturn_WithoutAlpha2",
+    "CAR_AbnormalReturn_4Factor2",
+    "CAR_AbnormalReturn_Industry2",
+    "CAR_AbnormalReturn_WithoutAlpha_Industry2",
+    "CAR_AbnormalReturn_MarketIndustry2",
+    "CAR_AbnormalReturn_MarketModel2",
+    "CAR_AbnormalReturn_WithoutAlpha_MarketModel2",
+    "CAR_AbnormalReturn_MarketModel_Industry2",
+    "CAR_AbnormalReturn_WithoutAlpha_MarketMOdel_Industry2",
+]
 
 
 def Result(g, CAR):
@@ -32,37 +132,16 @@ def Result(g, CAR):
     return AAR
 
 
-gg = Data.groupby("RaiseType")
-t1 = gg.apply(Result, CAR="CAR")
-t = Result(Data, "CAR").reset_index()
-t["RaiseType"] = "Total"
-t1 = t1.reset_index()
-t1 = t1.append(t).reset_index(drop=True)
-CAR = t1
-
-gg = Data.groupby("RaiseType")
-t1 = gg.apply(Result, CAR="CAR_4Factor")
-t = Result(Data, "CAR_4Factor").reset_index()
-t["RaiseType"] = "Total"
-t1 = t1.reset_index()
-t1 = t1.append(t).reset_index(drop=True)
-CAR_4Factor = t1
-
-gg = Data.groupby("RaiseType")
-t1 = gg.apply(Result, CAR="CAR_Market")
-t = Result(Data, "CAR_Market").reset_index()
-t["RaiseType"] = "Total"
-t1 = t1.reset_index()
-t1 = t1.append(t).reset_index(drop=True)
-CAR_Market = t1
-
-gg = Data.groupby("RaiseType")
-t1 = gg.apply(Result, CAR="CAR_WithoutAlpha")
-t = Result(Data, "CAR_WithoutAlpha").reset_index()
-t["RaiseType"] = "Total"
-t1 = t1.reset_index()
-t1 = t1.append(t).reset_index(drop=True)
-CAR_WithoutAlpha = t1
+for i in mlist:
+    print(i[0] + "A" + i[1:])
+    gg = Data.groupby("RaiseType")
+    t1 = gg.apply(Result, CAR=i)
+    t = Result(Data, "CAR").reset_index()
+    t["RaiseType"] = "Total"
+    t1 = t1.reset_index()
+    t1 = t1.append(t).reset_index(drop=True)
+    n = path + i[0] + "A" + i[1:] + ".xlsx"
+    t1.to_excel(n, index=False)
 
 
 gg = Data.groupby("RaiseType")
@@ -92,15 +171,6 @@ n = path + "TradeSumm.xlsx"
 t1.to_excel(n, index=False)
 
 
-n = path + "CAAR.xlsx"
-n1 = path + "CAAR_4Factor.xlsx"
-n2 = path + "CAAR_Market.xlsx"
-n3 = path + "CAAR_WithoutAlpha.xlsx"
-CAR.to_excel(n, index=False)
-CAR_4Factor.to_excel(n1, index=False)
-CAR_Market.to_excel(n2, index=False)
-CAR_WithoutAlpha.to_excel(n3, index=False)
-
 #%%
 
 import seaborn as sns
@@ -118,8 +188,10 @@ g = sns.relplot(data=Data, kind="line", x="EPeriod", y="CAR_Market", col="RaiseT
 
 
 #%%
+sns.relplot(data=Data, kind="line", x="EPeriod", y="Weight", col="RaiseType")
 
 
+#%%
 def Result(g, CAR):
     AAR = (
         g.groupby("EPeriod")

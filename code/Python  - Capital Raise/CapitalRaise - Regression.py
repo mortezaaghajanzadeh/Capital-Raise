@@ -149,6 +149,23 @@ Data[
         "betaH_FOUR",
         "betaW_FOUR",
         "Alpha_FOUR",
+        'Beta_CAPMIndustry',
+        'Alpha_CAPMIndustry',
+        'BetaI_CAPMIndustry', 
+        'Beta_Market',
+        'Alpha_Market', 
+        'Beta_MarketIndustry', 
+        'Alpha_MarketIndustry',
+        'Beta_CAPM2',
+        'Alpha_CAPM2',
+        'Beta_CAPMIndustry2',
+        'Alpha_CAPMIndustry2',
+        'BetaI_CAPMIndustry2', 
+        'Beta_Market2', 
+        'Alpha_Market2', 
+        'Beta_MarketIndustry2', 
+        'Alpha_MarketIndustry2', 
+        'BetaI_MarketIndustry2',
     ]
 ].describe().T
 
