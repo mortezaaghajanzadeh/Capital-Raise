@@ -34,7 +34,11 @@
 	urlcolor=black,
 	citecolor = blue
 }
+\setbeamertemplate{itemize items}[square]
+%\setbeamercolor{itemize item}{fg=red}  
 
+\setbeamertemplate{itemize subitem}[triangle]
+%\setbeamercolor{itemize subitem}{fg=red}
 \usepackage[authoryear]{natbib}
 
 \addtobeamertemplate{block begin}{}{\justifying} 
@@ -114,7 +118,7 @@ Percent & 55.50 & 27.75 & 8.91  & 7.83  & 100 \\
 \begin{frame}{Data Summary}{Raised Capital for each Firm}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{MedianCapRaiseAdjusted.eps}
+\includegraphics[width=0.7\linewidth]{Output/MedianCapRaiseAdjusted.eps}
 \label{fig:mediancapraise}
 \end{figure}
 \end{frame}
@@ -122,7 +126,7 @@ Percent & 55.50 & 27.75 & 8.91  & 7.83  & 100 \\
 \begin{frame}{Data Summary}{Raised Capital for each Firm}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{MeanCapRaiseAdjusted.eps}
+\includegraphics[width=0.7\linewidth]{Output/MeanCapRaiseAdjusted.eps}
 \label{fig:meancapraise}
 \end{figure}
 \end{frame}
@@ -130,12 +134,19 @@ Percent & 55.50 & 27.75 & 8.91  & 7.83  & 100 \\
 \begin{frame}{Data Summary}{Adjusted Value of Raised Capital in market}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{SumCapRaiseAdjusted.eps}
+\includegraphics[width=0.7\linewidth]{Output/SumCapRaiseAdjusted.eps}
 \label{fig:SumCapRaise}
 \end{figure}
 \end{frame}
 
+\begin{frame}{Data Summary}{Adjusted Value of Raised Capital in market}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{Output/SumCapRaiseAdjustedEachtype}
+	\label{fig:SumCapRaise2}
+\end{figure}
 
+\end{frame}
 
 \begin{frame}{Data Summary}{Percent of Raised Capital for each Firm}
 \begin{figure}
@@ -484,8 +495,7 @@ is overvalued. [\cite{myers1984corporate},
 \begin{frame}{Empirical Solutions}
 	\begin{itemize}
 		\tiny
-		 \item \cite{loderer1988stock} states that rights offering cannot alone solve the  information asymmetry problem unless the rights offering is fully subscribed
-		  Two additional requirements for eliminating the information asymmetry problem:
+		 \item \cite{loderer1988stock} states that rights offering cannot alone solve the  information asymmetry problem unless the rights offering is fully subscribed. Two additional requirements for eliminating the information asymmetry problem:
 		 \begin{itemize}\tiny
 		 	\item The life of the information asymmetry is shorter than the period of time
 		 	between announcement and issue date
@@ -522,7 +532,7 @@ is overvalued. [\cite{myers1984corporate},
 	\end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Individual investors}
 	\begin{itemize}\tiny
 		\item In particular, while institutions are viewed as informed
 		investors, individuals are believed to have psychological biases and are often
@@ -552,7 +562,7 @@ is overvalued. [\cite{myers1984corporate},
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{Individuals behavior around events}
 	\begin{itemize}\scriptsize
 		\item 	\cite{kaniel2012individual} :
 		\begin{itemize}\tiny
@@ -571,17 +581,20 @@ is overvalued. [\cite{myers1984corporate},
 	
 	
 	\end{itemize}
-	\item \cite{constantinides1989optimal}
-security issues are used to finance investments and do not necessarily provide signals to the
-market. On the other hand, repurchases do signal information in equilibrium in which part of the
-issue proceeds are used to repurchase
-\item \cite{bond2016buying} undervalued firms that
-would avoid issuing equity to finance positive NPV projects due to SEO underpricing can signal
-their valuation to the market using repurchases. As a result, some firms use repurchases for
-purposes of information signaling and (larger) subsequent SEOs for financing of investment opportunities
+	\item 
+	\begin{itemize}\tiny
+		\item  \cite{constantinides1989optimal}
+		security issues are used to finance investments and do not necessarily provide signals to the
+		market. On the other hand, repurchases do signal information in equilibrium in which part of the
+		issue proceeds are used to repurchase
+		\item \cite{bond2016buying} undervalued firms that
+		would avoid issuing equity to finance positive NPV projects due to SEO underpricing can signal
+		their valuation to the market using repurchases. As a result, some firms use repurchases for
+		purposes of information signaling and (larger) subsequent SEOs for financing of investment opportunities
+	\end{itemize}
 	\end{itemize}
 \end{frame}
-\begin{frame}
+\begin{frame}{Our path}
 	\begin{enumerate}
 		\item Decompose abnormal return to liquidity and information
 		\item Trading behavior around each type of SEO (Individual buy or sell, herding)
@@ -623,13 +636,13 @@ purposes of information signaling and (larger) subsequent SEOs for financing of 
 %	
 %\end{frame}
 \normalsize
-\begin{frame}{Iran}
-\begin{figure}
-\centering
-\includegraphics[width=0.65\linewidth]{Soltani}
-\label{Soltani}
-\end{figure}
-\end{frame}
+%\begin{frame}{Iran}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.65\linewidth]{Soltani}
+%\label{Soltani}
+%\end{figure}
+%\end{frame}
 
 
 \section{Abnormal Return Results}
@@ -690,7 +703,7 @@ purposes of information signaling and (larger) subsequent SEOs for financing of 
 \label{abreturn}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{AbReturn.eps}
+\includegraphics[width=0.7\linewidth]{Output/CAR.eps}
 \label{fig:abreturn}
 \end{figure}
 
@@ -757,7 +770,7 @@ purposes of information signaling and (larger) subsequent SEOs for financing of 
 \label{abreturnrevalution}
 \begin{figure}
 \centering
-\includegraphics[width=0.65\linewidth]{AbReturnRevalution}
+\includegraphics[width=0.65\linewidth]{Output/CARRevaluation.eps}
 \label{fig:abreturnrevalution}
 \end{figure}
 
@@ -813,7 +826,7 @@ purposes of information signaling and (larger) subsequent SEOs for financing of 
 \label{abreturnsaving}
 \begin{figure}
 \centering
-\includegraphics[width=0.65\linewidth]{AbReturnSaving}
+\includegraphics[width=0.65\linewidth]{Output/CARSaving.eps}
 \label{fig:abreturnsaving}
 \end{figure}
 
@@ -827,7 +840,7 @@ purposes of information signaling and (larger) subsequent SEOs for financing of 
 \label{abreturncash}
 \begin{figure}
 \centering
-\includegraphics[width=0.65\linewidth]{AbReturnCash}
+\includegraphics[width=0.65\linewidth]{Output/CARCash.eps}
 \label{fig:abreturncash}
 \end{figure}
 \hfill\hyperlink{abreturncash4Factor}{\beamerbutton{4Factor}}
@@ -841,53 +854,53 @@ purposes of information signaling and (larger) subsequent SEOs for financing of 
 \label{abreturnhybrid}
 \begin{figure}
 \centering
-\includegraphics[width=0.65\linewidth]{AbReturnHybrid}
+\includegraphics[width=0.65\linewidth]{Output/CARHybrid.eps}
 \label{fig:abreturnhybrid}
 \end{figure}
 \hfill\hyperlink{abreturnhybrid4Factor}{\beamerbutton{4Factor}}
 \end{frame}
 
 
-\begin{frame}
-\label{AbReturn_year}
-\begin{figure}
-\centering
-\includegraphics[width=0.85\linewidth]{AbReturn_year.eps}
-\label{fig:AbReturn_year}
-\end{figure}
-
-
-\end{frame}
-
-
-\begin{frame}
-\label{AbReturn_year_Revaluation}
-\begin{figure}
-\centering
-\includegraphics[width=0.85\linewidth]{AbReturn_year_Revaluation.eps}
-\label{fig:AbReturn_year_Revaluation}
-\end{figure}
-
-
-\end{frame}
-
-\begin{frame}
-\label{AbReturn_year_NoRevaluation}
-\begin{figure}
-\centering
-\includegraphics[width=0.85\linewidth]{AbReturn_year_NoRevaluation.eps}
-\label{fig:AbReturn_year_NoRevaluation}
-\end{figure}
-
-
-\end{frame}
+%\begin{frame}
+%\label{AbReturn_year}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.85\linewidth]{AbReturn_year.eps}
+%\label{fig:AbReturn_year}
+%\end{figure}
+%
+%
+%\end{frame}
+%
+%
+%\begin{frame}
+%\label{AbReturn_year_Revaluation}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.85\linewidth]{AbReturn_year_Revaluation.eps}
+%\label{fig:AbReturn_year_Revaluation}
+%\end{figure}
+%
+%
+%\end{frame}
+%
+%\begin{frame}
+%\label{AbReturn_year_NoRevaluation}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.85\linewidth]{AbReturn_year_NoRevaluation.eps}
+%\label{fig:AbReturn_year_NoRevaluation}
+%\end{figure}
+%
+%
+%\end{frame}
 
 \subsection{Volume}
 
 \begin{frame}{Volume}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{volume}
+\includegraphics[width=0.7\linewidth]{Output/volume.eps}
 \label{fig:volume}
 \end{figure}
 \end{frame}
@@ -896,7 +909,7 @@ purposes of information signaling and (larger) subsequent SEOs for financing of 
 \begin{frame}{Volume}{Volume of raised capital from Revaluation}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{volume_Revaluation}
+\includegraphics[width=0.7\linewidth]{Output/volume_Revaluation.eps}
 \label{fig:volumerevaluation}
 \end{figure}
 \end{frame}
@@ -905,7 +918,7 @@ purposes of information signaling and (larger) subsequent SEOs for financing of 
 \begin{frame}{Volume}{Volume of raised capital that it's not from Revaluation}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{volume_NoRevaluation}
+\includegraphics[width=0.7\linewidth]{Output/volume_NoRevaluation.eps}
 \label{fig:volumenorevaluation}
 \end{figure}
 \end{frame}
@@ -915,21 +928,21 @@ purposes of information signaling and (larger) subsequent SEOs for financing of 
 \begin{frame}{Relative volume}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{Relvolume}
+\includegraphics[width=0.7\linewidth]{Output/Relvolume.eps}
 \label{fig:relvolume}
 \end{figure}
 \end{frame}
 \begin{frame}{Relative volume}{Relative Volume of raised capital from Revaluation}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{Relvolume_Revaluation}
+\includegraphics[width=0.7\linewidth]{Output/Relvolume_Revaluation.eps}
 \label{fig:relvolumerevaluation}
 \end{figure}
 \end{frame}
 \begin{frame}{Relative volume}{Relative Volume of raised capital that it's not from Revaluation}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{Relvolume_NoRevaluation}
+\includegraphics[width=0.7\linewidth]{Output/Relvolume_NoRevaluation.eps}
 \label{fig:relvolumenorevaluation}
 \end{figure}
 \end{frame}
@@ -941,24 +954,24 @@ purposes of information signaling and (larger) subsequent SEOs for financing of 
 \begin{frame}{Buy-sell Imbalances}
 \begin{figure}
 \centering
-\includegraphics[width=0.45\linewidth]{IndImb}
-\includegraphics[width=0.45\linewidth]{InsImb}
+\includegraphics[width=0.45\linewidth]{Output/IndImb.eps}
+\includegraphics[width=0.45\linewidth]{Output/InsImb.eps}
 \label{fig:indimb}
 \end{figure}
 \end{frame}
 \begin{frame}{Buy-sell Imbalances}{Buy-sell Imbalances of raised capital from Revaluation}
 \begin{figure}
 \centering
-\includegraphics[width=0.45\linewidth]{IndImb_Revaluation}
-\includegraphics[width=0.45\linewidth]{InsImb_Revaluation}
+\includegraphics[width=0.45\linewidth]{Output/IndImb_Revaluation.eps}
+\includegraphics[width=0.45\linewidth]{Output/InsImb_Revaluation.eps}
 \label{fig:indimbrevaluation}
 \end{figure}
 \end{frame}
 \begin{frame}{Buy-sell Imbalances}{Buy-sell Imbalances of raised capital that it's not from Revaluation}
 \begin{figure}
 \centering
-\includegraphics[width=0.45\linewidth]{IndImb_NoRevaluation}
-\includegraphics[width=0.45\linewidth]{InsImb_NoRevaluation}
+\includegraphics[width=0.45\linewidth]{Output/IndImb_NoRevaluation.eps}
+\includegraphics[width=0.45\linewidth]{Output/InsImb_NoRevaluation.eps}
 \label{fig:indimbnorevaluation}
 \end{figure}
 \end{frame}
@@ -988,362 +1001,362 @@ purposes of information signaling and (larger) subsequent SEOs for financing of 
 
 
 
-\section{Abnormal Return Analysis}
-\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
-\begin{frame}
-\begin{center}
-
-\begin{columns}
-
-\column{.5\textwidth}     
- \centering
- \resizebox{0.7\textwidth}{!}{
-         \begin{tabular}{CCCC}
-         \toprule\toprule
-         \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
-                \multicolumn{4}{c}{\scriptsize\textit{Panel A:}{ Market Cap}}\\
-                \hline\hline
-               & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
-               \cmidrule{2-3}
-         \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
-          \hline
-    \rowfont{\normalsize}%
-    Small & 6.73  & 39.64 & 9.48 \\
-    \rowfont{\scriptsize}%
-      sd    & 19.66 & 40.16 & 23.82 \\
-        n  & 285   & 26    & 311 \\
-          \hline
-    \rowfont{\normalsize}%      
-    Middle & 3.73  & 37.33 & 6.47 \\
-    \rowfont{\scriptsize}%
-       sd   & 12.88 & 41.20 & 19.24 \\
-       n  & 282   & 25    & 307 \\
-          \hline
-          \rowfont{\normalsize}%
-    Large & 2.37  & 12.68 & 3.38 \\
-    \rowfont{\scriptsize}%
-       sd   & 11.21 & 16.96 & 12.26 \\
-       n   & 293   & 32    & 325 \\
-          \hline
-          \rowfont{\normalsize}%
-    Full sample & 4.26  & 28.55 & 6.40 \\
-    \rowfont{\scriptsize}%
-      sd    & 15.11 & 35.47 & 19.10 \\
-       n   & 860   & 83    & 943 \\
-          \hline
-          \rowfont{\normalsize}%
-    Small - Large & 4.366\sym{***} & 26.96\sym{**} & 6.101\sym{***} \\
-   \scriptsize P-Value & 0.001 & 0.003 & 0 \\
-     \bottomrule\bottomrule
-     \addlinespace[.75ex]
-     \end{tabular}
- }
- 
- \column{.5\textwidth}     
-  \centering
-   \resizebox{0.58\textwidth}{!}{
-      \begin{tabular}{CCCC}
-               \toprule\toprule
-               \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
-                      \multicolumn{4}{c}{\scriptsize\textit{Panel B:} {P/E ratio}}\\
-                      \hline\hline
-                     & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
-                     \cmidrule{2-3}
-               \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
-                \hline
-                \rowfont{\normalsize}%
-   {Low} & 2.39  & 35.88 & 4.99 \\
-   \rowfont{\scriptsize}%
-       sd   & 15.22 & 42.50 & 20.67 \\
-        n  & 214   & 18    & 232 \\\hline\rowfont{\normalsize}%
-    {Middle} & 4.76  & 37.58 & 7.07 \\
-       sd   & 20.26 & 41.74 & 23.84 \\
-        n  & 224   & 17    & 241 \\\hline\rowfont{\normalsize}%
-    {High} & 3.83  & 18.20 & 5.14 \\\rowfont{\scriptsize}%
-       sd   & 9.95  & 23.17 & 12.41 \\
-       n   & 219   & 22    & 241 \\\hline\rowfont{\normalsize}%
-    {Full sample} & 3.68  & 29.56 & 5.74 \\\rowfont{\scriptsize}%
-       sd   & 15.77 & 36.48 & 19.56 \\
-       n   & 657   & 57    & 714 \\ 
-          \hline \rowfont{\normalsize}%
-    {Low - High} & -1.436 & 17.68 & -0.149 \\\rowfont{\scriptsize}%
-    {P-Value}     & 0.247 & 0.126 & 0.924 \\           
-           \bottomrule\bottomrule
-           \addlinespace[.75ex]
-           \end{tabular}
-       }
-
-
- 
-\end{columns}
-
-\normalsize
-\end{center}
-\end{frame}
-
-
-\begin{frame}
-\begin{center}
-
-\begin{columns}
-\column{.5\textwidth}     
- \centering
- 
-  \resizebox{0.6\textwidth}{!}{
-          \begin{tabular}{CCCC}
-          \toprule\toprule
-          \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
-                 \multicolumn{4}{c}{\scriptsize\textit{Panel C:}{ Book-to-Market}}\\
-                 \hline\hline
-                & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
-                \cmidrule{2-3}
-          \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
-           \hline\rowfont{\normalsize}%
-          {Low} & 5.48  & 36.85 & 8.08 \\\rowfont{\scriptsize}%
-            sd    & 19.07 & 47.28 & 24.23 \\
-             n   & 288   & 26    & 314 \\
-                 \hline\rowfont{\normalsize}%
-          {Middle} & 3.14  & 28.41 & 5.03 \\\rowfont{\scriptsize}%
-             sd   & 12.87 & 33.15 & 16.62 \\
-             n   & 285   & 23    & 308 \\
-                 \hline\rowfont{\normalsize}%
-          {High} & 4.15  & 22.30 & 6.07 \\\rowfont{\scriptsize}%
-             sd   & 12.38 & 24.60 & 15.18 \\
-             n   & 287   & 34    & 321 \\
-                 \hline\rowfont{\normalsize}%
-          {Full sample} & 4.26  & 28.55 & 6.40 \\\rowfont{\scriptsize}%
-             sd   & 15.11 & 35.47 & 19.10 \\
-              n  & 860   & 83    & 943 \\
-                \hline\rowfont{\normalsize}%
-         {Low - High} & 1.327 & 14.55 & 2.003 \\\rowfont{\scriptsize}%
-          {P-Value}      & 0.323 & 0.162 & 0.214 \\
-      \bottomrule\bottomrule
-      \addlinespace[.75ex]
-      \end{tabular}
-  }
-  
-  
- 
- \column{.5\textwidth}     
-  \centering
-   \resizebox{0.6\textwidth}{!}{
-      \begin{tabular}{CCCC}
-               \toprule\toprule
-               \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
-                      \multicolumn{4}{c}{\scriptsize\textit{Panel D:}{ Free Float}}\\
-                      \hline\hline
-                     & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
-                     \cmidrule{2-3}
-               \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
-                \hline\rowfont{\normalsize}%
-    Low   & 5.13  & 21.17 & 6.59 \\\rowfont{\scriptsize}%
-      sd    & 19.60 & 23.58 & 20.48 \\
-        n  & 271   & 27    & 298 \\\hline\rowfont{\normalsize}%
-    Middle & 3.39  & 28.43 & 5.31 \\\rowfont{\scriptsize}%
-       sd   & 12.62 & 41.21 & 17.79 \\
-       n   & 277   & 23    & 300 \\\hline\rowfont{\normalsize}%
-    High  & 4.20  & 35.52 & 7.32 \\\rowfont{\scriptsize}%
-       sd   & 12.45 & 39.95 & 19.54 \\
-        n  & 281   & 31    & 312 \\\hline\rowfont{\normalsize}%
-    Full sample & 4.24  & 28.72 & 6.42 \\
-        sd  & 15.21 & 35.83 & 19.30 \\\rowfont{\scriptsize}%
-        n  & 829   & 81    & 910 \\
-          \hline\rowfont{\normalsize}%
-    Low - High &  0.929 & -14.35 & -0.73 \\\rowfont{\scriptsize}%
-    P-Value &0.508  &  0.097 & 0.653 \\        
-           \bottomrule\bottomrule
-           \addlinespace[.75ex]
-           \end{tabular}
-       }
-\end{columns}
-
-\normalsize
-\end{center}
-\end{frame}
-
-
-
-
-\begin{frame}
-\begin{center}
-
-\begin{columns}
-\column{.5\textwidth}     
- \centering
- \resizebox{0.75\textwidth}{!}{
-         \begin{tabular}{CCCC}
-         \toprule\toprule
-         \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
-                \multicolumn{4}{c}{\scriptsize\textit{Panel E: }{ Free Market Cap}}\\
-                \hline\hline
-               & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
-               \cmidrule{2-3}
-         \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
-          \hline\rowfont{\normalsize}
-    Small & 6.11  & 40.98 & 9.36 \\\rowfont{\scriptsize}
-       sd   & 20.10 & 46.67 & 25.81 \\
-       n   & 272   & 28    & 300 \\ \hline\rowfont{\normalsize}
-    Middle & 4.39  & 27.42 & 6.11 \\\rowfont{\scriptsize}
-       sd   & 13.36 & 30.56 & 16.39 \\
-        n  & 273   & 22    & 295 \\ \hline\rowfont{\normalsize}
-    Large & 2.30  & 18.58 & 3.90 \\\rowfont{\scriptsize}
-       sd   & 10.54 & 23.67 & 13.31 \\
-       n   & 284   & 31    & 315 \\ \hline\rowfont{\normalsize}
-    Full sample & 4.24  & 28.72 & 6.42 \\\rowfont{\scriptsize}
-       sd   & 15.21 & 35.83 & 19.30 \\
-       n   & 829   & 81    & 910 \\ \hline\rowfont{\normalsize}
-    Small - Large & 3.813\sym{**} & 22.41\sym{***} & 5.466\sym{***} \\\rowfont{\scriptsize}
-    P-Value & 0.006 & 0.028 & 0.001 \\
-     \bottomrule\bottomrule
-     \addlinespace[.75ex]
-     \end{tabular}
- }
- 
- 
- \column{.5\textwidth}     
-  \centering
-   \resizebox{0.6\textwidth}{!}{
-      \begin{tabular}{CCCC}
-               \toprule\toprule
-               \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
-                      \multicolumn{4}{c}{\scriptsize\textit{Panel F:}{ Volatility(past 250 days)}}\\
-                      \hline\hline
-                     & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
-                     \cmidrule{2-3}
-               \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
-                \hline\rowfont{\normalsize}
-    Low   & 4.50  & 24.11 & 6.29 \\\rowfont{\scriptsize}
-      sd    & 18.72 & 28.69 & 20.56 \\
-       n   & 269   & 27    & 296 \\\hline\rowfont{\normalsize}
-    Middle & 4.90  & 34.68 & 7.32 \\\rowfont{\scriptsize}
-        sd  & 12.28 & 33.07 & 17.04 \\
-       n   & 260   & 23    & 283 \\\hline\rowfont{\normalsize}
-    High  & 2.68  & 23.08 & 4.82 \\\rowfont{\scriptsize}
-       sd   & 13.92 & 34.70 & 18.31 \\
-       n   & 264   & 31    & 295 \\\hline\rowfont{\normalsize}
-    Full sample & 4.02  & 26.72 & 6.13 \\\rowfont{\scriptsize}
-      sd    & 15.27 & 32.33 & 18.73 \\
-       n   & 793   & 81    & 874 \\\hline\rowfont{\normalsize}
-    Low - High & 1.823 & 1.037 & 1.468 \\\rowfont{\scriptsize}
-    P-Value & 0.202 & 0.901 & 0.36 \\      
-           \bottomrule\bottomrule
-           \addlinespace[.75ex]
-           \end{tabular}
-       }
-\end{columns}
-
-
-\normalsize
-\end{center}
-\end{frame}
-
-
-
-\begin{frame}
-\begin{center}
-
-\begin{columns}
-\column{.5\textwidth}     
- \centering
- \resizebox{0.6\textwidth}{!}{
-         \begin{tabular}{CCCC}
-         \toprule\toprule
-         \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
-                \multicolumn{4}{c}{\scriptsize\textit{Panel G: }{Debt ratio}}\\
-                \hline\hline
-               & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
-               \cmidrule{2-3}
-         \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
-          \hline\rowfont{\normalsize}
-    Low   & 4.19  & 34.87 & 6.80 \\\rowfont{\scriptsize}
-      sd    & 18.95 & 43.56 & 23.61 \\
-       n   & 280   & 26    & 306 \\\hline\rowfont{\normalsize}
-    Middle & 3.69  & 28.19 & 5.67 \\\rowfont{\scriptsize}
-       sd   & 11.93 & 25.80 & 15.07 \\
-       n   & 273   & 24    & 297 \\\hline\rowfont{\normalsize}
-    High  & 5.06  & 23.42 & 6.80 \\\rowfont{\scriptsize}
-       sd   & 14.24 & 36.81 & 18.36 \\
-        n  & 277   & 29    & 306 \\\hline\rowfont{\normalsize}
-    Full sample & 4.32  & 28.64 & 6.43 \\\rowfont{\scriptsize}
-       sd   & 15.34 & 36.25 & 19.36 \\
-       n   & 830   & 79    & 909 \\\hline\rowfont{\normalsize}
-    Low - High & -0.872 & 11.45 & -0.005 \\\rowfont{\scriptsize}
-    P-Value & 0.539 & 0.301 & 0.998 \\
-     \bottomrule\bottomrule
-     \addlinespace[.75ex]
-     \end{tabular}
- }
- 
- 
- \column{.5\textwidth}     
-  \centering
-   \resizebox{0.6\textwidth}{!}{
-      \begin{tabular}{CCCC}
-               \toprule\toprule
-               \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
-                      \multicolumn{4}{c}{\scriptsize\textit{Panel H:}{ Leverage ratio}}\\
-                      \hline\hline
-                     & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
-                     \cmidrule{2-3}
-               \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
-                \hline\rowfont{\normalsize}
-    Low   & 3.80  & 29.24 & 5.97 \\\rowfont{\scriptsize}
-      sd    & 10.37 & 31.09 & 15.13 \\
-       n   & 278   & 26    & 304 \\\hline\rowfont{\normalsize}
-    Middle & 3.84  & 23.49 & 5.36 \\\rowfont{\scriptsize}
-       sd   & 12.64 & 29.34 & 15.46 \\
-       n   & 274   & 23    & 297 \\\hline\rowfont{\normalsize}
-    High  & 5.31  & 32.06 & 7.92 \\\rowfont{\scriptsize}
-      sd    & 20.93 & 44.88 & 25.47 \\
-      b    & 278   & 30    & 308 \\\hline\rowfont{\normalsize}
-    Full sample & 4.32  & 28.64 & 6.43 \\\rowfont{\scriptsize}
-       sd   & 15.34 & 36.25 & 19.36 \\
-       n   & 830   & 79    & 909 \\\hline\rowfont{\normalsize}
-    Low - High & -1.512 & -2.817 & -1.941 \\\rowfont{\scriptsize}
-    P-Value & 0.281 & 0.784 & 0.251 \\      
-           \bottomrule\bottomrule
-           \addlinespace[.75ex]
-           \end{tabular}
-       }
-\end{columns}
-
-
-\normalsize
-\end{center}
-\end{frame}
-
-
-\begin{frame}
-\begin{center}
-
- \resizebox{0.25\textwidth}{!}{
-         \begin{tabular}{CCCC}
-         \toprule\toprule
-         \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
-                \multicolumn{4}{c}{\scriptsize\textit{Panel I: }{Market Condition}}\\
-                \hline\hline
-               & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
-               \cmidrule{2-3}
-         \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
-          \hline\rowfont{\normalsize}
-    {Bad} & 3.85  & 29.85 & 6.20 \\\rowfont{\scriptsize}
-      sd    & 12.96 & 37.65 & 18.25 \\
-        n  & 301   & 30    & 331 \\\hline\rowfont{\normalsize}
-    {Good} & 4.48  & 27.82 & 6.51 \\\rowfont{\scriptsize}
-       sd   & 16.15 & 34.52 & 19.56 \\
-        n  & 559   & 53    & 612 \\\hline\rowfont{\normalsize}
-    {Full sample} & 4.26  & 28.55 & 6.40 \\\rowfont{\scriptsize}
-        sd  & 15.11 & 35.47 & 19.10 \\
-        n  & 860   & 83    & 943 \\
-     \bottomrule\bottomrule
-     \addlinespace[.75ex]
-     \end{tabular}
- }
-
-
-\normalsize
-\end{center}
-\end{frame}
+%\section{Abnormal Return Analysis}
+%\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+%\begin{frame}
+%\begin{center}
+%
+%\begin{columns}
+%
+%\column{.5\textwidth}     
+% \centering
+% \resizebox{0.7\textwidth}{!}{
+%         \begin{tabular}{CCCC}
+%         \toprule\toprule
+%         \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
+%                \multicolumn{4}{c}{\scriptsize\textit{Panel A:}{ Market Cap}}\\
+%                \hline\hline
+%               & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
+%               \cmidrule{2-3}
+%         \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
+%          \hline
+%    \rowfont{\normalsize}%
+%    Small & 6.73  & 39.64 & 9.48 \\
+%    \rowfont{\scriptsize}%
+%      sd    & 19.66 & 40.16 & 23.82 \\
+%        n  & 285   & 26    & 311 \\
+%          \hline
+%    \rowfont{\normalsize}%      
+%    Middle & 3.73  & 37.33 & 6.47 \\
+%    \rowfont{\scriptsize}%
+%       sd   & 12.88 & 41.20 & 19.24 \\
+%       n  & 282   & 25    & 307 \\
+%          \hline
+%          \rowfont{\normalsize}%
+%    Large & 2.37  & 12.68 & 3.38 \\
+%    \rowfont{\scriptsize}%
+%       sd   & 11.21 & 16.96 & 12.26 \\
+%       n   & 293   & 32    & 325 \\
+%          \hline
+%          \rowfont{\normalsize}%
+%    Full sample & 4.26  & 28.55 & 6.40 \\
+%    \rowfont{\scriptsize}%
+%      sd    & 15.11 & 35.47 & 19.10 \\
+%       n   & 860   & 83    & 943 \\
+%          \hline
+%          \rowfont{\normalsize}%
+%    Small - Large & 4.366\sym{***} & 26.96\sym{**} & 6.101\sym{***} \\
+%   \scriptsize P-Value & 0.001 & 0.003 & 0 \\
+%     \bottomrule\bottomrule
+%     \addlinespace[.75ex]
+%     \end{tabular}
+% }
+% 
+% \column{.5\textwidth}     
+%  \centering
+%   \resizebox{0.58\textwidth}{!}{
+%      \begin{tabular}{CCCC}
+%               \toprule\toprule
+%               \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
+%                      \multicolumn{4}{c}{\scriptsize\textit{Panel B:} {P/E ratio}}\\
+%                      \hline\hline
+%                     & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
+%                     \cmidrule{2-3}
+%               \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
+%                \hline
+%                \rowfont{\normalsize}%
+%   {Low} & 2.39  & 35.88 & 4.99 \\
+%   \rowfont{\scriptsize}%
+%       sd   & 15.22 & 42.50 & 20.67 \\
+%        n  & 214   & 18    & 232 \\\hline\rowfont{\normalsize}%
+%    {Middle} & 4.76  & 37.58 & 7.07 \\
+%       sd   & 20.26 & 41.74 & 23.84 \\
+%        n  & 224   & 17    & 241 \\\hline\rowfont{\normalsize}%
+%    {High} & 3.83  & 18.20 & 5.14 \\\rowfont{\scriptsize}%
+%       sd   & 9.95  & 23.17 & 12.41 \\
+%       n   & 219   & 22    & 241 \\\hline\rowfont{\normalsize}%
+%    {Full sample} & 3.68  & 29.56 & 5.74 \\\rowfont{\scriptsize}%
+%       sd   & 15.77 & 36.48 & 19.56 \\
+%       n   & 657   & 57    & 714 \\ 
+%          \hline \rowfont{\normalsize}%
+%    {Low - High} & -1.436 & 17.68 & -0.149 \\\rowfont{\scriptsize}%
+%    {P-Value}     & 0.247 & 0.126 & 0.924 \\           
+%           \bottomrule\bottomrule
+%           \addlinespace[.75ex]
+%           \end{tabular}
+%       }
+%
+%
+% 
+%\end{columns}
+%
+%\normalsize
+%\end{center}
+%\end{frame}
+%
+%
+%\begin{frame}
+%\begin{center}
+%
+%\begin{columns}
+%\column{.5\textwidth}     
+% \centering
+% 
+%  \resizebox{0.6\textwidth}{!}{
+%          \begin{tabular}{CCCC}
+%          \toprule\toprule
+%          \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
+%                 \multicolumn{4}{c}{\scriptsize\textit{Panel C:}{ Book-to-Market}}\\
+%                 \hline\hline
+%                & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
+%                \cmidrule{2-3}
+%          \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
+%           \hline\rowfont{\normalsize}%
+%          {Low} & 5.48  & 36.85 & 8.08 \\\rowfont{\scriptsize}%
+%            sd    & 19.07 & 47.28 & 24.23 \\
+%             n   & 288   & 26    & 314 \\
+%                 \hline\rowfont{\normalsize}%
+%          {Middle} & 3.14  & 28.41 & 5.03 \\\rowfont{\scriptsize}%
+%             sd   & 12.87 & 33.15 & 16.62 \\
+%             n   & 285   & 23    & 308 \\
+%                 \hline\rowfont{\normalsize}%
+%          {High} & 4.15  & 22.30 & 6.07 \\\rowfont{\scriptsize}%
+%             sd   & 12.38 & 24.60 & 15.18 \\
+%             n   & 287   & 34    & 321 \\
+%                 \hline\rowfont{\normalsize}%
+%          {Full sample} & 4.26  & 28.55 & 6.40 \\\rowfont{\scriptsize}%
+%             sd   & 15.11 & 35.47 & 19.10 \\
+%              n  & 860   & 83    & 943 \\
+%                \hline\rowfont{\normalsize}%
+%         {Low - High} & 1.327 & 14.55 & 2.003 \\\rowfont{\scriptsize}%
+%          {P-Value}      & 0.323 & 0.162 & 0.214 \\
+%      \bottomrule\bottomrule
+%      \addlinespace[.75ex]
+%      \end{tabular}
+%  }
+%  
+%  
+% 
+% \column{.5\textwidth}     
+%  \centering
+%   \resizebox{0.6\textwidth}{!}{
+%      \begin{tabular}{CCCC}
+%               \toprule\toprule
+%               \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
+%                      \multicolumn{4}{c}{\scriptsize\textit{Panel D:}{ Free Float}}\\
+%                      \hline\hline
+%                     & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
+%                     \cmidrule{2-3}
+%               \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
+%                \hline\rowfont{\normalsize}%
+%    Low   & 5.13  & 21.17 & 6.59 \\\rowfont{\scriptsize}%
+%      sd    & 19.60 & 23.58 & 20.48 \\
+%        n  & 271   & 27    & 298 \\\hline\rowfont{\normalsize}%
+%    Middle & 3.39  & 28.43 & 5.31 \\\rowfont{\scriptsize}%
+%       sd   & 12.62 & 41.21 & 17.79 \\
+%       n   & 277   & 23    & 300 \\\hline\rowfont{\normalsize}%
+%    High  & 4.20  & 35.52 & 7.32 \\\rowfont{\scriptsize}%
+%       sd   & 12.45 & 39.95 & 19.54 \\
+%        n  & 281   & 31    & 312 \\\hline\rowfont{\normalsize}%
+%    Full sample & 4.24  & 28.72 & 6.42 \\
+%        sd  & 15.21 & 35.83 & 19.30 \\\rowfont{\scriptsize}%
+%        n  & 829   & 81    & 910 \\
+%          \hline\rowfont{\normalsize}%
+%    Low - High &  0.929 & -14.35 & -0.73 \\\rowfont{\scriptsize}%
+%    P-Value &0.508  &  0.097 & 0.653 \\        
+%           \bottomrule\bottomrule
+%           \addlinespace[.75ex]
+%           \end{tabular}
+%       }
+%\end{columns}
+%
+%\normalsize
+%\end{center}
+%\end{frame}
+%
+%
+%
+%
+%\begin{frame}
+%\begin{center}
+%
+%\begin{columns}
+%\column{.5\textwidth}     
+% \centering
+% \resizebox{0.75\textwidth}{!}{
+%         \begin{tabular}{CCCC}
+%         \toprule\toprule
+%         \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
+%                \multicolumn{4}{c}{\scriptsize\textit{Panel E: }{ Free Market Cap}}\\
+%                \hline\hline
+%               & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
+%               \cmidrule{2-3}
+%         \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
+%          \hline\rowfont{\normalsize}
+%    Small & 6.11  & 40.98 & 9.36 \\\rowfont{\scriptsize}
+%       sd   & 20.10 & 46.67 & 25.81 \\
+%       n   & 272   & 28    & 300 \\ \hline\rowfont{\normalsize}
+%    Middle & 4.39  & 27.42 & 6.11 \\\rowfont{\scriptsize}
+%       sd   & 13.36 & 30.56 & 16.39 \\
+%        n  & 273   & 22    & 295 \\ \hline\rowfont{\normalsize}
+%    Large & 2.30  & 18.58 & 3.90 \\\rowfont{\scriptsize}
+%       sd   & 10.54 & 23.67 & 13.31 \\
+%       n   & 284   & 31    & 315 \\ \hline\rowfont{\normalsize}
+%    Full sample & 4.24  & 28.72 & 6.42 \\\rowfont{\scriptsize}
+%       sd   & 15.21 & 35.83 & 19.30 \\
+%       n   & 829   & 81    & 910 \\ \hline\rowfont{\normalsize}
+%    Small - Large & 3.813\sym{**} & 22.41\sym{***} & 5.466\sym{***} \\\rowfont{\scriptsize}
+%    P-Value & 0.006 & 0.028 & 0.001 \\
+%     \bottomrule\bottomrule
+%     \addlinespace[.75ex]
+%     \end{tabular}
+% }
+% 
+% 
+% \column{.5\textwidth}     
+%  \centering
+%   \resizebox{0.6\textwidth}{!}{
+%      \begin{tabular}{CCCC}
+%               \toprule\toprule
+%               \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
+%                      \multicolumn{4}{c}{\scriptsize\textit{Panel F:}{ Volatility(past 250 days)}}\\
+%                      \hline\hline
+%                     & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
+%                     \cmidrule{2-3}
+%               \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
+%                \hline\rowfont{\normalsize}
+%    Low   & 4.50  & 24.11 & 6.29 \\\rowfont{\scriptsize}
+%      sd    & 18.72 & 28.69 & 20.56 \\
+%       n   & 269   & 27    & 296 \\\hline\rowfont{\normalsize}
+%    Middle & 4.90  & 34.68 & 7.32 \\\rowfont{\scriptsize}
+%        sd  & 12.28 & 33.07 & 17.04 \\
+%       n   & 260   & 23    & 283 \\\hline\rowfont{\normalsize}
+%    High  & 2.68  & 23.08 & 4.82 \\\rowfont{\scriptsize}
+%       sd   & 13.92 & 34.70 & 18.31 \\
+%       n   & 264   & 31    & 295 \\\hline\rowfont{\normalsize}
+%    Full sample & 4.02  & 26.72 & 6.13 \\\rowfont{\scriptsize}
+%      sd    & 15.27 & 32.33 & 18.73 \\
+%       n   & 793   & 81    & 874 \\\hline\rowfont{\normalsize}
+%    Low - High & 1.823 & 1.037 & 1.468 \\\rowfont{\scriptsize}
+%    P-Value & 0.202 & 0.901 & 0.36 \\      
+%           \bottomrule\bottomrule
+%           \addlinespace[.75ex]
+%           \end{tabular}
+%       }
+%\end{columns}
+%
+%
+%\normalsize
+%\end{center}
+%\end{frame}
+%
+%
+%
+%\begin{frame}
+%\begin{center}
+%
+%\begin{columns}
+%\column{.5\textwidth}     
+% \centering
+% \resizebox{0.6\textwidth}{!}{
+%         \begin{tabular}{CCCC}
+%         \toprule\toprule
+%         \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
+%                \multicolumn{4}{c}{\scriptsize\textit{Panel G: }{Debt ratio}}\\
+%                \hline\hline
+%               & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
+%               \cmidrule{2-3}
+%         \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
+%          \hline\rowfont{\normalsize}
+%    Low   & 4.19  & 34.87 & 6.80 \\\rowfont{\scriptsize}
+%      sd    & 18.95 & 43.56 & 23.61 \\
+%       n   & 280   & 26    & 306 \\\hline\rowfont{\normalsize}
+%    Middle & 3.69  & 28.19 & 5.67 \\\rowfont{\scriptsize}
+%       sd   & 11.93 & 25.80 & 15.07 \\
+%       n   & 273   & 24    & 297 \\\hline\rowfont{\normalsize}
+%    High  & 5.06  & 23.42 & 6.80 \\\rowfont{\scriptsize}
+%       sd   & 14.24 & 36.81 & 18.36 \\
+%        n  & 277   & 29    & 306 \\\hline\rowfont{\normalsize}
+%    Full sample & 4.32  & 28.64 & 6.43 \\\rowfont{\scriptsize}
+%       sd   & 15.34 & 36.25 & 19.36 \\
+%       n   & 830   & 79    & 909 \\\hline\rowfont{\normalsize}
+%    Low - High & -0.872 & 11.45 & -0.005 \\\rowfont{\scriptsize}
+%    P-Value & 0.539 & 0.301 & 0.998 \\
+%     \bottomrule\bottomrule
+%     \addlinespace[.75ex]
+%     \end{tabular}
+% }
+% 
+% 
+% \column{.5\textwidth}     
+%  \centering
+%   \resizebox{0.6\textwidth}{!}{
+%      \begin{tabular}{CCCC}
+%               \toprule\toprule
+%               \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
+%                      \multicolumn{4}{c}{\scriptsize\textit{Panel H:}{ Leverage ratio}}\\
+%                      \hline\hline
+%                     & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
+%                     \cmidrule{2-3}
+%               \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
+%                \hline\rowfont{\normalsize}
+%    Low   & 3.80  & 29.24 & 5.97 \\\rowfont{\scriptsize}
+%      sd    & 10.37 & 31.09 & 15.13 \\
+%       n   & 278   & 26    & 304 \\\hline\rowfont{\normalsize}
+%    Middle & 3.84  & 23.49 & 5.36 \\\rowfont{\scriptsize}
+%       sd   & 12.64 & 29.34 & 15.46 \\
+%       n   & 274   & 23    & 297 \\\hline\rowfont{\normalsize}
+%    High  & 5.31  & 32.06 & 7.92 \\\rowfont{\scriptsize}
+%      sd    & 20.93 & 44.88 & 25.47 \\
+%      b    & 278   & 30    & 308 \\\hline\rowfont{\normalsize}
+%    Full sample & 4.32  & 28.64 & 6.43 \\\rowfont{\scriptsize}
+%       sd   & 15.34 & 36.25 & 19.36 \\
+%       n   & 830   & 79    & 909 \\\hline\rowfont{\normalsize}
+%    Low - High & -1.512 & -2.817 & -1.941 \\\rowfont{\scriptsize}
+%    P-Value & 0.281 & 0.784 & 0.251 \\      
+%           \bottomrule\bottomrule
+%           \addlinespace[.75ex]
+%           \end{tabular}
+%       }
+%\end{columns}
+%
+%
+%\normalsize
+%\end{center}
+%\end{frame}
+%
+%
+%\begin{frame}
+%\begin{center}
+%
+% \resizebox{0.25\textwidth}{!}{
+%         \begin{tabular}{CCCC}
+%         \toprule\toprule
+%         \multicolumn{4}{c}{\textit{Abnormal Return at event day }} \\
+%                \multicolumn{4}{c}{\scriptsize\textit{Panel I: }{Market Condition}}\\
+%                \hline\hline
+%               & \multicolumn{2}{c}{\scriptsize Revaluation}        &  \\
+%               \cmidrule{2-3}
+%         \multicolumn{1}{l}{Sub sample} & \multicolumn{1}{c}{No} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Total} \\
+%          \hline\rowfont{\normalsize}
+%    {Bad} & 3.85  & 29.85 & 6.20 \\\rowfont{\scriptsize}
+%      sd    & 12.96 & 37.65 & 18.25 \\
+%        n  & 301   & 30    & 331 \\\hline\rowfont{\normalsize}
+%    {Good} & 4.48  & 27.82 & 6.51 \\\rowfont{\scriptsize}
+%       sd   & 16.15 & 34.52 & 19.56 \\
+%        n  & 559   & 53    & 612 \\\hline\rowfont{\normalsize}
+%    {Full sample} & 4.26  & 28.55 & 6.40 \\\rowfont{\scriptsize}
+%        sd  & 15.11 & 35.47 & 19.10 \\
+%        n  & 860   & 83    & 943 \\
+%     \bottomrule\bottomrule
+%     \addlinespace[.75ex]
+%     \end{tabular}
+% }
+%
+%
+%\normalsize
+%\end{center}
+%\end{frame}
 
 
 %\begin{frame}
@@ -1633,7 +1646,7 @@ alpha and to exclude it from the event period abnormal return calculation.
 \begin{frame}{Amihud}{Amihud of capital raise}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{Amihud}
+\includegraphics[width=0.7\linewidth]{Output/Amihud.eps}
 \label{fig:amihud}
 \end{figure}
 \end{frame}
@@ -1643,7 +1656,7 @@ alpha and to exclude it from the event period abnormal return calculation.
 \begin{frame}{Amihud}{Amihud of raised capital from Revaluation}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{Amihud_Revaluation}
+\includegraphics[width=0.7\linewidth]{Output/Amihud_Revaluation.eps}
 \label{fig:amihudrevaluation}
 \end{figure}
 \end{frame}
@@ -1651,7 +1664,7 @@ alpha and to exclude it from the event period abnormal return calculation.
 \begin{frame}{Amihud}{Amihud of raised capital that it's not from Revaluation}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{Amihud_NoRevaluation}
+\includegraphics[width=0.7\linewidth]{Output/Amihud_NoRevaluation.eps}
 \label{fig:amihudnorevaluation}
 \end{figure}
 \end{frame}

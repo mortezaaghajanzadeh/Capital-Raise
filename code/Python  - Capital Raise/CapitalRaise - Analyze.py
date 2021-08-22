@@ -201,9 +201,6 @@ JalaliDates.sort()
 t = list(range(len(JalaliDates)))
 mapingdict = dict(zip(JalaliDates, t))
 mdf["t"] = mdf["jalaliDate"].map(mapingdict)
-
-
-# %%
 mapingdict = dict(zip(JalaliDates, t))
 
 df["t"] = df["ExtOrdGMDate"].map(mapingdict)
@@ -289,8 +286,6 @@ for symbol in list(gg.groups.keys()):
     if mark == 1:
         data = data.append(g)
 
-
-# %%
 ndf.to_excel(path + "SDate.xlsx", index=False)
 
 #%%
@@ -313,8 +308,7 @@ data = data2.sort_values(by=["name", "t"])
 index = pd.read_excel(path + "IRX6XTPI0009.xls")[["<COL14>", "<CLOSE>"]].rename(
     columns={"<COL14>": "jalaliDate", "<CLOSE>": "Index"}
 )
-# index["Market_return"] = index["Index"].pct_change(periods=1) * 100
-# index = DriveYearMonthDay(index)
+
 pdf.jalaliDate = pdf.jalaliDate.astype(int)
 index = index[index.jalaliDate >= pdf.jalaliDate.min()]
 n = path + "RiskFree rate.xlsx"
@@ -329,9 +323,6 @@ for i in rf.YM:
     index.loc[index.jalaliDate >= i, "RiskFree"] = (
         rf.loc[rf["YM"] == i].iloc[0, 1] / 356
     )
-
-
-# %%
 data = data.merge(index, on="jalaliDate")
 
 # %%
@@ -362,7 +353,7 @@ def removeSlash(row):
 
 industry = pd.read_csv(path + "indexes_1400-04-09.csv")
 industry["date"] = industry.date.apply(removeSlash)
-# industry["date"] = industry.date.apply(addDash)
+
 mlist = ["overall_index", "EWI"]
 industry = industry[~industry.index_id.isin(mlist)]
 industry["index_id"] = industry["index_id"].astype(float)
@@ -378,7 +369,9 @@ gg = data.groupby(["date", "group_id"])
 
 
 def marketCapAndWeight(g):
-    print(g.name[0])
+    print(g.name[0], end="\r", flush=True)
+    if len(g)<3:
+        return 
     g["MarketCap"] = g.close_price * g.CapBefore
     g["Weight"] = g.MarketCap / (g.MarketCap.sum())
     return g

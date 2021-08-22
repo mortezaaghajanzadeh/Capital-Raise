@@ -133,10 +133,10 @@ a
 
 # %%
 a = a.T
-a[["Sum"]].plot.bar(stacked=True, figsize=(20, 10), legend=False)
-plt.title("Number of Capital Raise")
-# txt= "Note: Number of Capital Raise from each source "
-plt.xlabel("Year Quarter")
+# a[["Sum"]].plot.bar(stacked=True, figsize=(20, 10), legend=False)
+# plt.title("Number of Capital Raise")
+# # txt= "Note: Number of Capital Raise from each source "
+# plt.xlabel("Year Quarter")
 # plt.figtext(0.5,-0.005, txt, horizontalalignment='center',
 #             fontsize=12, multialignment='left',
 #             bbox=dict(boxstyle="round", facecolor='#D8D8D8',
@@ -149,7 +149,7 @@ plt.xlabel("Year Quarter")
 
 # %%
 
-a[["Cash", "Reserves", "Hybrid", "Revaluation", "Premium"]].plot.bar(
+a[["Cash", "Saving", "Hybrid", "Revaluation", "Premium"]].plot.bar(
     stacked=True, figsize=(20, 10)
 )
 plt.title("Number of Capital Raise")
@@ -198,6 +198,52 @@ yearsum = (
 )
 yearsum.plot.bar(stacked=False, figsize=(10, 5))
 yearsum = yearsum.reset_index()
+
+#%%
+yearHybridsum = df[df.Hybrid == 1].groupby("year").CapRaised.sum().to_frame().rename(
+    columns={"CapRaised": "Sum_Hybrid"})
+yearHybridsum.plot.bar(stacked=False, figsize=(10, 5))
+yearHybridsum = yearHybridsum.reset_index()
+
+yearPremiumsum = df[df.JustPremium == 1].groupby("year").CapRaised.sum().to_frame().rename(
+    columns={"CapRaised": "Sum_Premium"})
+yearPremiumsum.plot.bar(stacked=False, figsize=(10, 5))
+yearPremiumsum = yearPremiumsum.reset_index()
+
+yearSavingsum = df[df.JustSaving == 1].groupby("year").CapRaised.sum().to_frame().rename(
+    columns={"CapRaised": "Sum_Saving"})
+yearSavingsum.plot.bar(stacked=False, figsize=(10, 5))
+yearSavingsum = yearSavingsum.reset_index()
+
+yearROsum = df[df.JustRO == 1].groupby("year").CapRaised.sum().to_frame().rename(
+    columns={"CapRaised": "Sum_RO"})
+yearROsum.plot.bar(stacked=False, figsize=(10, 5))
+yearROsum = yearROsum.reset_index()
+yearRevaluationsum = df[df.Revaluation == 1].groupby("year").CapRaised.sum().to_frame().rename(
+    columns={"CapRaised": "Sum_Revaluation"})
+yearRevaluationsum.plot.bar(stacked=False, figsize=(10, 5))
+yearRevaluationsum = yearRevaluationsum.reset_index()
+
+#%%
+yearHybridnumber = df.groupby("year").Hybrid.sum().to_frame()
+yearHybridnumber.plot.bar(stacked=False, figsize=(10, 5))
+yearHybridnumber = yearHybridnumber.reset_index()
+
+yearPremiumnumber = df.groupby("year").JustPremium.sum().to_frame()
+yearPremiumnumber.plot.bar(stacked=False, figsize=(10, 5))
+yearPremiumnumber = yearPremiumnumber.reset_index()
+
+yearSavingnumber = df.groupby("year").JustSaving.sum().to_frame()
+yearSavingnumber.plot.bar(stacked=False, figsize=(10, 5))
+yearSavingnumber = yearSavingnumber.reset_index()
+
+yearROnumber = df.groupby("year").JustRO.sum().to_frame()
+yearROnumber.plot.bar(stacked=False, figsize=(10, 5))
+yearROnumber = yearROnumber.reset_index()
+
+yearRevaluationnumber = df.groupby("year").Revaluation.sum().to_frame()
+yearRevaluationnumber.plot.bar(stacked=False, figsize=(10, 5))
+yearRevaluationnumber = yearRevaluationnumber.reset_index()
 
 
 # %%
@@ -255,13 +301,20 @@ vdata = (
     .merge(yearSavingnumber)
     .merge(yearROnumber)
     .merge(yearRevaluationnumber)
-)
-
-
+    .merge(yearPremiumsum,how = 'outer')
+    .merge(yearSavingsum)
+    .merge(yearHybridsum,how = 'outer')
+    .merge(yearROsum)
+    .merge(yearRevaluationsum,how = 'outer')
+).replace(np.nan,0)
+inflation = pd.read_excel(path + "Inflation.xlsx" )
+inflation['Inflation'] = inflation.CPI/inflation.loc[inflation.YM == 1398].CPI.iloc[0]
+inflation = inflation.drop(columns = ['CPI'])
+vdata = vdata.merge(inflation,left_on  = 'year',right_on = 'YM')
 # %%
-vdata
-vdata.to_excel(path + "SummaryCapitalData.xlsx", index=False)
 
+vdata.to_excel(path + "SummaryCapitalData.xlsx", index=False)
+vdata
 # %%
 df.loc[df.Revaluation == 1][
     [
