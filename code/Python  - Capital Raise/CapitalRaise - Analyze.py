@@ -1,10 +1,13 @@
 # %%
-import os
 import pandas as pd
 import numpy as np
 import re
 import statsmodels.api as sm
 import finance_byu.rolling as rolling
+import requests
+import pandas as pd
+from bs4 import BeautifulSoup
+import math
 
 
 def convert_ar_characters(input_str):
@@ -38,17 +41,213 @@ def vv2(row):
     X = row.split("/")
     return int(X[0] + X[1] + X[2])
 
+def addDash(row):
+    row = str(row)
+    X = [1, 1, 1]
+    X[0] = row[0:4]
+    X[1] = row[4:6]
+    X[2] = row[6:8]
+    return X[0] + "-" + X[1] + "-" + X[2]
+
+
+def removeSlash(row):
+    X = row.split("/")
+    if len(X[1]) < 2:
+        X[1] = "0" + X[1]
+    if len(X[2]) < 2:
+        X[2] = "0" + X[2]
+    return int(X[0] + X[1] + X[2])
+
+def removeSlash2(row):
+    X = row.split("/")
+    if len(X[1]) < 2:
+        X[1] = "0" + X[1]
+    if len(X[0]) < 2:
+        X[0] = "0" + X[0]
+        
+    return int(X[2] + X[0] + X[1])
+def removeDash(row):
+    X = row.split("-")
+    if len(X[1]) < 2:
+        X[1] = "0" + X[1]
+    if len(X[2]) < 2:
+        X[2] = "0" + X[2]
+    return int(X[0] + X[1] + X[2])
 
 path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
+#%%
+def group_id():
+    r = requests.get(
+        "http://www.tsetmc.com/Loader.aspx?ParTree=111C1213"
+    )  # This URL contains all sector groups.
+    soup = BeautifulSoup(r.text, "html.parser")
+    header = soup.find_all("table")[0].find("tr")
+    list_header = []
+    for items in header:
+        try:
+            list_header.append(items.get_text())
+        except:
+            continue
 
-
+    # for getting the data
+    HTML_data = soup.find_all("table")[0].find_all("tr")[1:]
+    data = []
+    for element in HTML_data:
+        sub_data = []
+        for sub_element in element:
+            try:
+                sub_data.append(sub_element.get_text())
+            except:
+                continue
+        data.append(sub_data)
+    df = pd.DataFrame(data=data, columns=list_header).rename(
+        columns = {
+            'گروه های صنعت':'group_name',
+            "کد گروه های صنعت":"group_id"
+        }
+    )
+    return df                  
+groupnameid = group_id()
 # %%
 df2 = pd.read_csv(path + "adjPrices_1399-11-06.csv")
 df2.Date = df2.Date.apply(vv)
-df2 = df2.drop(columns="Unnamed: 0").rename(columns={"ID": "stock_id", "Date": "date"})
+df2 = df2.drop(columns="Unnamed: 0").rename(
+    columns={"ID": "stock_id", "Date": "date"})
+pdf = pd.read_parquet(path + "Stocks_Prices_1400-04-27.parquet")
+mapdict = dict(zip(groupnameid.group_name,groupnameid.group_id))
+pdf['group_id'] = pdf.group_name.map(mapdict)
+pdf.loc[pdf.name.str[-1] == " ", "name"] = pdf.loc[pdf.name.str[-1] == " "].name.str[
+    :-1
+]
+pdf.loc[pdf.name.str[0] == " ", "name"] = pdf.loc[pdf.name.str[0] == " "].name.str[1:]
+pdf["name"] = pdf["name"].apply(lambda x: convert_ar_characters(x))
+pdf.jalaliDate = pdf.jalaliDate.apply(vv)
+pdf = pdf.sort_values(by=["name", "date"])
+pdf = pdf[~((pdf.title.str.startswith("ح")) & (pdf.name.str.endswith("ح")))]
+pdf = pdf[~(pdf.name.str.endswith("پذيره"))]
+
+pdf = pdf[~(pdf.group_name == "صندوق سرمايه گذاري قابل معامله")]
+# pdf = pdf[
+#     [
+#         "jalaliDate",
+#         "date",
+#         "name",
+#         "title",
+#         "stock_id",
+#         "group_name",
+#         "group_id",
+#         "baseVol",
+#         "value",
+#         "volume",
+#         "quantity",
+#     ]
+# ]
+col = "name"
+pdf[col] = pdf[col].apply(lambda x: convert_ar_characters(x))
+adData = pd.read_csv(path + "DataAdjustedEvent.csv")
+adData = adData.rename(columns = {
+    'قبل از تعدیل' : 'Before',
+    "تعدیل شده":"After",
+    "تاریخ":"jalaliDate"
+}).sort_values(by = ['stock_id','jalaliDate'])
+#%%
+gg = adData.groupby('stock_id')
+
+def clean(g):
+    g.loc[g.After == 1,"After"] = np.nan
+    g.loc[g.Before == 1,"Before"] = np.nan
+    g["After"] = g["After"].fillna(method="bfill")
+    g["Before"] = g["Before"].fillna(method="ffill")
+    return g
+adData = gg.apply(clean)
+adData['AdjustFactor'] = adData.After / adData.Before
+
+i = 'stock_id'
+pdf[i] = pdf[i].astype(str)
+adData[i] = adData[i].astype(str)
+i = 'jalaliDate'
+pdf[i] = pdf[i].astype(int)
+adData[i] = adData[i].astype(int)
+
+pdf = pdf.merge(adData[['jalaliDate','stock_id','AdjustFactor']]
+          ,on = ['jalaliDate','stock_id'],how = 'outer')
+gg = pdf.groupby('stock_id')
+pdf["AdjustFactor"] = gg["AdjustFactor"].fillna(method="ffill")
+pdf = pdf[~pdf.date.isnull()]
+pdf['AdjustFactor'] = pdf.AdjustFactor.fillna(1)
+shrout = pd.read_csv(path + "shrout.csv")
+mapdict = dict(zip(shrout.set_index(['name','date']).index,shrout.shrout))
+i = 'date'
+pdf[i] = pdf[i].astype(int)
+
+pdf['shrout'] = pdf.set_index(['name','date']).index.map(mapdict)
+i = 'stock_id'
+shrout[i] = shrout[i].astype(str)
+mapdict = dict(zip(shrout.set_index(['stock_id','date']).index,shrout.shrout))
+pdf['shrout2'] = pdf.set_index(['stock_id','date']).index.map(mapdict)
+pdf.loc[pdf.shrout.isnull(),'shrout'] = pdf.loc[pdf.shrout.isnull()]['shrout2']
+pdf = pdf.drop(columns = ['shrout2'])
+gg = pdf.groupby('name')
+pdf["shrout"] = gg["shrout"].fillna(method="ffill")
+i = 'volume'
+pdf[i] = pdf[i].astype(float)
+# d = pdf[pdf.volume>0]
+d = pd.DataFrame()
+d = d.append(pdf)
+gg = d.groupby('name')
+d["shrout"] = gg["shrout"].fillna(method="bfill")
+#%%
+pdf = pd.DataFrame()
+pdf = pdf.append(d[~d.shrout.isnull()])
+pdf = pdf[pdf.jalaliDate<13990000]
+pdf = pdf[pdf.jalaliDate>13900000]
+#%%
+gg = pdf.groupby('name')
 
 
-# %%
+
+#%%
+i = 'group_id'
+pdf[i] = pdf[i].astype(float)
+i = 'close_price'
+pdf[i] = pdf[i].astype(float)
+
+pdf.head()
+pdf['close'] = pdf.close_price /pdf.AdjustFactor
+gg = pdf.groupby(["name"])
+pdf['return'] = gg.close.pct_change()*100
+pdf['MarketCap'] = pdf.close_price * pdf.shrout
+
+
+gg = pdf.groupby(["date", "group_id"])
+
+def marketCapAndWeight(g):
+    # print(g.name[0], end="\r", flush=True)
+    if len(g) < 3:
+        return
+    g["Weight"] = g.MarketCap / (g.MarketCap.sum())
+    g['industry_return'] = (g['return'] * g["Weight"]).sum()
+    return g
+data2 = gg.apply(marketCapAndWeight)
+#%%
+pdf2 = pd.DataFrame()
+pdf2 = pdf2.append(data2).reset_index(drop = True).sort_values(by = [
+    'name','date'
+])
+pdf2.isnull().sum()
+pdf2['industry_index'] = 1
+first = pdf2.groupby(['group_id','date']).first()[
+    [
+        'group_name',
+        'industry_return',
+        'industry_index'
+    ]
+].reset_index()
+
+
+    
+
+#%%
 df = pd.read_excel(path + "Capital Rise - 71-99.xlsx")
 df = df[df.CapAfter != df.CapBefore]
 df = df[~df.Symbol.isnull()].rename(columns={"Symbol": "name"})
@@ -140,30 +339,6 @@ df = df[(df.year > 1382) & (df.year < 1399)]
 df.head()
 
 # %%
-pdf = pd.read_csv(path + "Stocks_Prices_1399-07-25.csv")
-pdf.loc[pdf.name.str[-1] == " ", "name"] = pdf.loc[pdf.name.str[-1] == " "].name.str[
-    :-1
-]
-pdf.loc[pdf.name.str[0] == " ", "name"] = pdf.loc[pdf.name.str[0] == " "].name.str[1:]
-pdf["name"] = pdf["name"].apply(lambda x: convert_ar_characters(x))
-pdf.jalaliDate = pdf.jalaliDate.apply(vv)
-pdf = pdf.sort_values(by=["name", "date"])
-pdf = pdf[
-    [
-        "jalaliDate",
-        "date",
-        "name",
-        "title",
-        "stock_id",
-        "group_name",
-        "group_id",
-        "baseVol",
-        "value",
-        "volume",
-        "quantity",
-    ]
-]
-pdf = pdf.merge(df2, on=["stock_id", "date"], how="left")
 
 # pdf['Firm'] = ''
 # pdf.loc[pdf.title.str.contains("\("),'Firm'] = pdf[pdf.title.str.contains("\(")]['title'].str.split("\(", n = 1, expand = True)[0]
@@ -333,53 +508,9 @@ data["Market_return"] = gg["Index"].pct_change(periods=1) * 100
 data = data[~data.Market_return.isnull()]
 data = data.rename(columns={"close": "close_price"})
 # %%
-def addDash(row):
-    row = str(row)
-    X = [1, 1, 1]
-    X[0] = row[0:4]
-    X[1] = row[4:6]
-    X[2] = row[6:8]
-    return X[0] + "-" + X[1] + "-" + X[2]
 
-
-def removeSlash(row):
-    X = row.split("/")
-    if len(X[1]) < 2:
-        X[1] = "0" + X[1]
-    if len(X[2]) < 2:
-        X[2] = "0" + X[2]
-    return int(X[0] + X[1] + X[2])
-
-
-industry = pd.read_csv(path + "indexes_1400-04-09.csv")
-industry["date"] = industry.date.apply(removeSlash)
-
-mlist = ["overall_index", "EWI"]
-industry = industry[~industry.index_id.isin(mlist)]
-industry["index_id"] = industry["index_id"].astype(float)
-industry = industry.set_index(["index_id", "date"])
-mapdict = dict(zip(industry.index, industry["index"]))
-data["industry_index"] = data.set_index(["group_id", "jalaliDate"]).index.map(mapdict)
-data.isnull().sum()
-gg = data.groupby("name")
-data["Industry_return"] = gg["Index"].pct_change(periods=1) * 100
-data = data[~data.Industry_return.isnull()]
 # %%
-gg = data.groupby(["date", "group_id"])
 
-
-def marketCapAndWeight(g):
-    print(g.name[0], end="\r", flush=True)
-    if len(g)<3:
-        return 
-    g["MarketCap"] = g.close_price * g.CapBefore
-    g["Weight"] = g.MarketCap / (g.MarketCap.sum())
-    return g
-
-
-data2 = gg.apply(marketCapAndWeight)
-data = pd.DataFrame()
-data = data.append(data2)
 
 #%%
 def divide_to_mean(g):
@@ -478,8 +609,7 @@ def ABnormal(g, Rlag):
     a["Beta_MarketIndustry2"] = np.nan
     a["Alpha_MarketIndustry2"] = np.nan
     a["BetaI_MarketIndustry2"] = np.nan
-    
-    
+
     nEvent = 0
     for i in a[a.Event == a.t]["Period"]:
         nEvent += 1
@@ -634,7 +764,7 @@ def ABnormal(g, Rlag):
         #
         #
 
-        estimation_window = a.loc[(a.EPeriod < -1 * Rlag) | (a.EPeriod > 1.5 * Rlag)]
+        estimation_window = a.loc[(a.EPeriod < -1 * Rlag) | (a.EPeriod > 2 * Rlag)]
 
         # CAPM
         alpha, beta = ols(estimation_window)
@@ -795,17 +925,11 @@ ARdata["Industry_return"] = (
     ARdata["Industry_return"] - ARdata["Weight"] * ARdata["Return"]
 ) / (1 - ARdata["Weight"])
 ARdata["EIR"] = ARdata["Industry_return"] - ARdata["RiskFree"]
-ARdata.loc[ARdata.Weight == 1.0, "Industry_return"] = 0
-ARdata.loc[ARdata.Weight == 1.0, "EIR"] = 0
+ARdata.loc[ARdata.Weight == 1.0, "Industry_return"] = np.nan
+ARdata.loc[ARdata.Weight == 1.0, "EIR"] = np.nan
 gg = ARdata.groupby("name")
-g = gg.get_group("آکنتور")
-g
-
-#%%
-dddd = ABnormal(g, 20)
-
-
-#%%
+# g = gg.get_group("فولاد")
+# dddd = ABnormal(g, 20)
 ## Lag
 
 ARdata = gg.apply(ABnormal, Rlag=20).reset_index(drop=True)
@@ -829,6 +953,16 @@ Data["TotalIns"] = Data["ins_buy_volume"] + Data["ins_sell_volume"]
 Data["IndlImbalance"] = Data["NetInd"].divide(Data["TotalInd"])
 Data["InslImbalance"] = Data["NetIns"].divide(Data["TotalIns"])
 
+for i in ["count", "volume", "value"]:
+    Data["ind_imbalance_" + i] = Data["ind_buy_" + i] - Data["ind_sell_" + i]
+    Data["ins_imbalance_" + i] = Data["ins_buy_" + i] - Data["ins_sell_" + i]
+Data["ind_nav"] = (
+    Data["ind_imbalance_volume"] * Data["close_price"] - Data["ind_imbalance_value"]
+)
+Data["ins_nav"] = (
+    Data["ins_imbalance_volume"] * Data["close_price"] - Data["ins_imbalance_value"]
+)
+
 
 gg = Data.groupby(["name", "nEvent"])
 Data["CAR"] = gg["AbnormalReturn"].cumsum()
@@ -848,27 +982,198 @@ Data["CAR_WithoutAlpha_MarketModel_Industry"] = gg[
     "AbnormalReturn_WithoutAlpha_MarketModel_Industry"
 ].cumsum()
 
-Data['CAR_AbnormalReturn2'] = gg['AbnormalReturn2'].cumsum()
-Data['CAR_AbnormalReturn_Market2'] = gg['AbnormalReturn_Market2'].cumsum()
-Data['CAR_AbnormalReturn_WithoutAlpha2'] = gg['AbnormalReturn_WithoutAlpha2'].cumsum()
-Data['CAR_AbnormalReturn_4Factor2'] = gg['AbnormalReturn_4Factor2'].cumsum()
-Data['CAR_AbnormalReturn_Industry2'] = gg['AbnormalReturn_Industry2'].cumsum()
-Data['CAR_AbnormalReturn_WithoutAlpha_Industry2'] = gg['AbnormalReturn_WithoutAlpha_Industry2'].cumsum()
-Data['CAR_AbnormalReturn_MarketIndustry2'] = gg['AbnormalReturn_MarketIndustry2'].cumsum()
-Data['CAR_AbnormalReturn_MarketModel2'] = gg['AbnormalReturn_MarketModel2'].cumsum()
-Data['CAR_AbnormalReturn_WithoutAlpha_MarketModel2'] = gg['AbnormalReturn_WithoutAlpha_MarketModel2'].cumsum()
-Data['CAR_AbnormalReturn_MarketModel_Industry2'] = gg['AbnormalReturn_MarketModel_Industry2'].cumsum()
-Data['CAR_AbnormalReturn_WithoutAlpha_MarketMOdel_Industry2'] = gg['AbnormalReturn_WithoutAlpha_MarketMOdel_Industry2'].cumsum()
+Data["CAR_AbnormalReturn2"] = gg["AbnormalReturn2"].cumsum()
+Data["CAR_AbnormalReturn_Market2"] = gg["AbnormalReturn_Market2"].cumsum()
+Data["CAR_AbnormalReturn_WithoutAlpha2"] = gg["AbnormalReturn_WithoutAlpha2"].cumsum()
+Data["CAR_AbnormalReturn_Industry2"] = gg["AbnormalReturn_Industry2"].cumsum()
+Data["CAR_AbnormalReturn_WithoutAlpha_Industry2"] = gg[
+    "AbnormalReturn_WithoutAlpha_Industry2"
+].cumsum()
+Data["CAR_AbnormalReturn_MarketIndustry2"] = gg[
+    "AbnormalReturn_MarketIndustry2"
+].cumsum()
+Data["CAR_AbnormalReturn_MarketModel2"] = gg["AbnormalReturn_MarketModel2"].cumsum()
+Data["CAR_AbnormalReturn_WithoutAlpha_MarketModel2"] = gg[
+    "AbnormalReturn_WithoutAlpha_MarketModel2"
+].cumsum()
+Data["CAR_AbnormalReturn_MarketModel_Industry2"] = gg[
+    "AbnormalReturn_MarketModel_Industry2"
+].cumsum()
+Data["CAR_AbnormalReturn_WithoutAlpha_MarketMOdel_Industry2"] = gg[
+    "AbnormalReturn_WithoutAlpha_MarketMOdel_Industry2"
+].cumsum()
 Data["RaiseType"] = np.nan
 Data.loc[Data.JustRO == 1, "RaiseType"] = "JustRO"
 Data.loc[Data.JustSaving == 1, "RaiseType"] = "JustSaving"
 Data.loc[Data.JustPremium == 1, "RaiseType"] = "JustPremium"
 Data.loc[Data.Hybrid == 1, "RaiseType"] = "Hybrid"
 Data.loc[Data.Revaluation == 1, "RaiseType"] = "Revaluation"
+#%%
+def firstComponent(col):
+    return abs(col - col.mean())
 
+
+def periodMean(col):
+    return col - col.mean()
+
+
+def HMCalculation(df):
+    df["br_ins"] = df.ins_buy_count / (df.ins_buy_count + df.ins_sell_count)
+    df["br_ind"] = df.ind_buy_count / (df.ind_buy_count + df.ind_sell_count)
+    df["br"] = (df.ind_buy_count +  df.ins_buy_count) / (df.ind_buy_count + df.ind_sell_count)
+    gg = df.groupby(["date"])
+    df["firstComponent_ins"] = gg["br_ins"].apply(firstComponent)
+    df["firstComponent_ind"] = gg["br_ind"].apply(firstComponent)
+    df["firstComponent"] = gg["br"].apply(firstComponent)
+    gg = df.groupby(["date"])
+    df["HM_ins"] = gg["firstComponent_ins"].apply(periodMean)
+    df["HM_ind"] = gg["firstComponent_ind"].apply(periodMean)
+    df["HM"] = gg["firstComponent_ind"].apply(periodMean)
+    return df
+
+Data = HMCalculation(Data)
+
+# %%
+df = pd.DataFrame()
+df = df.append(Data)
+
+df = df.groupby(["name"]).filter(lambda x: x.shape[0] >= 40)
+df = df.groupby(["date","group_name"]).filter(lambda x: x.shape[0] >= 2)
+mlist = ['CAR_4Factor',
+         'CAR_Industry', 
+         'CAR_WithoutAlpha_Industry',
+         'CAR_MarketIndustry', 
+         'CAR_MarketModel', 
+         'CAR_WithoutAlpha_MarketModel',
+         'CAR_MarketModel_Industry',
+         'CAR_WithoutAlpha_MarketModel_Industry',
+         'CAR_AbnormalReturn2', 
+         'CAR_AbnormalReturn_Market2',
+         'CAR_AbnormalReturn_WithoutAlpha2',
+         'CAR_AbnormalReturn_Industry2',
+         'CAR_AbnormalReturn_WithoutAlpha_Industry2', 
+         'CAR_AbnormalReturn_MarketIndustry2',
+         'CAR_AbnormalReturn_MarketModel2',
+         'CAR_AbnormalReturn_WithoutAlpha_MarketModel2',
+         'CAR_AbnormalReturn_MarketModel_Industry2', 
+         'CAR_AbnormalReturn_WithoutAlpha_MarketMOdel_Industry2'
+         ]
+values = {}
+for i in mlist:
+    print(i)
+    values[i] = (df[i].quantile(0.99),df[i].quantile(0.01))
+for i in values:
+    print(i)
+    df = df[df[i]<=  values[i][0]]
+    df = df[df[i]>=  values[i][1]]
 
 #%%
 d = path + "CapitalRaise.parquet"
-Data.to_parquet(d)
+df.to_parquet(d)
+
+# %%
+# d = path + "CapitalRaise.parquet"
+# Data = pd.read_parquet(d)
+df["year"] = round(df["ExtOrdGMDate"] / 10000).astype(int)
+print(len(df))
+df = df[df.JustPremium != 1]
+print(len(df))
+mlist = [
+    "name",
+    "EPeriod",
+    "jalaliDate",
+    "date",
+    "title",
+    "stock_id",
+    "group_name",
+    "group_id",
+    "baseVol",
+    "value",
+    "quantity",
+    "High",
+    "Low",
+    "Open",
+    "Last",
+    "Volume",
+    "t",
+    "CapBefore",
+    "CapAfter",
+    "ExtOrdGMDate",
+    "Event",
+    "JustRO",
+    "JustSaving",
+    "JustPremium",
+    "Hybrid",
+    "Revaluation",
+    "Index",
+    "RiskFree",
+    "Market_return",
+    "RelVolume",
+    "SMB",
+    "HML",
+    "Winner_Loser",
+    "industry_index",
+    "Industry_return",
+    "MarketCap",
+    "Weight",
+    "Amihud",
+    "NetInd",
+    "TotalInd",
+    "NetIns",
+    "TotalIns",
+    "IndlImbalance",
+    "InslImbalance",
+    "ind_imbalance_count",
+    "ins_imbalance_count",
+    "ind_imbalance_volume",
+    "ins_imbalance_volume",
+    "ind_imbalance_value",
+    "ins_imbalance_value",
+    "ind_nav",
+    "ins_nav",
+    "CAR",
+    "CAR_Market",
+    "CAR_WithoutAlpha",
+    "CAR_4Factor",
+    "CAR_Industry",
+    "CAR_WithoutAlpha_Industry",
+    "CAR_MarketIndustry",
+    "CAR_MarketModel",
+    "CAR_WithoutAlpha_MarketModel",
+    "CAR_MarketModel_Industry",
+    "CAR_WithoutAlpha_MarketModel_Industry",
+    "CAR_AbnormalReturn2",
+    "CAR_AbnormalReturn_Market2",
+    "CAR_AbnormalReturn_WithoutAlpha2",
+    "CAR_AbnormalReturn_Industry2",
+    "CAR_AbnormalReturn_WithoutAlpha_Industry2",
+    "CAR_AbnormalReturn_MarketIndustry2",
+    "CAR_AbnormalReturn_MarketModel2",
+    "CAR_AbnormalReturn_WithoutAlpha_MarketModel2",
+    "CAR_AbnormalReturn_MarketModel_Industry2",
+    "CAR_AbnormalReturn_WithoutAlpha_MarketMOdel_Industry2",
+    "RaiseType",
+    'br_ins',
+    'br_ind',
+    'br',
+    'firstComponent_ins',
+    'firstComponent_ind',
+    'firstComponent',
+    'HM_ins',
+    'HM_ind',
+    'HM',
+    "year",
+]
+df[mlist].to_csv(path + "CapitalRaise.csv", index=False)
+print('Done')
+# %%
+df['under'] = 1/(1-df.Weight)
+df[df.under >2][['name','date','Weight','under']].drop_duplicates(
+    subset = ['name'])
+
+
+
+
+
 
 # %%

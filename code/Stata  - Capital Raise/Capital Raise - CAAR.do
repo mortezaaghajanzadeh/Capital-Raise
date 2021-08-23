@@ -1,29 +1,33 @@
 
 clear
 cls
-import excel "G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\CapitalRaise.xlsx", sheet("Sheet1") firstrow
+import delimited "G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\CapitalRaise.csv", encoding(UTF-8) 
 cd "D:\Dropbox\Capital Raise\Capital-Raise\Report\Output"
+summ car_marketmodel_industry car_industry
 
+gen under = 1/(1-weight)
 
+summ 
 /**/
 
-local varlist "CAR CAR_Market CAR_WithoutAlpha CAR_4Factor CAR_Industry CAR_WithoutAlpha_Industry CAR_MarketIndustry CAR_MarketModel CAR_WithoutAlpha_MarketModel CAR_MarketModel_Industry CAR_WithoutAlpha_MarketModel_Ind" 
+
+local varlist "car_abnormalreturn2 car car_market car_withoutalpha car_4factor car_industry car_withoutalpha_industry car_marketindustry car_marketmodel car_withoutalpha_marketmodel car_marketmodel_industry car_withoutalpha_marketmodel_ind" 
 
 // set graphics off
 set graphics on
 
 foreach x in `varlist'{
 	display "`x'"
-	/*Abnormal Return */
+	/*Abnormal Return */	
 {
 	foreach var in meanvar se p25 p95 n t_stat e g{
 		capture drop `var'
 	}
-	egen meanvar = mean(`x'), by(EPeriod) 
-	egen se = sd(`x'), by(EPeriod) 
-	egen p95 = pctile(`x'), p(95) by(EPeriod) 
-	egen p25 = pctile(`x'), p(25) by(EPeriod) 
-	egen n = count(`x'), by(EPeriod) 
+	egen meanvar = mean(`x'), by(eperiod) 
+	egen se = sd(`x'), by(eperiod) 
+	egen p95 = pctile(`x'), p(95) by(eperiod) 
+	egen p25 = pctile(`x'), p(25) by(eperiod) 
+	egen n = count(`x'), by(eperiod) 
 	gen t_stat = meanvar / se * sqrt(n)
 	egen  e =  max(meanvar) 
 	gen g  = round(e,1) +0.5
@@ -43,7 +47,7 @@ foreach x in `varlist'{
 	}
 
 
-	twoway bar g EPeriod if ~inrange(t_stat, -1.96 , 1.96) , bcolor(gs14) base(`mi')  || line meanvar EPeriod , xlab(-20(10)100,labsize(vsmall)) sort(EPeriod) note("This figure graphs the CAAR from 20 period before event." "The gray area represents significant returns in 5% ") title("CAAR After Capital Raise") ytitle("Percent") ylabe(`mi'(`step')`ma' ,angle(0) labsize(vsmall)) xtitle("Period") color(navy) legend(off) || bar g EPeriod if EPeriod == 0 , bcolor(maroon) base(`mi') barw (0.01) 
+	twoway bar g eperiod if ~inrange(t_stat, -1.96 , 1.96) , bcolor(gs14) base(`mi')  || line meanvar eperiod , xlab(-20(10)100,labsize(vsmall)) sort(eperiod) note("This figure graphs the CAAR from 20 period before event." "The gray area represents significant returns in 5% ") title("CAAR After Capital Raise") ytitle("Percent") ylabe(`mi'(`step')`ma' ,angle(0) labsize(vsmall)) xtitle("Period") color(navy) legend(off) || bar g eperiod if eperiod == 0 , bcolor(maroon) base(`mi') barw (0.01) 
 	graph export `x'.png,replace
 	graph export `x'.eps,replace
 }
@@ -55,15 +59,15 @@ foreach type in `typelist'{
 	foreach var in meanvar se p25 p95 n t_stat e g	{
 		capture drop `var'
 	}	
-	egen meanvar = mean(`x') if  RaiseType == "`type'", by(EPeriod)	
-	egen se = sd(`x') if  RaiseType == "`type'", by(EPeriod) 
-	egen p95 = pctile(`x') if  RaiseType == "`type'", p(95) by(EPeriod) 
-	egen p25 = pctile(`x') if  RaiseType == "`type'", p(25) by(EPeriod) 
-	egen n = count(`x') if  RaiseType == "`type'", by(EPeriod) 
+	egen meanvar = mean(`x') if  raisetype == "`type'", by(eperiod)	
+	egen se = sd(`x') if  raisetype == "`type'", by(eperiod) 
+	egen p95 = pctile(`x') if  raisetype == "`type'", p(95) by(eperiod) 
+	egen p25 = pctile(`x') if  raisetype == "`type'", p(25) by(eperiod) 
+	egen n = count(`x') if  raisetype == "`type'", by(eperiod) 
 	gen t_stat = meanvar / se * sqrt(n)	
-	egen  e =  max(meanvar)  if  RaiseType == "`type'"
-	gen g  = round(e,1) +0.5 if  RaiseType == "`type'"
-	quietly: summarize meanvar  if  RaiseType == "`type'"
+	egen  e =  max(meanvar)  if  raisetype == "`type'"
+	gen g  = round(e,1) +0.5 if  raisetype == "`type'"
+	quietly: summarize meanvar  if  raisetype == "`type'"
 	local mi =  round(r(min),1)
 	local ma = round(r(max),1)
 	local step = round(abs(round(r(min),1))/2,1)
@@ -84,7 +88,7 @@ foreach type in `typelist'{
 	if "`type'" == "JustSaving"{
 		local name = "Saving"
 	}
-	twoway bar g EPeriod if ~inrange(t, -1.96 , 1.96) & RaiseType == "`type'", bcolor(gs14) base(`mi')  || line meanvar EPeriod if RaiseType == "`type'",xlab(-20(10)100,labsize(vsmall)) sort(EPeriod) note("This figure graphs the CAAR from 20 period before event." "The gray area represents significant returns in 5%") title("CAAR After Capital Raise from `name'",size(medium)) ytitle("Percent")  ylabe(`mi'(`step')`ma' ,angle(0) labsize(vsmall)) xtitle("Period") color(navy) legend(off) || bar g EPeriod if EPeriod == 0 , bcolor(maroon) base(`mi') barw (0.01) 
+	twoway bar g eperiod if ~inrange(t, -1.96 , 1.96) & raisetype == "`type'", bcolor(gs14) base(`mi')  || line meanvar eperiod if raisetype == "`type'",xlab(-20(10)100,labsize(vsmall)) sort(eperiod) note("This figure graphs the CAAR from 20 period before event." "The gray area represents significant returns in 5%") title("CAAR After Capital Raise from `name'",size(medium)) ytitle("Percent")  ylabe(`mi'(`step')`ma' ,angle(0) labsize(vsmall)) xtitle("Period") color(navy) legend(off) || bar g eperiod if eperiod == 0 , bcolor(maroon) base(`mi') barw (0.01) 
 	
 	graph export `x'`name'.png,replace
 	graph export `x'`name'.eps,replace
@@ -93,5 +97,7 @@ foreach type in `typelist'{
 
 
 }
+
+
 
 

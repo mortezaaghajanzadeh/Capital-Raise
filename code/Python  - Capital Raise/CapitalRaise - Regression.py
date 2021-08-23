@@ -335,8 +335,8 @@ df = gg.apply(Leverage)
 
 #%%
 path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
-d = path + "CapitalRaise_Analyze.xlsx"
-df.to_excel(d, index=False)
+d = path + "CapitalRaise_Analyze.csv"
+df.to_csv(d, index=False)
 
 #%%
 
