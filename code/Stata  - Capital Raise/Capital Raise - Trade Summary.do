@@ -10,14 +10,20 @@ capture drop lnVolume lnAmihud
 gen lnAmihud = ln(amihud)
 gen lnVolume = ln(volume)
 
-foreach var in indlimbalance inslimbalance relvolume lnAmihud lnVolume ind_nav ins_nav hm_ins hm_ind {
+foreach var in indlimbalance inslimbalance relvolume lnAmihud lnVolume hm_ins hm_ind {
 	capture drop x 
 	egen x = mean(`var'), by(eperiod) 
 	replace `var' =  x
 }
 
-replace ind_nav = ind_nav/1e10
-replace ins_nav = ins_nav/1e10
+foreach var in ind_nav ins_nav  {
+	capture drop x 
+	egen x = sum(`var'), by(eperiod) 
+	replace `var' =  x
+}
+
+replace ind_nav = ind_nav/1e13
+replace ins_nav = ins_nav/1e13
 
 gen RaiseType2 = raisetype
 replace RaiseType2 = "NoRevaluation" if raisetype != "Revaluation"
@@ -26,7 +32,7 @@ replace RaiseType2 = "NoRevaluation" if raisetype != "Revaluation"
 
 local e 21
 local u = `e' -1
-twoway connected ind_nav ins_nav  eperiod  if eperiod <`e' , sort(eperiod)  xline(0) yline(0) xlab(-20(10)`u')  msymbol(O D) title("Traders' NAV around Capital Raise",size(medium))   xtitle("Period")  color(navy)note("This figure graphs the traders' nav. It is defined as NetBuyVolume{sub:i,t} * ClosePrice{sub:k,t} + NetSellValue{sub:i,t}")   ytitle("Billion Toman") legend(label (1 "Individual") label (2 "Institutional") col(4))   
+twoway connected ind_nav ins_nav  eperiod  if eperiod <`e' , sort(eperiod)  xline(0) yline(0) xlab(-20(10)`u')  msymbol(O D) title("Traders' NAV change around Capital Raise",size(medium))   xtitle("Period")  color(navy)note("This figure graphs the traders' nav. It is defined as NetBuyVolume{sub:i,t} * ClosePrice{sub:k,t} + NetSellValue{sub:i,t}")   ytitle("Thousand Billion Toman") legend(label (1 "Individual") label (2 "Institutional") col(4))   
 
  graph export IndInsNav.png,replace
 graph export IndInsNav.eps,replace
@@ -167,18 +173,15 @@ cls
 import delimited "G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\CapitalRaise.csv", encoding(UTF-8) 
 cd "D:\Dropbox\Capital Raise\Capital-Raise\Report\Output"
 
-capture drop lnVolume lnAmihud
-gen lnAmihud = ln(amihud)
-gen lnVolume = ln(volume)
 
-foreach var in indlimbalance inslimbalance relvolume lnAmihud lnVolume ind_nav ins_nav {
+foreach var in  ind_nav ins_nav {
 	capture drop x 
-	egen x = mean(`var'), by(eperiod) 
+	egen x = sum(`var'), by(eperiod) 
 	replace `var' =  x
 }
 
-replace ind_nav = ind_nav/1e10
-replace ins_nav = ins_nav/1e10
+replace ind_nav = ind_nav/1e13
+replace ins_nav = ins_nav/1e13
 
 gen RaiseType2 = raisetype
 replace RaiseType2 = "NoRevaluation" if raisetype != "Revaluation"
@@ -203,7 +206,7 @@ replace ins_nav_cum = ins_nav[_n]+ ins_nav_cum[_n-1] if _n>1
  
 local e 21
 local u = `e' -1
-twoway connected  ind_nav_cum ins_nav_cum  eperiod  if eperiod <`e' , sort(eperiod)  xline(0) yline(0) xlab(-20(10)`u')  msymbol(O D) title("Cumulative Traders' NAV around Capital Raise",size(medium))   xtitle("Period")  color(navy)note("This figure graphs the traders' nav. It is defined as NetBuyVolume{sub:i,t} * ClosePrice{sub:k,t} + NetSellValue{sub:i,t}")   ytitle("Billion Toman") legend(label (1 "Individual") label (2 "Institutional") col(4)) 
+twoway connected  ind_nav_cum ins_nav_cum  eperiod  if eperiod <`e' , sort(eperiod)  xline(0) yline(0) xlab(-20(10)`u')  msymbol(O D) title("Cumulative Traders' NAV around Capital Raise",size(medium))   xtitle("Period")  color(navy)note("This figure graphs the traders' nav. It is defined as NetBuyVolume{sub:i,t} * ClosePrice{sub:k,t} + NetSellValue{sub:i,t}")   ytitle("Thousand Billion Toman") legend(label (1 "Individual") label (2 "Institutional") col(4)) 
 
 graph export IndInsNavCum.png,replace
 graph export IndInsNavCum.eps,replace

@@ -75,150 +75,12 @@ def removeDash(row):
     return int(X[0] + X[1] + X[2])
 
 path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
+path1 = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\\"
 #%%
-def group_id():
-    r = requests.get(
-        "http://www.tsetmc.com/Loader.aspx?ParTree=111C1213"
-    )  # This URL contains all sector groups.
-    soup = BeautifulSoup(r.text, "html.parser")
-    header = soup.find_all("table")[0].find("tr")
-    list_header = []
-    for items in header:
-        try:
-            list_header.append(items.get_text())
-        except:
-            continue
-
-    # for getting the data
-    HTML_data = soup.find_all("table")[0].find_all("tr")[1:]
-    data = []
-    for element in HTML_data:
-        sub_data = []
-        for sub_element in element:
-            try:
-                sub_data.append(sub_element.get_text())
-            except:
-                continue
-        data.append(sub_data)
-    df = pd.DataFrame(data=data, columns=list_header).rename(
-        columns = {
-            'گروه های صنعت':'group_name',
-            "کد گروه های صنعت":"group_id"
-        }
-    )
-    return df                  
-groupnameid = group_id()
-# %%
-df2 = pd.read_csv(path + "adjPrices_1399-11-06.csv")
-df2.Date = df2.Date.apply(vv)
-df2 = df2.drop(columns="Unnamed: 0").rename(
-    columns={"ID": "stock_id", "Date": "date"})
-pdf = pd.read_parquet(path + "Stocks_Prices_1400-04-27.parquet")
-mapdict = dict(zip(groupnameid.group_name,groupnameid.group_id))
-pdf['group_id'] = pdf.group_name.map(mapdict)
-pdf.loc[pdf.name.str[-1] == " ", "name"] = pdf.loc[pdf.name.str[-1] == " "].name.str[
-    :-1
-]
-pdf.loc[pdf.name.str[0] == " ", "name"] = pdf.loc[pdf.name.str[0] == " "].name.str[1:]
-pdf["name"] = pdf["name"].apply(lambda x: convert_ar_characters(x))
-pdf.jalaliDate = pdf.jalaliDate.apply(vv)
-pdf = pdf.sort_values(by=["name", "date"])
-pdf = pdf[~((pdf.title.str.startswith("ح")) & (pdf.name.str.endswith("ح")))]
-pdf = pdf[~(pdf.name.str.endswith("پذيره"))]
-
-pdf = pdf[~(pdf.group_name == "صندوق سرمايه گذاري قابل معامله")]
-# pdf = pdf[
-#     [
-#         "jalaliDate",
-#         "date",
-#         "name",
-#         "title",
-#         "stock_id",
-#         "group_name",
-#         "group_id",
-#         "baseVol",
-#         "value",
-#         "volume",
-#         "quantity",
-#     ]
-# ]
-col = "name"
-pdf[col] = pdf[col].apply(lambda x: convert_ar_characters(x))
-adData = pd.read_csv(path + "DataAdjustedEvent.csv")
-adData = adData.rename(columns = {
-    'قبل از تعدیل' : 'Before',
-    "تعدیل شده":"After",
-    "تاریخ":"jalaliDate"
-}).sort_values(by = ['stock_id','jalaliDate'])
-#%%
-gg = adData.groupby('stock_id')
-
-def clean(g):
-    g.loc[g.After == 1,"After"] = np.nan
-    g.loc[g.Before == 1,"Before"] = np.nan
-    g["After"] = g["After"].fillna(method="bfill")
-    g["Before"] = g["Before"].fillna(method="ffill")
-    return g
-adData = gg.apply(clean)
-adData['AdjustFactor'] = adData.After / adData.Before
-
-i = 'stock_id'
-pdf[i] = pdf[i].astype(str)
-adData[i] = adData[i].astype(str)
-i = 'jalaliDate'
-pdf[i] = pdf[i].astype(int)
-adData[i] = adData[i].astype(int)
-
-pdf = pdf.merge(adData[['jalaliDate','stock_id','AdjustFactor']]
-          ,on = ['jalaliDate','stock_id'],how = 'outer')
-gg = pdf.groupby('stock_id')
-pdf["AdjustFactor"] = gg["AdjustFactor"].fillna(method="ffill")
-pdf = pdf[~pdf.date.isnull()]
-pdf['AdjustFactor'] = pdf.AdjustFactor.fillna(1)
-shrout = pd.read_csv(path + "shrout.csv")
-mapdict = dict(zip(shrout.set_index(['name','date']).index,shrout.shrout))
-i = 'date'
-pdf[i] = pdf[i].astype(int)
-
-pdf['shrout'] = pdf.set_index(['name','date']).index.map(mapdict)
-i = 'stock_id'
-shrout[i] = shrout[i].astype(str)
-mapdict = dict(zip(shrout.set_index(['stock_id','date']).index,shrout.shrout))
-pdf['shrout2'] = pdf.set_index(['stock_id','date']).index.map(mapdict)
-pdf.loc[pdf.shrout.isnull(),'shrout'] = pdf.loc[pdf.shrout.isnull()]['shrout2']
-pdf = pdf.drop(columns = ['shrout2'])
-gg = pdf.groupby('name')
-pdf["shrout"] = gg["shrout"].fillna(method="ffill")
-i = 'volume'
-pdf[i] = pdf[i].astype(float)
-# d = pdf[pdf.volume>0]
-d = pd.DataFrame()
-d = d.append(pdf)
-gg = d.groupby('name')
-d["shrout"] = gg["shrout"].fillna(method="bfill")
-#%%
-pdf = pd.DataFrame()
-pdf = pdf.append(d[~d.shrout.isnull()])
-pdf = pdf[pdf.jalaliDate<13990000]
-pdf = pdf[pdf.jalaliDate>13900000]
-#%%
-gg = pdf.groupby('name')
-
+pdf = pd.read_parquet(path1 + "Cleaned_Stocks_Prices_1400-04-27.parquet")
 
 
 #%%
-i = 'group_id'
-pdf[i] = pdf[i].astype(float)
-i = 'close_price'
-pdf[i] = pdf[i].astype(float)
-
-pdf.head()
-pdf['close'] = pdf.close_price /pdf.AdjustFactor
-gg = pdf.groupby(["name"])
-pdf['return'] = gg.close.pct_change()*100
-pdf['MarketCap'] = pdf.close_price * pdf.shrout
-
-
 gg = pdf.groupby(["date", "group_id"])
 
 def marketCapAndWeight(g):
@@ -229,6 +91,7 @@ def marketCapAndWeight(g):
     g['industry_return'] = (g['return'] * g["Weight"]).sum()
     return g
 data2 = gg.apply(marketCapAndWeight)
+
 #%%
 pdf2 = pd.DataFrame()
 pdf2 = pdf2.append(data2).reset_index(drop = True).sort_values(by = [
@@ -243,7 +106,10 @@ first = pdf2.groupby(['group_id','date']).first()[
         'industry_index'
     ]
 ].reset_index()
-
+#%%
+first['industry_index'] = first.industry_return/100 + 1
+first['industry_index'] = first.groupby('group_id').industry_index.cumprod()
+first.to_csv(path + "IndustryIndexes.csv",index = False)
 
     
 
@@ -346,26 +212,36 @@ df.head()
 
 
 # %%
+pdf = pd.DataFrame()
+pdf = pdf.append(pdf2)
 gg = pdf.groupby(["name"])
-pdf["close"] = gg["close"].fillna(method="ffill")
-pdf["High"] = gg["High"].fillna(method="ffill")
-pdf["Low"] = gg["Low"].fillna(method="ffill")
-pdf["Open"] = gg["Open"].fillna(method="ffill")
-pdf["Last"] = gg["Last"].fillna(method="ffill")
-pdf.loc[pdf.volume == 0, "Volume"] = 0
-
-#%%
-df2 = pd.read_csv(path + "InsInd_1399-05-09" + ".csv")
+df2 = pd.read_csv(path + "Stock_price_trade_1387_1400" + ".csv")
 # df2["Name"] = df2["Name"].apply(lambda x: convert_ar_characters(x))
-df2.Date = df2.Date.apply(vv)
-df2 = df2.rename(columns={"ID": "stock_id", "Date": "date"}).drop(
-    columns=["Unnamed: 0", "Name"]
-)
+# df2.Date = df2.Date.apply(vv)
+# df2 = df2.rename(columns={"ID": "stock_id", "Date": "date"}).drop(
+#     columns=["Unnamed: 0", "Name"]
+# )
+mlist = ['stock_id','date',
+    'ind_buy_volume',
+ 'ins_buy_volume',
+ 'ind_buy_value',
+ 'ins_buy_value',
+ 'ins_buy_count',
+ 'ind_buy_count',
+ 'ind_sell_volume',
+ 'ins_sell_volume',
+ 'ind_sell_value',
+ 'ins_sell_value',
+ 'ins_sell_count',
+ 'ind_sell_count'
+]
 print(len(pdf), len(df2))
 
-pdf = pdf.merge(df2, on=["stock_id", "date"], how="left")
+i = 'stock_id'
+df2[i] = df2[i].astype(str)
+pdf = pdf.merge(df2[mlist], on=["stock_id", "date"], how="left").drop_duplicates()
 print(len(pdf))
-
+pdf = pdf.rename(columns = {'close_price' : "UnadjustedPrice"})
 
 # %%
 mdf = pd.DataFrame()
@@ -502,16 +378,10 @@ data = data.merge(index, on="jalaliDate")
 
 # %%
 data = data.sort_values(by=["name", "t"]).reset_index(drop=True)
-data = data[~data.High.isnull()]
 gg = data.groupby("name")
 data["Market_return"] = gg["Index"].pct_change(periods=1) * 100
 data = data[~data.Market_return.isnull()]
 data = data.rename(columns={"close": "close_price"})
-# %%
-
-# %%
-
-
 #%%
 def divide_to_mean(g):
     print(g.name, end="\r", flush=True)
@@ -537,18 +407,17 @@ for t in ["SMB", "HML", "Winner_Loser"]:
     gg = data.groupby("name")
     data[t] = gg[t].pct_change(periods=1) * 100
 
-
 #%%
 data.isnull().sum().to_frame()
 data = data.dropna()
 
-n = path + "RawDataBeforeAb.parquet"
+n = path + "RawDataBeforeAb2.parquet"
 
 data.to_parquet(n)
 
 
 #%%
-data = pd.read_parquet(path + "RawDataBeforeAb.parquet")
+data = pd.read_parquet(path + "RawDataBeforeAb2.parquet")
 
 # %%
 def ABnormal(g, Rlag):
@@ -918,11 +787,11 @@ def ols4(tempt):
 
 ARdata = pd.DataFrame()
 ARdata = ARdata.append(data)
-ARdata["Return"] = ARdata.groupby("name")["close_price"].pct_change(periods=1) * 100
+ARdata["Return"] = ARdata['return']
 ARdata["ER"] = ARdata["Return"] - ARdata["RiskFree"]
 ARdata["EMR"] = ARdata["Market_return"] - ARdata["RiskFree"]
 ARdata["Industry_return"] = (
-    ARdata["Industry_return"] - ARdata["Weight"] * ARdata["Return"]
+    ARdata["industry_return"] - ARdata["Weight"] * ARdata["Return"]
 ) / (1 - ARdata["Weight"])
 ARdata["EIR"] = ARdata["Industry_return"] - ARdata["RiskFree"]
 ARdata.loc[ARdata.Weight == 1.0, "Industry_return"] = np.nan
@@ -942,8 +811,8 @@ Data = pd.DataFrame()
 Data = Data.append(ARdata)
 Data = Data.reset_index(drop=True)
 Data = Data.rename(columns={"ER": "EReturn"})
-Data["Amihud"] = abs(Data["Return"]) / Data["Volume"]
-Data = Data.loc[(Data.EPeriod >= -20) & (Data.EPeriod <= 100)]
+Data["Amihud"] = abs(Data["Return"]) / Data["volume"]
+Data = Data.loc[(Data.EPeriod >= -20) & (Data.EPeriod <= 50)]
 
 Data["NetInd"] = Data["ind_buy_volume"] - Data["ind_sell_volume"]
 Data["TotalInd"] = Data["ind_buy_volume"] + Data["ind_sell_volume"]
@@ -1090,11 +959,7 @@ mlist = [
     "baseVol",
     "value",
     "quantity",
-    "High",
-    "Low",
-    "Open",
-    "Last",
-    "Volume",
+    "volume",
     "t",
     "CapBefore",
     "CapAfter",

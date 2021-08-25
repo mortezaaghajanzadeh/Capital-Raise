@@ -26,11 +26,6 @@ mlist = [
     "value",
     "volume",
     "quantity",
-    "High",
-    "Low",
-    "Open",
-    "Last",
-    "Volume",
     "t",
     "CapBefore",
     "CapAfter",
@@ -73,7 +68,6 @@ mlist = [
     "CAR_AbnormalReturn2",
     "CAR_AbnormalReturn_Market2",
     "CAR_AbnormalReturn_WithoutAlpha2",
-    "CAR_AbnormalReturn_4Factor2",
     "CAR_AbnormalReturn_Industry2",
     "CAR_AbnormalReturn_WithoutAlpha_Industry2",
     "CAR_AbnormalReturn_MarketIndustry2",
@@ -84,7 +78,7 @@ mlist = [
     "RaiseType",
     "year",
 ]
-Data[mlist].to_excel(path + "CapitalRaise.xlsx",index = False)
+# Data[mlist].to_excel(path + "CapitalRaise.xlsx",index = False)
 
 #%%
 mlist = [
@@ -102,7 +96,6 @@ mlist = [
     "CAR_AbnormalReturn2",
     "CAR_AbnormalReturn_Market2",
     "CAR_AbnormalReturn_WithoutAlpha2",
-    "CAR_AbnormalReturn_4Factor2",
     "CAR_AbnormalReturn_Industry2",
     "CAR_AbnormalReturn_WithoutAlpha_Industry2",
     "CAR_AbnormalReturn_MarketIndustry2",
@@ -189,7 +182,7 @@ g = sns.relplot(data=Data, kind="line", x="EPeriod", y="CAR_Market", col="RaiseT
 
 #%%
 sns.relplot(data=Data, kind="line", x="EPeriod", y="Weight", col="RaiseType")
-
+sns.relplot(data=Data, kind="line", x="EPeriod", y="CAR")
 
 #%%
 def Result(g, CAR):
