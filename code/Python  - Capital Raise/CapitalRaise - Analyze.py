@@ -3,11 +3,7 @@ import pandas as pd
 import numpy as np
 import re
 import statsmodels.api as sm
-import finance_byu.rolling as rolling
-import requests
 import pandas as pd
-from bs4 import BeautifulSoup
-import math
 
 
 def convert_ar_characters(input_str):
@@ -77,42 +73,49 @@ def removeDash(row):
 path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
 path1 = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\\"
 #%%
-pdf = pd.read_parquet(path1 + "Cleaned_Stocks_Prices_1400-04-27.parquet")
+pdf = pd.read_parquet(path1 + "Cleaned_Stocks_Prices_1400-04-27.parquet").reset_index(drop = True)
 
 
 #%%
-gg = pdf.groupby(["date", "group_id"])
-
-def marketCapAndWeight(g):
-    # print(g.name[0], end="\r", flush=True)
-    if len(g) < 3:
-        return
-    g["Weight"] = g.MarketCap / (g.MarketCap.sum())
-    g['industry_return'] = (g['return'] * g["Weight"]).sum()
-    return g
-data2 = gg.apply(marketCapAndWeight)
-
-#%%
-pdf2 = pd.DataFrame()
-pdf2 = pdf2.append(data2).reset_index(drop = True).sort_values(by = [
-    'name','date'
-])
-pdf2.isnull().sum()
-pdf2['industry_index'] = 1
-first = pdf2.groupby(['group_id','date']).first()[
-    [
-        'group_name',
-        'industry_return',
-        'industry_index'
-    ]
-].reset_index()
-#%%
-first['industry_index'] = first.industry_return/100 + 1
-first['industry_index'] = first.groupby('group_id').industry_index.cumprod()
-first.to_csv(path + "IndustryIndexes.csv",index = False)
-
+indexes = pd.read_csv(path1 + "IndustryIndexes_1400-04-27.csv").reset_index(drop = True)
+for i in ['industry_index','industry_size']:
+    mapdict = dict(zip(indexes.set_index(['group_id','date']).index,indexes[i]))
+    pdf[i] = pdf.set_index(['group_id','date']).index.map(mapdict)
     
+#%%
+gg = pdf.groupby(['date','group_id'])
+pdf = pdf.set_index(['date','group_id'])
+pdf['Weight'] = gg.MarketCap.sum()
+pdf['Weight'] = pdf.MarketCap / pdf.Weight
+pdf = pdf.reset_index().sort_values(by = ['name','date'])
 
+
+#%%
+
+df2 = pd.read_csv(path + "Stock_price_trade_1387_1400" + ".csv")
+mlist = ['stock_id','date',
+    'ind_buy_volume',
+ 'ins_buy_volume',
+ 'ind_buy_value',
+ 'ins_buy_value',
+ 'ins_buy_count',
+ 'ind_buy_count',
+ 'ind_sell_volume',
+ 'ins_sell_volume',
+ 'ind_sell_value',
+ 'ins_sell_value',
+ 'ins_sell_count',
+ 'ind_sell_count'
+]
+print(len(pdf), len(df2))
+
+i = 'stock_id'
+df2[i] = df2[i].astype(str)
+pdf = pdf.merge(df2[mlist], on=["stock_id", "date"], how="left").drop_duplicates()
+print(len(pdf))
+pdf = pdf.rename(columns = {'close_price' : "UnadjustedPrice",
+                            "AdjustedPrice":"close_price"})    
+    
 #%%
 df = pd.read_excel(path + "Capital Rise - 71-99.xlsx")
 df = df[df.CapAfter != df.CapBefore]
@@ -206,42 +209,6 @@ df.head()
 
 # %%
 
-# pdf['Firm'] = ''
-# pdf.loc[pdf.title.str.contains("\("),'Firm'] = pdf[pdf.title.str.contains("\(")]['title'].str.split("\(", n = 1, expand = True)[0]
-# firmsymbol = pdf[['name','Firm']].drop_duplicates()
-
-
-# %%
-pdf = pd.DataFrame()
-pdf = pdf.append(pdf2)
-gg = pdf.groupby(["name"])
-df2 = pd.read_csv(path + "Stock_price_trade_1387_1400" + ".csv")
-# df2["Name"] = df2["Name"].apply(lambda x: convert_ar_characters(x))
-# df2.Date = df2.Date.apply(vv)
-# df2 = df2.rename(columns={"ID": "stock_id", "Date": "date"}).drop(
-#     columns=["Unnamed: 0", "Name"]
-# )
-mlist = ['stock_id','date',
-    'ind_buy_volume',
- 'ins_buy_volume',
- 'ind_buy_value',
- 'ins_buy_value',
- 'ins_buy_count',
- 'ind_buy_count',
- 'ind_sell_volume',
- 'ins_sell_volume',
- 'ind_sell_value',
- 'ins_sell_value',
- 'ins_sell_count',
- 'ind_sell_count'
-]
-print(len(pdf), len(df2))
-
-i = 'stock_id'
-df2[i] = df2[i].astype(str)
-pdf = pdf.merge(df2[mlist], on=["stock_id", "date"], how="left").drop_duplicates()
-print(len(pdf))
-pdf = pdf.rename(columns = {'close_price' : "UnadjustedPrice"})
 
 # %%
 mdf = pd.DataFrame()
@@ -380,8 +347,8 @@ data = data.merge(index, on="jalaliDate")
 data = data.sort_values(by=["name", "t"]).reset_index(drop=True)
 gg = data.groupby("name")
 data["Market_return"] = gg["Index"].pct_change(periods=1) * 100
+data["industry_return"] = gg["industry_index"].pct_change(periods=1) * 100
 data = data[~data.Market_return.isnull()]
-data = data.rename(columns={"close": "close_price"})
 #%%
 def divide_to_mean(g):
     print(g.name, end="\r", flush=True)
