@@ -781,6 +781,8 @@ Data = Data.rename(columns={"ER": "EReturn"})
 Data["Amihud"] = abs(Data["Return"]) / Data["volume"]
 Data = Data.loc[(Data.EPeriod >= -20) & (Data.EPeriod <= 50)]
 
+#%%
+
 Data["NetInd"] = Data["ind_buy_volume"] - Data["ind_sell_volume"]
 Data["TotalInd"] = Data["ind_buy_volume"] + Data["ind_sell_volume"]
 Data["NetIns"] = Data["ins_buy_volume"] - Data["ins_sell_volume"]
@@ -792,13 +794,24 @@ Data["InslImbalance"] = Data["NetIns"].divide(Data["TotalIns"])
 for i in ["count", "volume", "value"]:
     Data["ind_imbalance_" + i] = Data["ind_buy_" + i] - Data["ind_sell_" + i]
     Data["ins_imbalance_" + i] = Data["ins_buy_" + i] - Data["ins_sell_" + i]
-Data["ind_nav"] = (
-    Data["ind_imbalance_volume"] * Data["close_price"] - Data["ind_imbalance_value"]
-)
-Data["ins_nav"] = (
-    Data["ins_imbalance_volume"] * Data["close_price"] - Data["ins_imbalance_value"]
-)
+    
+gg = Data.groupby(['name','nEvent'])
 
+Data['ind_stock_account'] = gg.ind_imbalance_volume.cumsum()
+Data['ins_stock_account'] = gg.ins_imbalance_volume.cumsum()
+
+Data['ind_stock_account'] = Data['ind_stock_account'] * Data['close_price']
+Data['ins_stock_account'] = Data['ins_stock_account'] * Data['close_price']
+
+gg = Data.groupby(['name'])
+Data['ind_Cash_account'] = gg.ind_imbalance_value.cumsum()
+Data['ins_Cash_account'] = gg.ins_imbalance_value.cumsum()
+
+Data['ind_Cash_account'] = Data['ind_Cash_account'] * (-1)
+Data['ins_Cash_account'] = Data['ins_Cash_account'] * (-1)
+
+Data['ind_Nav'] = Data["ind_Cash_account"] + Data["ind_stock_account"]
+Data['ins_Nav'] = Data["ins_Cash_account"] + Data["ins_stock_account"]
 
 gg = Data.groupby(["name", "nEvent"])
 Data["CAR"] = gg["AbnormalReturn"].cumsum()
@@ -961,8 +974,8 @@ mlist = [
     "ins_imbalance_volume",
     "ind_imbalance_value",
     "ins_imbalance_value",
-    "ind_nav",
-    "ins_nav",
+    "ind_Nav",
+    "ins_Nav",
     "CAR",
     "CAR_Market",
     "CAR_WithoutAlpha",
