@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.5.13)  30 AUG 2021 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.5.13)  30 AUG 2021 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1363,464 +1363,496 @@ Package pdftex.def Info: Output/IndInsNav.png  used on input line 985.
  [45
 
  <./Output/IndInsNav.png (PNG copy)>]
-<Output/IndInsHerd.png, id=1639, 722.7pt x 524.96124pt>
-File: Output/IndInsHerd.png Graphic file (type png)
-<use Output/IndInsHerd.png>
-Package pdftex.def Info: Output/IndInsHerd.png  used on input line 995.
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+<Output/IndInsNav_NoRevaluation.png, id=1639, 722.7pt x 524.96124pt>
+File: Output/IndInsNav_NoRevaluation.png Graphic file (type png)
+<use Output/IndInsNav_NoRevaluation.png>
+Package pdftex.def Info: Output/IndInsNav_NoRevaluation.png  used on input line
+ 995.
+(pdftex.def)             Requested size: 154.03183pt x 111.8872pt.
+<Output/IndInsNav_Revaluation.png, id=1640, 722.7pt x 524.96124pt>
+File: Output/IndInsNav_Revaluation.png Graphic file (type png)
+<use Output/IndInsNav_Revaluation.png>
+Package pdftex.def Info: Output/IndInsNav_Revaluation.png  used on input line 9
+95.
+(pdftex.def)             Requested size: 154.03183pt x 111.8872pt.
  [46
 
- <./Output/IndInsHerd.png (PNG copy)>]
-<Output/weight.png, id=1671, 722.7pt x 524.96124pt>
-File: Output/weight.png Graphic file (type png)
-<use Output/weight.png>
-Package pdftex.def Info: Output/weight.png  used on input line 1003.
+ <./Output/IndInsNav_NoRevaluation.png (PNG copy)> <./Output/IndInsNav_Revaluat
+ion.png (PNG copy)>]
+<Output/IndInsHerd.png, id=1672, 722.7pt x 524.96124pt>
+File: Output/IndInsHerd.png Graphic file (type png)
+<use Output/IndInsHerd.png>
+Package pdftex.def Info: Output/IndInsHerd.png  used on input line 1005.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [47
 
- <./Output/weight.png (PNG copy)>] (./CapitalRaise - Slide.bbl
+ <./Output/IndInsHerd.png (PNG copy)>]
+<Output/IndInsHerdRevaluation.png, id=1704, 722.7pt x 524.96124pt>
+File: Output/IndInsHerdRevaluation.png Graphic file (type png)
+<use Output/IndInsHerdRevaluation.png>
+Package pdftex.def Info: Output/IndInsHerdRevaluation.png  used on input line 1
+014.
+(pdftex.def)             Requested size: 154.03183pt x 111.8872pt.
+<Output/IndInsHerdNoRevaluation.png, id=1705, 722.7pt x 524.96124pt>
+File: Output/IndInsHerdNoRevaluation.png Graphic file (type png)
+<use Output/IndInsHerdNoRevaluation.png>
+Package pdftex.def Info: Output/IndInsHerdNoRevaluation.png  used on input line
+ 1014.
+(pdftex.def)             Requested size: 154.03183pt x 111.8872pt.
+ [48
+
+ <./Output/IndInsHerdRevaluation.png (PNG copy)> <./Output/IndInsHerdNoRevaluat
+ion.png (PNG copy)>]
+<Output/weight.png, id=1738, 722.7pt x 524.96124pt>
+File: Output/weight.png Graphic file (type png)
+<use Output/weight.png>
+Package pdftex.def Info: Output/weight.png  used on input line 1024.
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [49
+
+ <./Output/weight.png (PNG copy)>]
+(./CapitalRaise - Slide.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\translate ' on input line 1.
 
-) [48
-
-] [49
-
-
-] [50
-
+) [50
 
 ] [51
 
 
-]
+] [52
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\translate ' on input line 1471.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1473.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 1473.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1473.
-
-(./CapitalRaise - Slide.toc) [52
 
 ] [53
 
+
 ]
-<Output/car_withoutalpha.png, id=1904, 722.7pt x 524.96124pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\translate ' on input line 1492.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1494.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\alpha' on input line 1494.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1494.
+
+(./CapitalRaise - Slide.toc) [54
+
+] [55
+
+]
+<Output/car_withoutalpha.png, id=1971, 722.7pt x 524.96124pt>
 File: Output/car_withoutalpha.png Graphic file (type png)
 <use Output/car_withoutalpha.png>
-Package pdftex.def Info: Output/car_withoutalpha.png  used on input line 1498.
+Package pdftex.def Info: Output/car_withoutalpha.png  used on input line 1519.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
- [54
+ [56
 
  <./Output/car_withoutalpha.png (PNG copy)>]
-<Output/car_withoutalphaRevaluation.png, id=1936, 722.7pt x 524.96124pt>
+<Output/car_withoutalphaRevaluation.png, id=2004, 722.7pt x 524.96124pt>
 File: Output/car_withoutalphaRevaluation.png Graphic file (type png)
 <use Output/car_withoutalphaRevaluation.png>
 Package pdftex.def Info: Output/car_withoutalphaRevaluation.png  used on input 
-line 1509.
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [55
-
- <./Output/car_withoutalphaRevaluation.png (PNG copy)>]
-<Output/car_withoutalphaSaving.png, id=1969, 722.7pt x 524.96124pt>
-File: Output/car_withoutalphaSaving.png Graphic file (type png)
-<use Output/car_withoutalphaSaving.png>
-Package pdftex.def Info: Output/car_withoutalphaSaving.png  used on input line 
-1519.
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [56
-
- <./Output/car_withoutalphaSaving.png (PNG copy)>]
-<Output/car_withoutalphaCash.png, id=2002, 722.7pt x 524.96124pt>
-File: Output/car_withoutalphaCash.png Graphic file (type png)
-<use Output/car_withoutalphaCash.png>
-Package pdftex.def Info: Output/car_withoutalphaCash.png  used on input line 15
-30.
+line 1530.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [57
 
- <./Output/car_withoutalphaCash.png (PNG copy)>]
-<Output/car_withoutalphaHybrid.png, id=2033, 722.7pt x 524.96124pt>
-File: Output/car_withoutalphaHybrid.png Graphic file (type png)
-<use Output/car_withoutalphaHybrid.png>
-Package pdftex.def Info: Output/car_withoutalphaHybrid.png  used on input line 
-1541.
+ <./Output/car_withoutalphaRevaluation.png (PNG copy)>]
+<Output/car_withoutalphaSaving.png, id=2036, 722.7pt x 524.96124pt>
+File: Output/car_withoutalphaSaving.png Graphic file (type png)
+<use Output/car_withoutalphaSaving.png>
+Package pdftex.def Info: Output/car_withoutalphaSaving.png  used on input line 
+1540.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [58
 
- <./Output/car_withoutalphaHybrid.png (PNG copy)>]
-(./CapitalRaise - Slide.toc) [59
+ <./Output/car_withoutalphaSaving.png (PNG copy)>]
+<Output/car_withoutalphaCash.png, id=2068, 722.7pt x 524.96124pt>
+File: Output/car_withoutalphaCash.png Graphic file (type png)
+<use Output/car_withoutalphaCash.png>
+Package pdftex.def Info: Output/car_withoutalphaCash.png  used on input line 15
+51.
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [59
 
-]
-<Output/car_industry.png, id=2104, 722.7pt x 524.96124pt>
-File: Output/car_industry.png Graphic file (type png)
-<use Output/car_industry.png>
-Package pdftex.def Info: Output/car_industry.png  used on input line 1555.
-(pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
+ <./Output/car_withoutalphaCash.png (PNG copy)>]
+<Output/car_withoutalphaHybrid.png, id=2099, 722.7pt x 524.96124pt>
+File: Output/car_withoutalphaHybrid.png Graphic file (type png)
+<use Output/car_withoutalphaHybrid.png>
+Package pdftex.def Info: Output/car_withoutalphaHybrid.png  used on input line 
+1562.
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [60
 
+ <./Output/car_withoutalphaHybrid.png (PNG copy)>]
+(./CapitalRaise - Slide.toc) [61
+
+]
+<Output/car_industry.png, id=2171, 722.7pt x 524.96124pt>
+File: Output/car_industry.png Graphic file (type png)
+<use Output/car_industry.png>
+Package pdftex.def Info: Output/car_industry.png  used on input line 1576.
+(pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
+ [62
+
  <./Output/car_industry.png (PNG copy)>]
-<Output/car_industryRevaluation.png, id=2136, 722.7pt x 524.96124pt>
+<Output/car_industryRevaluation.png, id=2203, 722.7pt x 524.96124pt>
 File: Output/car_industryRevaluation.png Graphic file (type png)
 <use Output/car_industryRevaluation.png>
 Package pdftex.def Info: Output/car_industryRevaluation.png  used on input line
- 1564.
+ 1585.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
 
-[61
+[63
 
  <./Output/car_industryRevaluation.png (PNG copy)>]
-<Output/car_industrySaving.png, id=2169, 722.7pt x 524.96124pt>
+<Output/car_industrySaving.png, id=2236, 722.7pt x 524.96124pt>
 File: Output/car_industrySaving.png Graphic file (type png)
 <use Output/car_industrySaving.png>
-Package pdftex.def Info: Output/car_industrySaving.png  used on input line 1574
+Package pdftex.def Info: Output/car_industrySaving.png  used on input line 1595
 .
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [62
+ [64
 
  <./Output/car_industrySaving.png (PNG copy)>]
-<Output/car_industryCash.png, id=2201, 722.7pt x 524.96124pt>
+<Output/car_industryCash.png, id=2268, 722.7pt x 524.96124pt>
 File: Output/car_industryCash.png Graphic file (type png)
 <use Output/car_industryCash.png>
-Package pdftex.def Info: Output/car_industryCash.png  used on input line 1585.
+Package pdftex.def Info: Output/car_industryCash.png  used on input line 1606.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [63
+ [65
 
  <./Output/car_industryCash.png (PNG copy)>]
-<Output/car_industryHybrid.png, id=2233, 722.7pt x 524.96124pt>
+<Output/car_industryHybrid.png, id=2299, 722.7pt x 524.96124pt>
 File: Output/car_industryHybrid.png Graphic file (type png)
 <use Output/car_industryHybrid.png>
-Package pdftex.def Info: Output/car_industryHybrid.png  used on input line 1594
+Package pdftex.def Info: Output/car_industryHybrid.png  used on input line 1615
 .
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
 
-[64
+[66
 
  <./Output/car_industryHybrid.png (PNG copy)>] (./CapitalRaise - Slide.toc)
-[65
+[67
 
 ]
-<Output/car_abnormalreturn2.png, id=2303, 722.7pt x 524.96124pt>
+<Output/car_abnormalreturn2.png, id=2371, 722.7pt x 524.96124pt>
 File: Output/car_abnormalreturn2.png Graphic file (type png)
 <use Output/car_abnormalreturn2.png>
-Package pdftex.def Info: Output/car_abnormalreturn2.png  used on input line 160
-6.
+Package pdftex.def Info: Output/car_abnormalreturn2.png  used on input line 162
+7.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
- [66
+ [68
 
  <./Output/car_abnormalreturn2.png (PNG copy)>]
-<Output/car_abnormalreturn2Revaluation.png, id=2336, 722.7pt x 524.96124pt>
+<Output/car_abnormalreturn2Revaluation.png, id=2403, 722.7pt x 524.96124pt>
 File: Output/car_abnormalreturn2Revaluation.png Graphic file (type png)
 <use Output/car_abnormalreturn2Revaluation.png>
 Package pdftex.def Info: Output/car_abnormalreturn2Revaluation.png  used on inp
-ut line 1615.
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [67
-
- <./Output/car_abnormalreturn2Revaluation.png (PNG copy)>]
-<Output/car_abnormalreturn2Saving.png, id=2369, 722.7pt x 524.96124pt>
-File: Output/car_abnormalreturn2Saving.png Graphic file (type png)
-<use Output/car_abnormalreturn2Saving.png>
-Package pdftex.def Info: Output/car_abnormalreturn2Saving.png  used on input li
-ne 1625.
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [68
-
- <./Output/car_abnormalreturn2Saving.png (PNG copy)>]
-<Output/car_abnormalreturn2Cash.png, id=2401, 722.7pt x 524.96124pt>
-File: Output/car_abnormalreturn2Cash.png Graphic file (type png)
-<use Output/car_abnormalreturn2Cash.png>
-Package pdftex.def Info: Output/car_abnormalreturn2Cash.png  used on input line
- 1636.
+ut line 1636.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [69
 
+ <./Output/car_abnormalreturn2Revaluation.png (PNG copy)>]
+<Output/car_abnormalreturn2Saving.png, id=2436, 722.7pt x 524.96124pt>
+File: Output/car_abnormalreturn2Saving.png Graphic file (type png)
+<use Output/car_abnormalreturn2Saving.png>
+Package pdftex.def Info: Output/car_abnormalreturn2Saving.png  used on input li
+ne 1646.
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [70
+
+ <./Output/car_abnormalreturn2Saving.png (PNG copy)>]
+<Output/car_abnormalreturn2Cash.png, id=2468, 722.7pt x 524.96124pt>
+File: Output/car_abnormalreturn2Cash.png Graphic file (type png)
+<use Output/car_abnormalreturn2Cash.png>
+Package pdftex.def Info: Output/car_abnormalreturn2Cash.png  used on input line
+ 1657.
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [71
+
  <./Output/car_abnormalreturn2Cash.png (PNG copy)>]
-<Output/car_abnormalreturn2Hybrid.png, id=2433, 722.7pt x 524.96124pt>
+<Output/car_abnormalreturn2Hybrid.png, id=2499, 722.7pt x 524.96124pt>
 File: Output/car_abnormalreturn2Hybrid.png Graphic file (type png)
 <use Output/car_abnormalreturn2Hybrid.png>
 Package pdftex.def Info: Output/car_abnormalreturn2Hybrid.png  used on input li
-ne 1645.
+ne 1666.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
 
-[70
+[72
 
  <./Output/car_abnormalreturn2Hybrid.png (PNG copy)>]
-(./CapitalRaise - Slide.toc) [71
+(./CapitalRaise - Slide.toc) [73
 
 ]
-<Output/car_marketmodel.png, id=2503, 722.7pt x 524.96124pt>
+<Output/car_marketmodel.png, id=2571, 722.7pt x 524.96124pt>
 File: Output/car_marketmodel.png Graphic file (type png)
 <use Output/car_marketmodel.png>
-Package pdftex.def Info: Output/car_marketmodel.png  used on input line 1660.
+Package pdftex.def Info: Output/car_marketmodel.png  used on input line 1681.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
- [72
+ [74
 
  <./Output/car_marketmodel.png (PNG copy)>]
-<Output/car_marketmodelRevaluation.png, id=2536, 722.7pt x 524.96124pt>
+<Output/car_marketmodelRevaluation.png, id=2603, 722.7pt x 524.96124pt>
 File: Output/car_marketmodelRevaluation.png Graphic file (type png)
 <use Output/car_marketmodelRevaluation.png>
 Package pdftex.def Info: Output/car_marketmodelRevaluation.png  used on input l
-ine 1669.
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [73
-
- <./Output/car_marketmodelRevaluation.png (PNG copy)>]
-<Output/car_marketmodelSaving.png, id=2569, 722.7pt x 524.96124pt>
-File: Output/car_marketmodelSaving.png Graphic file (type png)
-<use Output/car_marketmodelSaving.png>
-Package pdftex.def Info: Output/car_marketmodelSaving.png  used on input line 1
-679.
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [74
-
- <./Output/car_marketmodelSaving.png (PNG copy)>]
-<Output/car_marketmodelCash.png, id=2601, 722.7pt x 524.96124pt>
-File: Output/car_marketmodelCash.png Graphic file (type png)
-<use Output/car_marketmodelCash.png>
-Package pdftex.def Info: Output/car_marketmodelCash.png  used on input line 169
-0.
+ine 1690.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [75
 
- <./Output/car_marketmodelCash.png (PNG copy)>]
-<Output/car_marketmodelHybrid.png, id=2632, 722.7pt x 524.96124pt>
-File: Output/car_marketmodelHybrid.png Graphic file (type png)
-<use Output/car_marketmodelHybrid.png>
-Package pdftex.def Info: Output/car_marketmodelHybrid.png  used on input line 1
-699.
+ <./Output/car_marketmodelRevaluation.png (PNG copy)>]
+<Output/car_marketmodelSaving.png, id=2635, 722.7pt x 524.96124pt>
+File: Output/car_marketmodelSaving.png Graphic file (type png)
+<use Output/car_marketmodelSaving.png>
+Package pdftex.def Info: Output/car_marketmodelSaving.png  used on input line 1
+700.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [76
 
+ <./Output/car_marketmodelSaving.png (PNG copy)>]
+<Output/car_marketmodelCash.png, id=2668, 722.7pt x 524.96124pt>
+File: Output/car_marketmodelCash.png Graphic file (type png)
+<use Output/car_marketmodelCash.png>
+Package pdftex.def Info: Output/car_marketmodelCash.png  used on input line 171
+1.
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [77
+
+ <./Output/car_marketmodelCash.png (PNG copy)>]
+<Output/car_marketmodelHybrid.png, id=2699, 722.7pt x 524.96124pt>
+File: Output/car_marketmodelHybrid.png Graphic file (type png)
+<use Output/car_marketmodelHybrid.png>
+Package pdftex.def Info: Output/car_marketmodelHybrid.png  used on input line 1
+720.
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [78
+
  <./Output/car_marketmodelHybrid.png (PNG copy)>]
-(./CapitalRaise - Slide.toc) [77
+(./CapitalRaise - Slide.toc) [79
 
 ]
-<Output/car_marketmodel_industry.png, id=2703, 722.7pt x 524.96124pt>
+<Output/car_marketmodel_industry.png, id=2771, 722.7pt x 524.96124pt>
 File: Output/car_marketmodel_industry.png Graphic file (type png)
 <use Output/car_marketmodel_industry.png>
 Package pdftex.def Info: Output/car_marketmodel_industry.png  used on input lin
-e 1712.
+e 1733.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
- [78
+ [80
 
  <./Output/car_marketmodel_industry.png (PNG copy)>]
-<Output/car_marketmodel_industryRevaluation.png, id=2735, 722.7pt x 524.96124pt
+<Output/car_marketmodel_industryRevaluation.png, id=2803, 722.7pt x 524.96124pt
 >
 File: Output/car_marketmodel_industryRevaluation.png Graphic file (type png)
 <use Output/car_marketmodel_industryRevaluation.png>
 Package pdftex.def Info: Output/car_marketmodel_industryRevaluation.png  used o
-n input line 1721.
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [79
-
- <./Output/car_marketmodel_industryRevaluation.png (PNG copy)>]
-<Output/car_marketmodel_industrySaving.png, id=2769, 722.7pt x 524.96124pt>
-File: Output/car_marketmodel_industrySaving.png Graphic file (type png)
-<use Output/car_marketmodel_industrySaving.png>
-Package pdftex.def Info: Output/car_marketmodel_industrySaving.png  used on inp
-ut line 1731.
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
-
-[80
-
- <./Output/car_marketmodel_industrySaving.png (PNG copy)>]
-<Output/car_marketmodel_industryCash.png, id=2801, 722.7pt x 524.96124pt>
-File: Output/car_marketmodel_industryCash.png Graphic file (type png)
-<use Output/car_marketmodel_industryCash.png>
-Package pdftex.def Info: Output/car_marketmodel_industryCash.png  used on input
- line 1742.
+n input line 1742.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [81
 
+ <./Output/car_marketmodel_industryRevaluation.png (PNG copy)>]
+<Output/car_marketmodel_industrySaving.png, id=2835, 722.7pt x 524.96124pt>
+File: Output/car_marketmodel_industrySaving.png Graphic file (type png)
+<use Output/car_marketmodel_industrySaving.png>
+Package pdftex.def Info: Output/car_marketmodel_industrySaving.png  used on inp
+ut line 1752.
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+
+[82
+
+ <./Output/car_marketmodel_industrySaving.png (PNG copy)>]
+<Output/car_marketmodel_industryCash.png, id=2868, 722.7pt x 524.96124pt>
+File: Output/car_marketmodel_industryCash.png Graphic file (type png)
+<use Output/car_marketmodel_industryCash.png>
+Package pdftex.def Info: Output/car_marketmodel_industryCash.png  used on input
+ line 1763.
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [83
+
  <./Output/car_marketmodel_industryCash.png (PNG copy)>]
-<Output/car_marketmodel_industryHybrid.png, id=2832, 722.7pt x 524.96124pt>
+<Output/car_marketmodel_industryHybrid.png, id=2899, 722.7pt x 524.96124pt>
 File: Output/car_marketmodel_industryHybrid.png Graphic file (type png)
 <use Output/car_marketmodel_industryHybrid.png>
 Package pdftex.def Info: Output/car_marketmodel_industryHybrid.png  used on inp
-ut line 1751.
+ut line 1772.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [82
-
- <./Output/car_marketmodel_industryHybrid.png (PNG copy)>] (./CapitalRaise - Sl
-ide.toc) [83
-
-]
-<Output/car_4factor.png, id=2903, 722.7pt x 524.96124pt>
-File: Output/car_4factor.png Graphic file (type png)
-<use Output/car_4factor.png>
-Package pdftex.def Info: Output/car_4factor.png  used on input line 1764.
-(pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [84
 
+ <./Output/car_marketmodel_industryHybrid.png (PNG copy)>] (./CapitalRaise - Sl
+ide.toc) [85
+
+]
+<Output/car_4factor.png, id=2971, 722.7pt x 524.96124pt>
+File: Output/car_4factor.png Graphic file (type png)
+<use Output/car_4factor.png>
+Package pdftex.def Info: Output/car_4factor.png  used on input line 1785.
+(pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
+ [86
+
  <./Output/car_4factor.png (PNG copy)>]
-<Output/car_4factorRevaluation.png, id=2935, 722.7pt x 524.96124pt>
+<Output/car_4factorRevaluation.png, id=3003, 722.7pt x 524.96124pt>
 File: Output/car_4factorRevaluation.png Graphic file (type png)
 <use Output/car_4factorRevaluation.png>
 Package pdftex.def Info: Output/car_4factorRevaluation.png  used on input line 
-1774.
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [85
-
- <./Output/car_4factorRevaluation.png (PNG copy)>]
-<Output/car_4factorSaving.png, id=2969, 722.7pt x 524.96124pt>
-File: Output/car_4factorSaving.png Graphic file (type png)
-<use Output/car_4factorSaving.png>
-Package pdftex.def Info: Output/car_4factorSaving.png  used on input line 1785.
-
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
-
-[86
-
- <./Output/car_4factorSaving.png (PNG copy)>]
-<Output/car_4factorCash.png, id=3001, 722.7pt x 524.96124pt>
-File: Output/car_4factorCash.png Graphic file (type png)
-<use Output/car_4factorCash.png>
-Package pdftex.def Info: Output/car_4factorCash.png  used on input line 1795.
+1795.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [87
 
- <./Output/car_4factorCash.png (PNG copy)>]
-<Output/car_4factorHybrid.png, id=3032, 722.7pt x 524.96124pt>
-File: Output/car_4factorHybrid.png Graphic file (type png)
-<use Output/car_4factorHybrid.png>
-Package pdftex.def Info: Output/car_4factorHybrid.png  used on input line 1806.
+ <./Output/car_4factorRevaluation.png (PNG copy)>]
+<Output/car_4factorSaving.png, id=3035, 722.7pt x 524.96124pt>
+File: Output/car_4factorSaving.png Graphic file (type png)
+<use Output/car_4factorSaving.png>
+Package pdftex.def Info: Output/car_4factorSaving.png  used on input line 1806.
 
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [88
 
- <./Output/car_4factorHybrid.png (PNG copy)>]
-(./CapitalRaise - Slide.toc) [89
+[88
 
-]
-<Output/car_market.png, id=3103, 722.7pt x 524.96124pt>
-File: Output/car_market.png Graphic file (type png)
-<use Output/car_market.png>
-Package pdftex.def Info: Output/car_market.png  used on input line 1818.
-(pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
+ <./Output/car_4factorSaving.png (PNG copy)>]
+<Output/car_4factorCash.png, id=3068, 722.7pt x 524.96124pt>
+File: Output/car_4factorCash.png Graphic file (type png)
+<use Output/car_4factorCash.png>
+Package pdftex.def Info: Output/car_4factorCash.png  used on input line 1816.
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [89
+
+ <./Output/car_4factorCash.png (PNG copy)>]
+<Output/car_4factorHybrid.png, id=3099, 722.7pt x 524.96124pt>
+File: Output/car_4factorHybrid.png Graphic file (type png)
+<use Output/car_4factorHybrid.png>
+Package pdftex.def Info: Output/car_4factorHybrid.png  used on input line 1827.
+
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [90
 
+ <./Output/car_4factorHybrid.png (PNG copy)>]
+(./CapitalRaise - Slide.toc) [91
+
+]
+<Output/car_market.png, id=3171, 722.7pt x 524.96124pt>
+File: Output/car_market.png Graphic file (type png)
+<use Output/car_market.png>
+Package pdftex.def Info: Output/car_market.png  used on input line 1839.
+(pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
+ [92
+
  <./Output/car_market.png (PNG copy)>]
-<Output/car_marketRevaluation.png, id=3135, 722.7pt x 524.96124pt>
+<Output/car_marketRevaluation.png, id=3203, 722.7pt x 524.96124pt>
 File: Output/car_marketRevaluation.png Graphic file (type png)
 <use Output/car_marketRevaluation.png>
 Package pdftex.def Info: Output/car_marketRevaluation.png  used on input line 1
-828.
+849.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
 
-[91
+[93
 
  <./Output/car_marketRevaluation.png (PNG copy)>]
-<Output/car_marketSaving.png, id=3169, 722.7pt x 524.96124pt>
+<Output/car_marketSaving.png, id=3235, 722.7pt x 524.96124pt>
 File: Output/car_marketSaving.png Graphic file (type png)
 <use Output/car_marketSaving.png>
-Package pdftex.def Info: Output/car_marketSaving.png  used on input line 1839.
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [92
-
- <./Output/car_marketSaving.png (PNG copy)>]
-<Output/car_marketCash.png, id=3201, 722.7pt x 524.96124pt>
-File: Output/car_marketCash.png Graphic file (type png)
-<use Output/car_marketCash.png>
-Package pdftex.def Info: Output/car_marketCash.png  used on input line 1849.
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [93
-
- <./Output/car_marketCash.png (PNG copy)>]
-<Output/car_marketHybrid.png, id=3232, 722.7pt x 524.96124pt>
-File: Output/car_marketHybrid.png Graphic file (type png)
-<use Output/car_marketHybrid.png>
-Package pdftex.def Info: Output/car_marketHybrid.png  used on input line 1859.
+Package pdftex.def Info: Output/car_marketSaving.png  used on input line 1860.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [94
 
- <./Output/car_marketHybrid.png (PNG copy)>] (./CapitalRaise - Slide.toc) [95
+ <./Output/car_marketSaving.png (PNG copy)>]
+<Output/car_marketCash.png, id=3267, 722.7pt x 524.96124pt>
+File: Output/car_marketCash.png Graphic file (type png)
+<use Output/car_marketCash.png>
+Package pdftex.def Info: Output/car_marketCash.png  used on input line 1870.
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [95
 
-]
-<Output/car_marketindustry.png, id=3303, 722.7pt x 524.96124pt>
-File: Output/car_marketindustry.png Graphic file (type png)
-<use Output/car_marketindustry.png>
-Package pdftex.def Info: Output/car_marketindustry.png  used on input line 1870
-.
-(pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
+ <./Output/car_marketCash.png (PNG copy)>]
+<Output/car_marketHybrid.png, id=3299, 722.7pt x 524.96124pt>
+File: Output/car_marketHybrid.png Graphic file (type png)
+<use Output/car_marketHybrid.png>
+Package pdftex.def Info: Output/car_marketHybrid.png  used on input line 1880.
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [96
 
+ <./Output/car_marketHybrid.png (PNG copy)>] (./CapitalRaise - Slide.toc) [97
+
+]
+<Output/car_marketindustry.png, id=3370, 722.7pt x 524.96124pt>
+File: Output/car_marketindustry.png Graphic file (type png)
+<use Output/car_marketindustry.png>
+Package pdftex.def Info: Output/car_marketindustry.png  used on input line 1891
+.
+(pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
+ [98
+
  <./Output/car_marketindustry.png (PNG copy)>]
-<Output/car_marketindustryRevaluation.png, id=3335, 722.7pt x 524.96124pt>
+<Output/car_marketindustryRevaluation.png, id=3403, 722.7pt x 524.96124pt>
 File: Output/car_marketindustryRevaluation.png Graphic file (type png)
 <use Output/car_marketindustryRevaluation.png>
 Package pdftex.def Info: Output/car_marketindustryRevaluation.png  used on inpu
-t line 1880.
+t line 1901.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [97
+ [99
 
  <./Output/car_marketindustryRevaluation.png (PNG copy)>]
-<Output/car_marketindustrySaving.png, id=3368, 722.7pt x 524.96124pt>
+<Output/car_marketindustrySaving.png, id=3435, 722.7pt x 524.96124pt>
 File: Output/car_marketindustrySaving.png Graphic file (type png)
 <use Output/car_marketindustrySaving.png>
 Package pdftex.def Info: Output/car_marketindustrySaving.png  used on input lin
-e 1891.
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
- [98
-
- <./Output/car_marketindustrySaving.png (PNG copy)>]
-<Output/car_marketindustryCash.png, id=3401, 722.7pt x 524.96124pt>
-File: Output/car_marketindustryCash.png Graphic file (type png)
-<use Output/car_marketindustryCash.png>
-Package pdftex.def Info: Output/car_marketindustryCash.png  used on input line 
-1901.
-(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
-[99
-
- <./Output/car_marketindustryCash.png (PNG copy)>]
-<Output/car_marketindustryHybrid.png, id=3432, 722.7pt x 524.96124pt>
-File: Output/car_marketindustryHybrid.png Graphic file (type png)
-<use Output/car_marketindustryHybrid.png>
-Package pdftex.def Info: Output/car_marketindustryHybrid.png  used on input lin
-e 1911.
+e 1912.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [100
 
- <./Output/car_marketindustryHybrid.png (PNG copy)>] (./CapitalRaise - Slide.to
-c) [101
+ <./Output/car_marketindustrySaving.png (PNG copy)>]
+<Output/car_marketindustryCash.png, id=3467, 722.7pt x 524.96124pt>
+File: Output/car_marketindustryCash.png Graphic file (type png)
+<use Output/car_marketindustryCash.png>
+Package pdftex.def Info: Output/car_marketindustryCash.png  used on input line 
+1922.
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [101
 
-]
-<Output/Amihud.png, id=3502, 722.7pt x 524.96124pt>
-File: Output/Amihud.png Graphic file (type png)
-<use Output/Amihud.png>
-Package pdftex.def Info: Output/Amihud.png  used on input line 1924.
-(pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
+ <./Output/car_marketindustryCash.png (PNG copy)>]
+<Output/car_marketindustryHybrid.png, id=3499, 722.7pt x 524.96124pt>
+File: Output/car_marketindustryHybrid.png Graphic file (type png)
+<use Output/car_marketindustryHybrid.png>
+Package pdftex.def Info: Output/car_marketindustryHybrid.png  used on input lin
+e 1932.
+(pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [102
 
+ <./Output/car_marketindustryHybrid.png (PNG copy)>] (./CapitalRaise - Slide.to
+c) [103
+
+]
+<Output/Amihud.png, id=3569, 722.7pt x 524.96124pt>
+File: Output/Amihud.png Graphic file (type png)
+<use Output/Amihud.png>
+Package pdftex.def Info: Output/Amihud.png  used on input line 1945.
+(pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
+ [104
+
  <./Output/Amihud.png (PNG copy)>]
-<Output/Amihud_Revaluation.png, id=3533, 722.7pt x 524.96124pt>
+<Output/Amihud_Revaluation.png, id=3601, 722.7pt x 524.96124pt>
 File: Output/Amihud_Revaluation.png Graphic file (type png)
 <use Output/Amihud_Revaluation.png>
-Package pdftex.def Info: Output/Amihud_Revaluation.png  used on input line 1934
+Package pdftex.def Info: Output/Amihud_Revaluation.png  used on input line 1955
 .
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
- [103
+ [105
 
  <./Output/Amihud_Revaluation.png (PNG copy)>]
-<Output/Amihud_NoRevaluation.png, id=3564, 722.7pt x 524.96124pt>
+<Output/Amihud_NoRevaluation.png, id=3631, 722.7pt x 524.96124pt>
 File: Output/Amihud_NoRevaluation.png Graphic file (type png)
 <use Output/Amihud_NoRevaluation.png>
 Package pdftex.def Info: Output/Amihud_NoRevaluation.png  used on input line 19
-42.
+63.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
-
-[104
+ [106
 
  <./Output/Amihud_NoRevaluation.png (PNG copy)>]
 \tf@nav=\write7
@@ -1832,22 +1864,22 @@ Package pdftex.def Info: Output/Amihud_NoRevaluation.png  used on input line 19
 \tf@snm=\write9
 \openout9 = `"CapitalRaise - Slide.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1948.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1948.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1969.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1969.
 
 (./CapitalRaise - Slide.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1948.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1948.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1969.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1969.
 
 Package rerunfilecheck Info: File `"CapitalRaise - Slide".out' has not changed.
 
 (rerunfilecheck)             Checksum: B482CD896702D3816405E7345F4088D8;1208.
  ) 
 Here is how much of TeX's memory you used:
- 25073 strings out of 480608
- 499857 string characters out of 5907536
- 729559 words of memory out of 5000000
- 39905 multiletter control sequences out of 15000+600000
+ 25109 strings out of 480608
+ 500881 string characters out of 5907536
+ 729862 words of memory out of 5000000
+ 39931 multiletter control sequences out of 15000+600000
  546252 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,18n,67p,811b,901s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1886,10 +1918,10 @@ exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/202
 0/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2020/te
 xmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb><c:/texlive/2020/texmf-d
 ist/fonts/type1/public/cm-super/sfss0600.pfb>
-Output written on "CapitalRaise - Slide.pdf" (104 pages, 5676615 bytes).
+Output written on "CapitalRaise - Slide.pdf" (106 pages, 5919217 bytes).
 PDF statistics:
- 3747 PDF objects out of 4296 (max. 8388607)
- 3500 compressed objects within 35 object streams
- 379 named destinations out of 1000 (max. 500000)
- 593 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3815 PDF objects out of 4296 (max. 8388607)
+ 3561 compressed objects within 36 object streams
+ 385 named destinations out of 1000 (max. 500000)
+ 613 words of extra memory for PDF output out of 10000 (max. 10000000)
 
