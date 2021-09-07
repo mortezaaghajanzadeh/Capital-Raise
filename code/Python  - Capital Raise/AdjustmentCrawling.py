@@ -63,5 +63,9 @@ for number,i in enumerate(object):
     except:
         pass
 # %%
-
+id = 35366681030756042
+url = r"https://members.tsetmc.com/tsev2/chart/data/Financial.aspx?i={}&t=ph&a=1".format(id)
+url = r"https://members.tsetmc.com/tsev2/chart/data/Financial.aspx?i={}&t=ph&a=0".format(id)
+r = requests.get(url)
+r.text.split(';')
 # %%

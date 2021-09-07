@@ -29,24 +29,55 @@ Data["InslImbalance"] = Data["NetIns"].divide(Data["TotalIns"])
 for i in ["count", "volume", "value"]:
     Data["ind_imbalance_" + i] = Data["ind_buy_" + i] - Data["ind_sell_" + i]
     Data["ins_imbalance_" + i] = Data["ins_buy_" + i] - Data["ins_sell_" + i]
-    
-gg = Data.groupby(['name','nEvent'])
 
-Data['ind_stock_account'] = gg.ind_imbalance_volume.cumsum()
-Data['ins_stock_account'] = gg.ins_imbalance_volume.cumsum()
+gg = Data.groupby(["name", "nEvent"])
 
-Data['ind_stock_account'] = Data['ind_stock_account'] * Data['UnadjustedPrice']
-Data['ins_stock_account'] = Data['ins_stock_account'] * Data['UnadjustedPrice']
+Data["ind_stock_account"] = gg.ind_imbalance_volume.cumsum()
+Data["ins_stock_account"] = gg.ins_imbalance_volume.cumsum()
 
-gg = Data.groupby(['name','nEvent'])
-Data['ind_Cash_account'] = gg.ind_imbalance_value.cumsum()
-Data['ins_Cash_account'] = gg.ins_imbalance_value.cumsum()
 
-Data['ind_Cash_account'] = Data['ind_Cash_account'] * (-1)
-Data['ins_Cash_account'] = Data['ins_Cash_account'] * (-1)
+#%%
+gg = Data.groupby(["name", "nEvent"])
 
-Data['ind_Nav'] = Data["ind_Cash_account"] + Data["ind_stock_account"]
-Data['ins_Nav'] = Data["ins_Cash_account"] + Data["ins_stock_account"]
+
+def adjust(g):
+    print(g.name)
+    l = g.EPeriod.to_list()
+    if (len(g) < 20) | (-1 not in l):
+        return g
+
+    factor = (
+        g[g.EPeriod == 0].AdjustFactor.iloc[0] / g[g.EPeriod == -1].AdjustFactor.iloc[0]
+    )
+    a = g[g.EPeriod == 0].NetInd.iloc[0]
+    change = a / factor - a
+
+    g.loc[g.EPeriod > -1, "ind_stock_account"] = (
+        g.loc[g.EPeriod > -1]["ind_stock_account"] + change
+    )
+    a = g[g.EPeriod == 0].NetIns.iloc[0]
+    change = a / factor - a
+    g.loc[g.EPeriod > -1, "ins_stock_account"] = (
+        g.loc[g.EPeriod > -1]["ins_stock_account"] + change
+    )
+    return g
+
+
+Data = gg.apply(adjust)
+#%%
+
+Data["ind_stock_account"] = Data["ind_stock_account"] * Data["UnadjustedPrice"]
+Data["ins_stock_account"] = Data["ins_stock_account"] * Data["UnadjustedPrice"]
+
+gg = Data.groupby(["name", "nEvent"])
+Data["ind_Cash_account"] = gg.ind_imbalance_value.cumsum()
+Data["ins_Cash_account"] = gg.ins_imbalance_value.cumsum()
+
+Data["ind_Cash_account"] = Data["ind_Cash_account"] * (-1)
+Data["ins_Cash_account"] = Data["ins_Cash_account"] * (-1)
+
+Data["ind_Nav"] = Data["ind_Cash_account"] + Data["ind_stock_account"]
+Data["ins_Nav"] = Data["ins_Cash_account"] + Data["ins_stock_account"]
 
 gg = Data.groupby(["name", "nEvent"])
 Data["CAR"] = gg["AbnormalReturn"].cumsum()
@@ -104,7 +135,9 @@ def periodMean(col):
 def HMCalculation(df):
     df["br_ins"] = df.ins_buy_count / (df.ins_buy_count + df.ins_sell_count)
     df["br_ind"] = df.ind_buy_count / (df.ind_buy_count + df.ind_sell_count)
-    df["br"] = (df.ind_buy_count +  df.ins_buy_count) / (df.ind_buy_count + df.ind_sell_count)
+    df["br"] = (df.ind_buy_count + df.ins_buy_count) / (
+        df.ind_buy_count + df.ind_sell_count
+    )
     gg = df.groupby(["date"])
     df["firstComponent_ins"] = gg["br_ins"].apply(firstComponent)
     df["firstComponent_ind"] = gg["br_ind"].apply(firstComponent)
@@ -115,41 +148,45 @@ def HMCalculation(df):
     df["HM"] = gg["firstComponent_ind"].apply(periodMean)
     return df
 
+
 Data = HMCalculation(Data)
+
+
+#%%
 
 # %%
 df = pd.DataFrame()
 df = df.append(Data)
-
-df = df.groupby(["name"]).filter(lambda x: x.shape[0] >= 40)
-df = df.groupby(["date","group_name"]).filter(lambda x: x.shape[0] >= 2)
-mlist = ['CAR_4Factor',
-         'CAR_Industry', 
-         'CAR_WithoutAlpha_Industry',
-         'CAR_MarketIndustry', 
-         'CAR_MarketModel', 
-         'CAR_WithoutAlpha_MarketModel',
-         'CAR_MarketModel_Industry',
-         'CAR_WithoutAlpha_MarketModel_Industry',
-         'CAR_AbnormalReturn2', 
-         'CAR_AbnormalReturn_Market2',
-         'CAR_AbnormalReturn_WithoutAlpha2',
-         'CAR_AbnormalReturn_Industry2',
-         'CAR_AbnormalReturn_WithoutAlpha_Industry2', 
-         'CAR_AbnormalReturn_MarketIndustry2',
-         'CAR_AbnormalReturn_MarketModel2',
-         'CAR_AbnormalReturn_WithoutAlpha_MarketModel2',
-         'CAR_AbnormalReturn_MarketModel_Industry2', 
-         'CAR_AbnormalReturn_WithoutAlpha_MarketMOdel_Industry2'
-         ]
+df = df.groupby(["name"]).filter(lambda x: x.shape[0] >= 60)
+# df = df.groupby(["date","group_name"]).filter(lambda x: x.shape[0] >= 2)
+mlist = [
+    "CAR_4Factor",
+    "CAR_Industry",
+    "CAR_WithoutAlpha_Industry",
+    "CAR_MarketIndustry",
+    "CAR_MarketModel",
+    "CAR_WithoutAlpha_MarketModel",
+    "CAR_MarketModel_Industry",
+    "CAR_WithoutAlpha_MarketModel_Industry",
+    "CAR_AbnormalReturn2",
+    "CAR_AbnormalReturn_Market2",
+    "CAR_AbnormalReturn_WithoutAlpha2",
+    "CAR_AbnormalReturn_Industry2",
+    "CAR_AbnormalReturn_WithoutAlpha_Industry2",
+    "CAR_AbnormalReturn_MarketIndustry2",
+    "CAR_AbnormalReturn_MarketModel2",
+    "CAR_AbnormalReturn_WithoutAlpha_MarketModel2",
+    "CAR_AbnormalReturn_MarketModel_Industry2",
+    "CAR_AbnormalReturn_WithoutAlpha_MarketMOdel_Industry2",
+]
 values = {}
 for i in mlist:
     print(i)
-    values[i] = (df[i].quantile(0.99),df[i].quantile(0.01))
+    values[i] = (df[i].quantile(0.99), df[i].quantile(0.01))
 for i in values:
     print(i)
-    df = df[df[i]<=  values[i][0]]
-    df = df[df[i]>=  values[i][1]]
+    df = df[df[i] <= values[i][0]]
+    df = df[df[i] >= values[i][1]]
 
 #%%
 d = path + "CapitalRaise.parquet"
@@ -233,22 +270,31 @@ mlist = [
     "CAR_AbnormalReturn_MarketModel_Industry2",
     "CAR_AbnormalReturn_WithoutAlpha_MarketMOdel_Industry2",
     "RaiseType",
-    'br_ins',
-    'br_ind',
-    'br',
-    'firstComponent_ins',
-    'firstComponent_ind',
-    'firstComponent',
-    'HM_ins',
-    'HM_ind',
-    'HM',
+    "br_ins",
+    "br_ind",
+    "br",
+    "firstComponent_ins",
+    "firstComponent_ind",
+    "firstComponent",
+    "HM_ins",
+    "HM_ind",
+    "HM",
     "year",
 ]
 df[mlist].to_csv(path + "CapitalRaise.csv", index=False)
-print('Done')
+print("Done")
 # %%
-df['under'] = 1/(1-df.Weight)
-df[df.under >2][['name','date','Weight','under']].drop_duplicates(
-    subset = ['name'])
+df[(df.RaiseType2 == 0) & (df.EPeriod < 3) & (df.name == "شبندر")][
+    ["jalaliDate","EPeriod", "name", "ind_Nav", "NetInd", "ind_stock_account", "AdjustFactor"]
+]
 
 
+# %%
+len(df[(df.RaiseType2 == "Revaluation")].name.unique())
+
+#%%
+df['RaiseType2'] = 0
+df.loc[df.RaiseType == 'Revaluation','RaiseType2'] = 1
+df = df[df.EPeriod<21]
+import seaborn as sns
+sns.relplot(data=df[df.RaiseType2 == 0], kind="line", x="EPeriod", y="ind_Nav")
