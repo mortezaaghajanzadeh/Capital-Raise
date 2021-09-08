@@ -15,7 +15,7 @@ gen lnVolume = ln(volume)
 gen RaiseType2 = raisetype
 replace RaiseType2 = "NoRevaluation" if raisetype != "Revaluation"
 
-foreach var in indlimbalance inslimbalance relvolume lnAmihud lnVolume hm_ins hm_ind ind_nav ins_nav{
+foreach var in indlimbalance inslimbalance relvolume lnAmihud lnVolume hm_ins hm_ind {
 	foreach vv in "NoRevaluation" "Revaluation"{
 		display "`vv'"
 		capture drop x 
@@ -23,24 +23,30 @@ foreach var in indlimbalance inslimbalance relvolume lnAmihud lnVolume hm_ins hm
 		gen `var'`vv' =  x
 		capture drop x 
 	} 
-}
-
-foreach var in ind_navNoRevaluation ind_navRevaluation ins_navNoRevaluation ins_navRevaluation{
-		replace `var' = `var'/1e13
-}
-
-
-foreach var in indlimbalance inslimbalance relvolume lnAmihud lnVolume hm_ins hm_ind {
 	capture drop x 
 	egen x = mean(`var'), by(eperiod) 
 	replace `var' =  x
 }
 
-foreach var in ind_nav ins_nav  {
+foreach var in ind_nav ins_nav{
+	foreach vv in "NoRevaluation" "Revaluation"{
+		display "`vv'"
+		capture drop x 
+		egen x = sum(`var') if RaiseType2 == "`vv'", by(eperiod) 
+		gen `var'`vv' =  x
+		capture drop x 
+	} 
 	capture drop x 
 	egen x = sum(`var'), by(eperiod) 
 	replace `var' =  x
 }
+
+
+foreach var in ind_navNoRevaluation ind_navRevaluation ins_navNoRevaluation ins_navRevaluation {
+		replace `var' = `var'/1e13
+}
+
+
 
 replace ind_nav = ind_nav/1e13
 replace ins_nav = ins_nav/1e13
@@ -55,7 +61,8 @@ twoway connected ind_nav ins_nav  eperiod  if eperiod <`e' , sort(eperiod)  xlin
  graph export IndInsNav.png,replace
 graph export IndInsNav.eps,replace
 
-
+local e 21
+local u = `e' -1
 
 twoway connected ind_navRevaluation  ins_navRevaluation   eperiod  if eperiod <`e' , sort(eperiod)  xline(0) yline(0) xlab(-20(10)`u')  msymbol(O D) title("Traders' NAV around Capital Raise from revaluation",size(medium))   xtitle("Period")  color(navy)note("This figure graphs the traders' nav. It is defined as BuyedVolume{sub:i,t} * ClosePrice{sub:k,t} + NetSellValue{sub:i,t}")   ytitle("Thousand Billion Toman") legend(label (1 "Individual") label (2 "Institutional") col(4))   
 

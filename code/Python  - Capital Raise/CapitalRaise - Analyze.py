@@ -8,10 +8,12 @@ n = path + "ARdata.parquet"
 
 ARdata = pd.read_parquet(n)
 
+
 #%%
 Data = pd.DataFrame()
 Data = Data.append(ARdata)
 Data = Data.reset_index(drop=True)
+Data["AdjustFactor"] = Data.close_price_Adjusted / Data.UnadjustedPrice
 Data = Data.rename(columns={"ER": "EReturn"})
 Data["Amihud"] = abs(Data["Return"]) / Data["volume"]
 Data = Data.loc[(Data.EPeriod >= -20) & (Data.EPeriod <= 50)]
@@ -50,18 +52,22 @@ def adjust(g):
         g[g.EPeriod == 0].AdjustFactor.iloc[0] / g[g.EPeriod == -1].AdjustFactor.iloc[0]
     )
     a = g[g.EPeriod == 0].NetInd.iloc[0]
-    change = a / factor - a
+    change = a * (factor - 1)
 
     g.loc[g.EPeriod > -1, "ind_stock_account"] = (
         g.loc[g.EPeriod > -1]["ind_stock_account"] + change
     )
     a = g[g.EPeriod == 0].NetIns.iloc[0]
-    change = a / factor - a
+    change = a * (factor - 1)
+
     g.loc[g.EPeriod > -1, "ins_stock_account"] = (
         g.loc[g.EPeriod > -1]["ins_stock_account"] + change
     )
     return g
 
+
+# g = gg.get_group(('فولاد',1))
+# g[g.EPeriod >-2][['AdjustFactor','name','EPeriod']]
 
 Data = gg.apply(adjust)
 #%%
@@ -157,7 +163,8 @@ Data = HMCalculation(Data)
 # %%
 df = pd.DataFrame()
 df = df.append(Data)
-df = df.groupby(["name"]).filter(lambda x: x.shape[0] >= 60)
+gg = df.groupby(["name", "nEvent"])
+df = gg.filter(lambda x: x.shape[0] >= 60)
 # df = df.groupby(["date","group_name"]).filter(lambda x: x.shape[0] >= 2)
 mlist = [
     "CAR_4Factor",
@@ -187,6 +194,22 @@ for i in values:
     print(i)
     df = df[df[i] <= values[i][0]]
     df = df[df[i] >= values[i][1]]
+t = df[df.EPeriod < 21]
+print(len(t))
+gg = t.groupby(["name", "nEvent"])
+t = gg.filter(lambda x: x.shape[0] > 40)
+print(len(t))
+l = list(t.groupby(["name", "nEvent"]).groups.keys())
+def check(g,l):
+    if g.name in l:
+        return g
+    # print(g.name)
+print(len(df))
+gg = df.groupby(["name", "nEvent"])
+df = gg.apply(check,l = l)
+
+df = df[~df.Period.isnull()]
+print(len(df))
 
 #%%
 d = path + "CapitalRaise.parquet"
@@ -283,18 +306,15 @@ mlist = [
 ]
 df[mlist].to_csv(path + "CapitalRaise.csv", index=False)
 print("Done")
-# %%
-df[(df.RaiseType2 == 0) & (df.EPeriod < 3) & (df.name == "شبندر")][
-    ["jalaliDate","EPeriod", "name", "ind_Nav", "NetInd", "ind_stock_account", "AdjustFactor"]
-]
-
-
-# %%
-len(df[(df.RaiseType2 == "Revaluation")].name.unique())
-
 #%%
-df['RaiseType2'] = 0
-df.loc[df.RaiseType == 'Revaluation','RaiseType2'] = 1
-df = df[df.EPeriod<21]
+df["RaiseType2"] = 0
+df.loc[df.RaiseType == "Revaluation", "RaiseType2"] = 1
+df = df[df.EPeriod < 21]
+gg = df.groupby(["name", "nEvent"])
+t = gg.filter(lambda x: x.shape[0] > 40)
+t = df
+
 import seaborn as sns
-sns.relplot(data=df[df.RaiseType2 == 0], kind="line", x="EPeriod", y="ind_Nav")
+
+sns.relplot(data=t[t.RaiseType2 == 0], kind="line", x="EPeriod", y="ind_Nav")
+#
