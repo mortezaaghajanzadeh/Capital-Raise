@@ -16,11 +16,6 @@ Black, F. (1986).
 \newblock Noise.
 \newblock {\em The journal of finance}, 41(3):528--543.
 
-\bibitem[Boehmer et~al., 2021]{BOEHMER2021}
-Boehmer, E., Jones, C.~M., Zhang, X., and Zhang, X. (2021).
-\newblock Tracking retail investor activity.
-\newblock {\em The Journal of Finance}, n/a(n/a):n/a.
-
 \bibitem[Bond and Zhong, 2016]{bond2016buying}
 Bond, P. and Zhong, H. (2016).
 \newblock Buying high and selling low: Stock repurchases and persistent
@@ -67,6 +62,12 @@ Eckbo, B. and Masulis, R.~W. (1992a).
 Eckbo, B.~E. and Masulis, R.~W. (1992b).
 \newblock Adverse selection and the rights offer paradox.
 \newblock {\em Journal of financial economics}, 32(3):293--332.
+
+\bibitem[Foucault and Gehrig, 2008]{FOUCAULT2008146}
+Foucault, T. and Gehrig, T. (2008).
+\newblock Stock price informativeness, cross-listings, and investment
+  decisions.
+\newblock {\em Journal of Financial Economics}, 88(1):146--168.
 
 \bibitem[Griffin et~al., 2003]{griffin2003dynamics}
 Griffin, J.~M., Harris, J.~H., and Topaloglu, S. (2003).

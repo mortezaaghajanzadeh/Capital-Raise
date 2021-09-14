@@ -3,50 +3,50 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: CapitalRaise - Slide.aux
 The style file: apalike.bst
 Database file #1: Ref.bib
-Repeated entry---line 631 of file Ref.bib
+Repeated entry---line 655 of file Ref.bib
  : @article{ambarish1987efficient
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 651 of file Ref.bib
+Repeated entry---line 675 of file Ref.bib
  : @article{ambarish1987efficient
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 693 of file Ref.bib
+Repeated entry---line 717 of file Ref.bib
  : @article{dierkens1991information
  :                                 ,
 I'm skipping whatever remains of this entry
 You've used 32 entries,
             1935 wiz_defined-function locations,
-            678 strings with 8560 characters,
-and the built_in function-call counts, 12927 in all, are:
-= -- 1331
-> -- 401
-< -- 28
-+ -- 137
-- -- 126
-* -- 1136
-:= -- 2182
+            678 strings with 8564 characters,
+and the built_in function-call counts, 12910 in all, are:
+= -- 1333
+> -- 391
+< -- 29
++ -- 133
+- -- 122
+* -- 1132
+:= -- 2174
 add.period$ -- 96
 call.type$ -- 32
-change.case$ -- 223
+change.case$ -- 221
 chr.to.int$ -- 31
 cite$ -- 32
 duplicate$ -- 473
-empty$ -- 964
-format.name$ -- 188
-if$ -- 2538
+empty$ -- 968
+format.name$ -- 186
+if$ -- 2540
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 32
 newline$ -- 163
 num.names$ -- 96
-pop$ -- 140
+pop$ -- 137
 preamble$ -- 1
-purify$ -- 223
+purify$ -- 221
 quote$ -- 0
-skip$ -- 378
+skip$ -- 379
 stack$ -- 0
-substring$ -- 1175
+substring$ -- 1187
 swap$ -- 57
 text.length$ -- 3
 text.prefix$ -- 0
