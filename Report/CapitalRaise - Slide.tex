@@ -237,151 +237,151 @@
 	%\end{frame}
 	
 	
-	\section{Abnormal Return}
-	
-	\begin{frame}{Abnormal Return}
-		\begin{itemize}
-			\item Abnormal return  is the difference between the observed return and the predicted return
-			\begin{equation*}
-				AR_{i,t} = R_{i,t} - E(R_{i,t}|X_t)
-			\end{equation*}
-			\item Predicted return
-			\begin{itemize}
-				\item Mean-adjusted returns Model (MAR) $ \longrightarrow \bar{R}_i $
-				\item Market-adjusted returns Model (MKAR) $ \longrightarrow {R}_{M,t} $
-				\item Risk-adjusted returns Model (RAR) $ \longrightarrow \alpha_i + \beta_i{R}_{M,t} $
-			\end{itemize}
-		\end{itemize}
-	\end{frame}
-	\begin{frame}{Abnormal Return Calculation}{First Step}
-		
-		
-		%\item  Fama, Fisher, Jensen and Roll (1969)
-		%
-		%\begin{tikzpicture}
-		%	\draw[] (0,0) -- node[below=1mm,pos=0.6,scale=2]{}(10,0)node[right = 4mm]{};
-		%	\draw[] (1,2.5mm)-- +(0,-5.5mm)node[below]{$T_0$};	
-		%	\draw[] (5,2.5mm) -- +(0,-5.5mm)node[below]{$0$};
-		%	\draw[] (9,2.5mm) -- +(0,-5.5mm)node[below]{$T_1$};
-		%	
-		%\draw [decorate,decoration={brace,amplitude=5pt,,raise=2ex}]
-		%  (1,0) -- (9,0) node[midway,yshift=2em]{Estimation Window \& Event Window};
-		%
-		%	\end{tikzpicture}
-		
-		
-		
-		
-		
-		\begin{tikzpicture}
-			\draw[] (0,0) -- node[below=1mm,pos=0.6,scale=2]{}(10,0)node[right = 4mm]{};
-			\draw[] (1,2.5mm) -- +(0,-5.5mm)node[below]{\footnotesize $T_0$};	
-			\draw[] (5,2.5mm) -- +(0,-5.5mm)node[below]{\footnotesize$T_1$};
-			\draw[] (6,2.5mm) -- +(0,-5.5mm)node[below]{\footnotesize$T_1 + 1$};
-			\draw[] (9,2.5mm)  -- +(0,-5.5mm)node[below]{\footnotesize$T_2$};
-			\draw[] (7.5,2.5mm) -- +(0,-5.5mm)node[below]{\footnotesize $0$};
-			
-			\draw [decorate,decoration={brace,amplitude=5pt,mirror,raise=5ex}]
-			(1,0) -- (5,0) node[midway,yshift=-4em]{Estimation window};
-			\draw [decorate,decoration={brace,amplitude=5pt,mirror,raise=5ex}]
-			(6,0) -- (9,0) node[midway,yshift=-4em]{Event window};
-		\end{tikzpicture}
-		\begin{itemize}
-			\item Event windows specifically 3-day, 7-day, and 11-day event periods 
-			\item  Estimation window :  Each event window implies a particular estimation window interval.
-			\scriptsize(For example,
-			3-day event window [-1,+1] is associated with [-122,-2] estimation window)
-			\normalsize
-			\item Fama,Fisher,Jensen, and Roll use Event Window as Estimation window  
-			\tiny[IER-1969-The Adjustment of Stock Prices to New Information]
-		\end{itemize}
-	\end{frame}
-	
-	
-	\begin{frame}{Abnormal Return Calculation}{Second Step}
-		\begin{itemize}
-			\scriptsize
-			\item For each Firm :
-			\begin{equation*}
-				R_{i,t} = \hat{\alpha}_i + \hat{\beta}_i (R_{m,t}) + \boxed{\varepsilon_{i,t}} \rightarrow AR_{i,t}
-			\end{equation*}
-			
-			\item Average abnormal return during period t: 
-			\tiny $ N_t $ is the number of firms in the sample during period t
-			\scriptsize
-			\begin{equation*}
-				AAR_t = \sum_{i=1}^{N_t} \frac{AR_{it}}{N_t}
-			\end{equation*}
-			\item Cumulative Abnormal Returns
-			\begin{equation*}
-				CAR_t(t_1,t_2) = \sum_{t=t_1}^{t_2} {AR_{it}}
-			\end{equation*}
-			\item Cumulative Average Abnormal Return from period $ t_1 $ to period $ t_2 $
-			\begin{equation*}
-				CAAR_{t_1,t_2} = \sum_{i=t_1}^{t_2} CAR_i(t_1,t_2)
-			\end{equation*}
-		\end{itemize}
-	\end{frame}
-	
-	
-	\begin{frame}{Abnormal Return Calculation}{Cross-Sectional Test (Test $ AAR=0 $)}
-		
-		
-		\begin{itemize}
-			\item Hypothesis is  $\left\{\begin{array}{c c }
-				H_0: & AAR=0\\
-				H_1: & AAR\neq 0
-			\end{array}\right.
-			$\\
-			\item[]
-			\item The t-statistics for this test is 
-			\begin{itemize}
-				\item 
-				$
-				t_{AAR} = \sqrt{N}\frac{AAR}{S_{AAR}}
-				$
-				\item 
-				$
-				S^2_{AAR} = \frac{1}{N-1}\sum_{i = 1}^{N}(AR_i - {AAR})^2
-				$
-			\end{itemize}
-		\end{itemize}
-		
-		
-		
-	\end{frame}
-	
-	
-	\begin{frame}{Abnormal Return Calculation}{Cross-Sectional Test (Test $ CAAR=0 $ )}
-		
-		\begin{itemize}
-			\item Hypothesis is  $\left\{\begin{array}{c c }
-				H_0: & CAAR=0\\
-				H_1: & CAAR\neq 0
-			\end{array}\right.
-			$\\
-			\item[]
-			\item The t-statistics for this test is 
-			\begin{itemize}
-				\item 
-				$
-				t_{CAAR} = \sqrt{N}\frac{CAAR}{S_{CAAR}}
-				$
-				\item 
-				$
-				S^2_{CAAR} = \frac{1}{N-1}\sum_{i = 1}^{N}(CAR_i - {CAAR})^2
-				$
-				\item
-				\scriptsize
-				$ CAR_i = \sum_{i=t_1}^{t_2} AR_{i,t} $ 
-				\normalsize 
-			\end{itemize}
-		\end{itemize}
-		
-	\end{frame}
-	
-	
-	
+%	\section{Abnormal Return}
+%	
+%	\begin{frame}{Abnormal Return}
+%		\begin{itemize}
+%			\item Abnormal return  is the difference between the observed return and the predicted return
+%			\begin{equation*}
+%				AR_{i,t} = R_{i,t} - E(R_{i,t}|X_t)
+%			\end{equation*}
+%			\item Predicted return
+%			\begin{itemize}
+%				\item Mean-adjusted returns Model (MAR) $ \longrightarrow \bar{R}_i $
+%				\item Market-adjusted returns Model (MKAR) $ \longrightarrow {R}_{M,t} $
+%				\item Risk-adjusted returns Model (RAR) $ \longrightarrow \alpha_i + \beta_i{R}_{M,t} $
+%			\end{itemize}
+%		\end{itemize}
+%	\end{frame}
+%	\begin{frame}{Abnormal Return Calculation}{First Step}
+%		
+%		
+%		%\item  Fama, Fisher, Jensen and Roll (1969)
+%		%
+%		%\begin{tikzpicture}
+%		%	\draw[] (0,0) -- node[below=1mm,pos=0.6,scale=2]{}(10,0)node[right = 4mm]{};
+%		%	\draw[] (1,2.5mm)-- +(0,-5.5mm)node[below]{$T_0$};	
+%		%	\draw[] (5,2.5mm) -- +(0,-5.5mm)node[below]{$0$};
+%		%	\draw[] (9,2.5mm) -- +(0,-5.5mm)node[below]{$T_1$};
+%		%	
+%		%\draw [decorate,decoration={brace,amplitude=5pt,,raise=2ex}]
+%		%  (1,0) -- (9,0) node[midway,yshift=2em]{Estimation Window \& Event Window};
+%		%
+%		%	\end{tikzpicture}
+%		
+%		
+%		
+%		
+%		
+%		\begin{tikzpicture}
+%			\draw[] (0,0) -- node[below=1mm,pos=0.6,scale=2]{}(10,0)node[right = 4mm]{};
+%			\draw[] (1,2.5mm) -- +(0,-5.5mm)node[below]{\footnotesize $T_0$};	
+%			\draw[] (5,2.5mm) -- +(0,-5.5mm)node[below]{\footnotesize$T_1$};
+%			\draw[] (6,2.5mm) -- +(0,-5.5mm)node[below]{\footnotesize$T_1 + 1$};
+%			\draw[] (9,2.5mm)  -- +(0,-5.5mm)node[below]{\footnotesize$T_2$};
+%			\draw[] (7.5,2.5mm) -- +(0,-5.5mm)node[below]{\footnotesize $0$};
+%			
+%			\draw [decorate,decoration={brace,amplitude=5pt,mirror,raise=5ex}]
+%			(1,0) -- (5,0) node[midway,yshift=-4em]{Estimation window};
+%			\draw [decorate,decoration={brace,amplitude=5pt,mirror,raise=5ex}]
+%			(6,0) -- (9,0) node[midway,yshift=-4em]{Event window};
+%		\end{tikzpicture}
+%		\begin{itemize}
+%			\item Event windows specifically 3-day, 7-day, and 11-day event periods 
+%			\item  Estimation window :  Each event window implies a particular estimation window interval.
+%			\scriptsize(For example,
+%			3-day event window [-1,+1] is associated with [-122,-2] estimation window)
+%			\normalsize
+%			\item Fama,Fisher,Jensen, and Roll use Event Window as Estimation window  
+%			\tiny[IER-1969-The Adjustment of Stock Prices to New Information]
+%		\end{itemize}
+%	\end{frame}
+%	
+%	
+%	\begin{frame}{Abnormal Return Calculation}{Second Step}
+%		\begin{itemize}
+%			\scriptsize
+%			\item For each Firm :
+%			\begin{equation*}
+%				R_{i,t} = \hat{\alpha}_i + \hat{\beta}_i (R_{m,t}) + \boxed{\varepsilon_{i,t}} \rightarrow AR_{i,t}
+%			\end{equation*}
+%			
+%			\item Average abnormal return during period t: 
+%			\tiny $ N_t $ is the number of firms in the sample during period t
+%			\scriptsize
+%			\begin{equation*}
+%				AAR_t = \sum_{i=1}^{N_t} \frac{AR_{it}}{N_t}
+%			\end{equation*}
+%			\item Cumulative Abnormal Returns
+%			\begin{equation*}
+%				CAR_t(t_1,t_2) = \sum_{t=t_1}^{t_2} {AR_{it}}
+%			\end{equation*}
+%			\item Cumulative Average Abnormal Return from period $ t_1 $ to period $ t_2 $
+%			\begin{equation*}
+%				CAAR_{t_1,t_2} = \sum_{i=t_1}^{t_2} CAR_i(t_1,t_2)
+%			\end{equation*}
+%		\end{itemize}
+%	\end{frame}
+%	
+%	
+%	\begin{frame}{Abnormal Return Calculation}{Cross-Sectional Test (Test $ AAR=0 $)}
+%		
+%		
+%		\begin{itemize}
+%			\item Hypothesis is  $\left\{\begin{array}{c c }
+%				H_0: & AAR=0\\
+%				H_1: & AAR\neq 0
+%			\end{array}\right.
+%			$\\
+%			\item[]
+%			\item The t-statistics for this test is 
+%			\begin{itemize}
+%				\item 
+%				$
+%				t_{AAR} = \sqrt{N}\frac{AAR}{S_{AAR}}
+%				$
+%				\item 
+%				$
+%				S^2_{AAR} = \frac{1}{N-1}\sum_{i = 1}^{N}(AR_i - {AAR})^2
+%				$
+%			\end{itemize}
+%		\end{itemize}
+%		
+%		
+%		
+%	\end{frame}
+%	
+%	
+%	\begin{frame}{Abnormal Return Calculation}{Cross-Sectional Test (Test $ CAAR=0 $ )}
+%		
+%		\begin{itemize}
+%			\item Hypothesis is  $\left\{\begin{array}{c c }
+%				H_0: & CAAR=0\\
+%				H_1: & CAAR\neq 0
+%			\end{array}\right.
+%			$\\
+%			\item[]
+%			\item The t-statistics for this test is 
+%			\begin{itemize}
+%				\item 
+%				$
+%				t_{CAAR} = \sqrt{N}\frac{CAAR}{S_{CAAR}}
+%				$
+%				\item 
+%				$
+%				S^2_{CAAR} = \frac{1}{N-1}\sum_{i = 1}^{N}(CAR_i - {CAAR})^2
+%				$
+%				\item
+%				\scriptsize
+%				$ CAR_i = \sum_{i=t_1}^{t_2} AR_{i,t} $ 
+%				\normalsize 
+%			\end{itemize}
+%		\end{itemize}
+%		
+%	\end{frame}
+%	
+%	
+%	
 	\section{Literature}
 		\begin{frame}{Individual investors}
 		\begin{itemize}\tiny
@@ -714,49 +714,49 @@
 
 	\end{frame}
 	
-	\begin{frame}
-		% Table generated by Excel2LaTeX from sheet 'Sheet1'
-		
-		
-		\centering
-		\begin{table}[htbp]
-			\centering
-			
-			\captionsetup{labelformat=empty}
-			\caption{\tiny Analysis of abnormal return in days surrounding the capital raise announcements}
-			\centering
-			\resizebox{0.8\textheight}{!}
-			{\tiny
-				\begin{tabular}{cccc|cccc}
-					\hline\hline
-					Period & \multicolumn{1}{c}{AAR} & \multicolumn{1}{c}{CAAR} & \multicolumn{1}{c}{t-stat} & Period & \multicolumn{1}{c}{AAR} & \multicolumn{1}{c}{CAAR} & \multicolumn{1}{c}{t-stat} \\
-					\hline    -20   & 0.06  & 0.06  & 0.45  & 0     & 6.38  & 6.99  & 7.88 \\
-					-19   & -0.06 & 0.00  & -0.02 & 1     & 0.33  & 7.32  & 8.10 \\
-					-18   & -0.03 & -0.03 & -0.15 & 2     & 0.32  & 7.67  & 8.34 \\
-					-17   & 0.08  & 0.05  & 0.23  & 3     & 0.18  & 7.85  & 8.39 \\
-					-16   & -0.16 & -0.10 & -0.42 & 4     & -0.07 & 7.75  & 8.12 \\
-					-15   & -0.06 & -0.16 & -0.59 & 5     & 0.13  & 7.89  & 7.95 \\
-					-14   & 0.04  & -0.13 & -0.43 & 6     & -0.02 & 7.88  & 7.87 \\
-					-13   & 0.05  & -0.08 & -0.24 & 7     & -0.08 & 7.85  & 7.77 \\
-					-12   & -0.08 & -0.16 & -0.47 & 8     & -0.19 & 7.65  & 7.52 \\
-					-11   & -0.09 & -0.25 & -0.68 & 9     & -0.22 & 7.46  & 7.24 \\
-					-10   & 0.18  & -0.06 & -0.17 & 10    & -0.07 & 7.39  & 7.08 \\
-					-9    & 0.18  & 0.12  & 0.29  & 11    & -0.12 & 7.27  & 6.88 \\
-					-8    & 0.29  & 0.40  & 0.93  & 12    & -0.22 & 7.05  & 6.65 \\
-					-7    & 0.16  & 0.59  & 1.30  & 13    & -0.11 & 6.93  & 6.46 \\
-					-6    & -0.01 & 0.58  & 1.23  & 14    & -0.04 & 6.87  & 6.28 \\
-					-5    & 0.41  & 1.00  & 1.80  & 15    & -0.19 & 6.64  & 6.02 \\
-					-4    & -0.09 & 0.91  & 1.59  & 16    & -0.26 & 6.38  & 5.71 \\
-					-3    & -0.11 & 0.81  & 1.37  & 17    & -0.10 & 6.30  & 5.54 \\
-					-2    & -0.22 & 0.58  & 0.95  & 18    & -0.15 & 6.18  & 5.36 \\
-					-1    & 0.04  & 0.62  & 1.01  & 19    & -0.09 & 6.09  & 5.24 \\
-					\hline\hline
-				\end{tabular}%
-			}
-		\end{table}%
-		
-	\end{frame}
-	%
+%	\begin{frame}
+%		% Table generated by Excel2LaTeX from sheet 'Sheet1'
+%		
+%		
+%		\centering
+%		\begin{table}[htbp]
+%			\centering
+%			
+%			\captionsetup{labelformat=empty}
+%			\caption{\tiny Analysis of abnormal return in days surrounding the capital raise announcements}
+%			\centering
+%			\resizebox{0.8\textheight}{!}
+%			{\tiny
+%				\begin{tabular}{cccc|cccc}
+%					\hline\hline
+%					Period & \multicolumn{1}{c}{AAR} & \multicolumn{1}{c}{CAAR} & \multicolumn{1}{c}{t-stat} & Period & \multicolumn{1}{c}{AAR} & \multicolumn{1}{c}{CAAR} & \multicolumn{1}{c}{t-stat} \\
+%					\hline    -20   & 0.06  & 0.06  & 0.45  & 0     & 6.38  & 6.99  & 7.88 \\
+%					-19   & -0.06 & 0.00  & -0.02 & 1     & 0.33  & 7.32  & 8.10 \\
+%					-18   & -0.03 & -0.03 & -0.15 & 2     & 0.32  & 7.67  & 8.34 \\
+%					-17   & 0.08  & 0.05  & 0.23  & 3     & 0.18  & 7.85  & 8.39 \\
+%					-16   & -0.16 & -0.10 & -0.42 & 4     & -0.07 & 7.75  & 8.12 \\
+%					-15   & -0.06 & -0.16 & -0.59 & 5     & 0.13  & 7.89  & 7.95 \\
+%					-14   & 0.04  & -0.13 & -0.43 & 6     & -0.02 & 7.88  & 7.87 \\
+%					-13   & 0.05  & -0.08 & -0.24 & 7     & -0.08 & 7.85  & 7.77 \\
+%					-12   & -0.08 & -0.16 & -0.47 & 8     & -0.19 & 7.65  & 7.52 \\
+%					-11   & -0.09 & -0.25 & -0.68 & 9     & -0.22 & 7.46  & 7.24 \\
+%					-10   & 0.18  & -0.06 & -0.17 & 10    & -0.07 & 7.39  & 7.08 \\
+%					-9    & 0.18  & 0.12  & 0.29  & 11    & -0.12 & 7.27  & 6.88 \\
+%					-8    & 0.29  & 0.40  & 0.93  & 12    & -0.22 & 7.05  & 6.65 \\
+%					-7    & 0.16  & 0.59  & 1.30  & 13    & -0.11 & 6.93  & 6.46 \\
+%					-6    & -0.01 & 0.58  & 1.23  & 14    & -0.04 & 6.87  & 6.28 \\
+%					-5    & 0.41  & 1.00  & 1.80  & 15    & -0.19 & 6.64  & 6.02 \\
+%					-4    & -0.09 & 0.91  & 1.59  & 16    & -0.26 & 6.38  & 5.71 \\
+%					-3    & -0.11 & 0.81  & 1.37  & 17    & -0.10 & 6.30  & 5.54 \\
+%					-2    & -0.22 & 0.58  & 0.95  & 18    & -0.15 & 6.18  & 5.36 \\
+%					-1    & 0.04  & 0.62  & 1.01  & 19    & -0.09 & 6.09  & 5.24 \\
+%					\hline\hline
+%				\end{tabular}%
+%			}
+%		\end{table}%
+%		
+%	\end{frame}
+%	%
 	%\begin{frame}{Abnormal Return}
 	%\begin{figure}
 	%\centering
@@ -779,48 +779,48 @@
 
 	\end{frame}
 	
-	
-	\begin{frame}
-		
-		\centering
-		\begin{table}[htbp]
-			\centering
-			
-			\captionsetup{labelformat=empty}
-			\caption{\tiny Analysis of abnormal return in days surrounding the Revaluation announcements}
-			\resizebox{0.8\textheight}{!}
-			{\tiny
-				\begin{tabular}{cccc|cccc}
-					\hline\hline 
-					Period & \multicolumn{1}{c}{AAR} & \multicolumn{1}{c}{CAAR} & \multicolumn{1}{c}{t-stat} & Period & \multicolumn{1}{c}{AAR} & \multicolumn{1}{c}{CAAR} & \multicolumn{1}{c}{t-stat} \\
-					\hline
-					-20   & 0.04  & 0.04  & 0.13  & 0     & 28.55 & 29.18 & 6.41 \\
-					-19   & -0.89 & -0.86 & -2.02 & 1     & 1.08  & 30.26 & 6.58 \\
-					-18   & -0.26 & -1.08 & -1.83 & 2     & 0.35  & 30.61 & 6.58 \\
-					-17   & 0.11  & -0.97 & -1.50 & 3     & 0.47  & 31.08 & 6.55 \\
-					-16   & -0.39 & -1.36 & -1.82 & 4     & 0.17  & 31.25 & 6.43 \\
-					-15   & -0.52 & -1.88 & -2.26 & 5     & 0.10  & 31.36 & 6.34 \\
-					-14   & 0.21  & -1.67 & -1.72 & 6     & 0.07  & 31.42 & 6.26 \\
-					-13   & 0.00  & -1.67 & -1.48 & 7     & -0.40 & 31.02 & 6.11 \\
-					-12   & -0.14 & -1.81 & -1.40 & 8     & -0.28 & 30.74 & 6.01 \\
-					-11   & 0.02  & -1.80 & -1.35 & 9     & -0.07 & 30.67 & 5.90 \\
-					-10   & -0.15 & -1.95 & -1.45 & 10    & -0.02 & 30.65 & 5.83 \\
-					-9    & 0.33  & -1.61 & -1.15 & 11    & -0.38 & 30.27 & 5.66 \\
-					-8    & 0.72  & -0.89 & -0.59 & 12    & -0.59 & 29.68 & 5.59 \\
-					-7    & 0.67  & -0.22 & -0.14 & 13    & 0.21  & 29.89 & 5.62 \\
-					-6    & 0.33  & 0.12  & 0.07  & 14    & -0.15 & 29.49 & 5.39 \\
-					-5    & 0.63  & 0.75  & 0.44  & 15    & -0.02 & 29.47 & 5.34 \\
-					-4    & -0.16 & 0.58  & 0.32  & 16    & -0.43 & 29.05 & 5.21 \\
-					-3    & 0.30  & 0.89  & 0.43  & 17    & -0.61 & 28.43 & 5.09 \\
-					-2    & -0.26 & 0.63  & 0.29  & 18    & -0.17 & 28.27 & 5.02 \\
-					-1    & 0.01  & 0.63  & 0.28  & 19    & 0.39  & 28.65 & 5.03 \\
-					\hline\hline
-				\end{tabular}%
-			}
-		\end{table}%
-		
-		
-	\end{frame}
+%	
+%	\begin{frame}
+%		
+%		\centering
+%		\begin{table}[htbp]
+%			\centering
+%			
+%			\captionsetup{labelformat=empty}
+%			\caption{\tiny Analysis of abnormal return in days surrounding the Revaluation announcements}
+%			\resizebox{0.8\textheight}{!}
+%			{\tiny
+%				\begin{tabular}{cccc|cccc}
+%					\hline\hline 
+%					Period & \multicolumn{1}{c}{AAR} & \multicolumn{1}{c}{CAAR} & \multicolumn{1}{c}{t-stat} & Period & \multicolumn{1}{c}{AAR} & \multicolumn{1}{c}{CAAR} & \multicolumn{1}{c}{t-stat} \\
+%					\hline
+%					-20   & 0.04  & 0.04  & 0.13  & 0     & 28.55 & 29.18 & 6.41 \\
+%					-19   & -0.89 & -0.86 & -2.02 & 1     & 1.08  & 30.26 & 6.58 \\
+%					-18   & -0.26 & -1.08 & -1.83 & 2     & 0.35  & 30.61 & 6.58 \\
+%					-17   & 0.11  & -0.97 & -1.50 & 3     & 0.47  & 31.08 & 6.55 \\
+%					-16   & -0.39 & -1.36 & -1.82 & 4     & 0.17  & 31.25 & 6.43 \\
+%					-15   & -0.52 & -1.88 & -2.26 & 5     & 0.10  & 31.36 & 6.34 \\
+%					-14   & 0.21  & -1.67 & -1.72 & 6     & 0.07  & 31.42 & 6.26 \\
+%					-13   & 0.00  & -1.67 & -1.48 & 7     & -0.40 & 31.02 & 6.11 \\
+%					-12   & -0.14 & -1.81 & -1.40 & 8     & -0.28 & 30.74 & 6.01 \\
+%					-11   & 0.02  & -1.80 & -1.35 & 9     & -0.07 & 30.67 & 5.90 \\
+%					-10   & -0.15 & -1.95 & -1.45 & 10    & -0.02 & 30.65 & 5.83 \\
+%					-9    & 0.33  & -1.61 & -1.15 & 11    & -0.38 & 30.27 & 5.66 \\
+%					-8    & 0.72  & -0.89 & -0.59 & 12    & -0.59 & 29.68 & 5.59 \\
+%					-7    & 0.67  & -0.22 & -0.14 & 13    & 0.21  & 29.89 & 5.62 \\
+%					-6    & 0.33  & 0.12  & 0.07  & 14    & -0.15 & 29.49 & 5.39 \\
+%					-5    & 0.63  & 0.75  & 0.44  & 15    & -0.02 & 29.47 & 5.34 \\
+%					-4    & -0.16 & 0.58  & 0.32  & 16    & -0.43 & 29.05 & 5.21 \\
+%					-3    & 0.30  & 0.89  & 0.43  & 17    & -0.61 & 28.43 & 5.09 \\
+%					-2    & -0.26 & 0.63  & 0.29  & 18    & -0.17 & 28.27 & 5.02 \\
+%					-1    & 0.01  & 0.63  & 0.28  & 19    & 0.39  & 28.65 & 5.03 \\
+%					\hline\hline
+%				\end{tabular}%
+%			}
+%		\end{table}%
+%		
+%		
+%	\end{frame}
 	
 	
 	

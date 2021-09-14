@@ -46,11 +46,13 @@ def adjust(g):
     print(g.name)
     l = g.EPeriod.to_list()
     if (len(g) < 20) | (-1 not in l):
-        return g
-
+        return 
     factor = (
         g[g.EPeriod == 0].AdjustFactor.iloc[0] / g[g.EPeriod == -1].AdjustFactor.iloc[0]
     )
+
+    print(factor)
+    
     a = g[g.EPeriod == 0].NetInd.iloc[0]
     change = a * (factor - 1)
 
