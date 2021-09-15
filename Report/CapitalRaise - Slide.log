@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.5.13)  14 SEP 2021 13:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.5.13)  14 SEP 2021 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -865,16 +865,6 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count333
 )
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \hskip 21.90005pt
-(hyperref)                replaced by space on input line 75.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \hskip 21.90005pt
-(hyperref)                replaced by space on input line 75.
-
 (c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count334
@@ -1852,12 +1842,12 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2032.
 
 Package rerunfilecheck Info: File `"CapitalRaise - Slide".out' has not changed.
 
-(rerunfilecheck)             Checksum: 4829E0A4C3790319CA1141C15A564A0D;1206.
+(rerunfilecheck)             Checksum: 9594C3DE09020E76DE4A2212BC89704E;1204.
  ) 
 Here is how much of TeX's memory you used:
  25090 strings out of 480608
  500608 string characters out of 5907536
- 725044 words of memory out of 5000000
+ 724815 words of memory out of 5000000
  39901 multiletter control sequences out of 15000+600000
  546252 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1877,7 +1867,7 @@ onts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2020/texmf-dist/fonts/type1
 /public/amsfonts/symbols/msam10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msam7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/c
 m-super/sfss0600.pfb>
-Output written on "CapitalRaise - Slide.pdf" (102 pages, 5447788 bytes).
+Output written on "CapitalRaise - Slide.pdf" (102 pages, 6817893 bytes).
 PDF statistics:
  3656 PDF objects out of 4296 (max. 8388607)
  3413 compressed objects within 35 object streams

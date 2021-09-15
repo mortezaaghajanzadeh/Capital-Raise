@@ -2,7 +2,7 @@
 \beamer@sectionintoc {2}{Literature}{11}{0}{2}
 \beamer@sectionintoc {3}{Abnormal Return Results}{20}{0}{3}
 \beamer@subsectionintoc {3}{1}{Abnormal Return}{23}{0}{3}
-\beamer@subsectionintoc {3}{2}{Volume}{28}{0}{3}
+\beamer@subsectionintoc {3}{2}{Vale}{28}{0}{3}
 \beamer@subsectionintoc {3}{3}{Relative Volume}{31}{0}{3}
 \beamer@subsectionintoc {3}{4}{Buy-sell Imbalances}{34}{0}{3}
 \beamer@sectionintoc {4}{Cross Section}{42}{0}{4}

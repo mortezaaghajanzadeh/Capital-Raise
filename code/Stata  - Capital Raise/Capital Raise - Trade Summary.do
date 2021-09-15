@@ -8,7 +8,7 @@ import delimited "G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital R
 cd "D:\Dropbox\Capital Raise\Capital-Raise\Report\Output"
 capture drop lnVolume lnAmihud
 gen lnAmihud = ln(amihud)
-gen lnVolume = ln(volume)
+gen lnVolume = ln(value)
 
 
 
@@ -53,16 +53,13 @@ replace ins_nav = ins_nav/1e13
 
 
 
-local e 21
+local e 51
 local u = `e' -1
 
 twoway connected ind_nav ins_nav  eperiod  if eperiod <`e' , sort(eperiod)  xline(0) yline(0) xlab(-20(10)`u')  msymbol(O D) title("Traders' NAV around Capital Raise",size(medium))   xtitle("Period")  color(navy)note("This figure graphs the traders' nav. It is defined as BuyedVolume{sub:i,t} * ClosePrice{sub:k,t} + NetSellValue{sub:i,t}")   ytitle("Thousand Billion Toman") legend(label (1 "Individual") label (2 "Institutional") col(4))   
 
  graph export IndInsNav.png,replace
 graph export IndInsNav.eps,replace
-
-local e 21
-local u = `e' -1
 
 twoway connected ind_navRevaluation  ins_navRevaluation   eperiod  if eperiod <`e' , sort(eperiod)  xline(0) yline(0) xlab(-20(10)`u')  msymbol(O D) title("Traders' NAV around Capital Raise from revaluation",size(medium))   xtitle("Period")  color(navy)note("This figure graphs the traders' nav. It is defined as BuyedVolume{sub:i,t} * ClosePrice{sub:k,t} + NetSellValue{sub:i,t}")   ytitle("Thousand Billion Toman") legend(label (1 "Individual") label (2 "Institutional") col(4))   
 
@@ -76,10 +73,10 @@ graph export IndInsNav_NoRevaluation.eps,replace
 
 
  
-local e 11
+local e 50
 local u = `e' -1
-local l = -1 * `u'
-local g = -1* `e'
+local l = -1 * 20
+local g = -1* 21
 
 capture drop hm_ind_percent hm_ins_percent
 
@@ -153,12 +150,15 @@ graph export InsImb.eps,replace
 
 
 
-twoway connected lnVolume  eperiod   , xline(0) xlab(`l'(10)`u')  msymbol(O D) title("Volume  After Capital Raise",size(medium))   xtitle("Period")  color(navy)  ytitle("ln(Volume) ") ylabe(,angle(0) labsize(vsmall)) sort(eperiod)
+twoway connected lnVolume  eperiod   , xline(0) xlab(`l'(10)`u')  msymbol(O D) title("Volume  After Capital Raise",size(medium))   xtitle("Period")  color(navy)  ytitle("ln(Value) ") ylabe(,angle(0) labsize(vsmall)) sort(eperiod)
 
 graph export volume.png,replace
 graph export volume.eps,replace
 
 
+
+local l = -20
+local u = 50
 
 twoway connected relvolume  eperiod   , xline(0) xlab(`l'(10)`u')  msymbol(O D) title("Relative Volume  After Capital Raise",size(medium))   xtitle("Period")  color(navy)  ytitle(" Relative Volume") ylabe(,angle(0) labsize(vsmall)) yline(1) sort(eperiod)
 
@@ -181,8 +181,17 @@ local l = -20
 local u = 50
 
 
+twoway connected lnVolumeNoRevaluation  eperiod   , xline(0) xlab(`l'(10)`u')  msymbol(O D) title("Volume  After Capital Raise that it's not from Revaluation",size(medium))   xtitle("Period")  color(navy)  ytitle("ln(Value)") ylabe(,angle(0) labsize(vsmall))  sort(eperiod)
 
-twoway connected lnVolumeRevaluation  eperiod  , xline(0) xlab(`l'(10)`u')  msymbol(O D) title("Volume  After Capital Raise from Revaluation",size(medium))   xtitle("Period")  color(navy)  ytitle("ln(Volume) ") ylabe(,angle(0) labsize(vsmall)) sort(eperiod)
+graph export volume_NoRevaluation.png,replace
+graph export volume_NoRevaluation.eps,replace
+
+twoway connected relvolumeNoRevaluation  eperiod   , xline(0)  xlab(`l'(10)`u')  msymbol(O D) title("Relative Volume  After Capital Raise  that it's not from Revaluation",size(medium))   xtitle("Period")  color(navy)  ytitle(" Relative Volume") ylabe(,angle(0) labsize(vsmall)) yline(1) sort(eperiod)
+
+graph export relvolume_NoRevaluation.png,replace
+graph export relvolume_NoRevaluation.eps,replace
+
+twoway connected lnVolumeRevaluation  eperiod  , xline(0) xlab(`l'(10)`u')  msymbol(O D) title("Volume  After Capital Raise from Revaluation",size(medium))   xtitle("Period")  color(navy)  ytitle("ln(Value)") ylabe(,angle(0) labsize(vsmall)) sort(eperiod)
 
 graph export volume_Revaluation.png,replace
 graph export volume_Revaluation.eps,replace
@@ -200,15 +209,7 @@ graph export Amihud_Revaluation.eps,replace
 
 
 
-twoway connected lnVolumeRevaluation  eperiod   , xline(0) xlab(`l'(10)`u')  msymbol(O D) title("Volume  After Capital Raise that it's not from Revaluation",size(medium))   xtitle("Period")  color(navy)  ytitle("ln(Volume) ") ylabe(,angle(0) labsize(vsmall))  sort(eperiod)
 
-graph export volume_NoRevaluation.png,replace
-graph export volume_NoRevaluation.eps,replace
-
-twoway connected relvolumeNoRevaluation  eperiod   , xline(0)  xlab(`l'(10)`u')  msymbol(O D) title("Relative Volume  After Capital Raise  that it's not from Revaluation",size(medium))   xtitle("Period")  color(navy)  ytitle(" Relative Volume") ylabe(,angle(0) labsize(vsmall)) yline(1) sort(eperiod)
-
-graph export relvolume_NoRevaluation.png,replace
-graph export relvolume_NoRevaluation.eps,replace
 
 
 twoway connected lnAmihudNoRevaluation  eperiod   , xline(0)  xlab(`l'(10)`u')  msymbol(O D) title("Amihud measurment  After Capital Raise that it's not from Revaluation",size(medium))   xtitle("Period")  color(navy)  ytitle("ln(Amihud) ")ylabe(,angle(0) labsize(vsmall)) sort(eperiod)

@@ -21,7 +21,7 @@ set graphics on
 
 foreach x in `varlist'{
 	display "`x'"
-	local xlim 50
+	local xlim 100
 	/*Abnormal Return */	
 {
 	foreach var in meanvar se p25 p95 n t_stat e g{
@@ -113,7 +113,7 @@ local x "car_withoutalpha"
 local varlist "car_abnormalreturn2 car  car_market car_withoutalpha car_4factor car_industry car_withoutalpha_industry car_marketindustry car_marketmodel car_withoutalpha_marketmodel car_marketmodel_industry car_withoutalpha_marketmodel_ind" 
 foreach x in `varlist'{
 display "`x'"
-local xlim 50
+local xlim 100
 	/*Abnormal Return */	
 {
 	foreach var in meanvar se p25 p95 n t_stat e g{

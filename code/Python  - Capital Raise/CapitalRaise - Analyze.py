@@ -16,7 +16,7 @@ Data = Data.reset_index(drop=True)
 Data["AdjustFactor"] = Data.close_price_Adjusted / Data.UnadjustedPrice
 Data = Data.rename(columns={"ER": "EReturn"})
 Data["Amihud"] = abs(Data["Return"]) / Data["volume"]
-Data = Data.loc[(Data.EPeriod >= -20) & (Data.EPeriod <= 50)]
+Data = Data.loc[(Data.EPeriod >= -20) & (Data.EPeriod <= 100)]
 
 #%%
 
@@ -43,35 +43,38 @@ gg = Data.groupby(["name", "nEvent"])
 
 
 def adjust(g):
-    print(g.name)
+
     l = g.EPeriod.to_list()
-    if (len(g) < 20) | (-1 not in l):
-        return 
-    factor = (
-        g[g.EPeriod == 0].AdjustFactor.iloc[0] / g[g.EPeriod == -1].AdjustFactor.iloc[0]
-    )
+    if ~((len(g) < 20) | (-1 not in l)):
+        try:
+            factor = (
+                g[g.EPeriod == 0].AdjustFactor.iloc[0]
+                / g[g.EPeriod == -1].AdjustFactor.iloc[0]
+            )
 
-    print(factor)
-    
-    a = g[g.EPeriod == 0].NetInd.iloc[0]
-    change = a * (factor - 1)
+            print(factor)
 
-    g.loc[g.EPeriod > -1, "ind_stock_account"] = (
-        g.loc[g.EPeriod > -1]["ind_stock_account"] + change
-    )
-    a = g[g.EPeriod == 0].NetIns.iloc[0]
-    change = a * (factor - 1)
+            a = g[g.EPeriod == 0].NetInd.iloc[0]
+            change = a * (factor - 1)
 
-    g.loc[g.EPeriod > -1, "ins_stock_account"] = (
-        g.loc[g.EPeriod > -1]["ins_stock_account"] + change
-    )
-    return g
+            g.loc[g.EPeriod > -1, "ind_stock_account"] = (
+                g.loc[g.EPeriod > -1]["ind_stock_account"] + change
+            )
+            a = g[g.EPeriod == 0].NetIns.iloc[0]
+            change = a * (factor - 1)
+
+            g.loc[g.EPeriod > -1, "ins_stock_account"] = (
+                g.loc[g.EPeriod > -1]["ins_stock_account"] + change
+            )
+            return g
+        except:
+            print(g.name)
 
 
 # g = gg.get_group(('فولاد',1))
 # g[g.EPeriod >-2][['AdjustFactor','name','EPeriod']]
 
-Data = gg.apply(adjust)
+Data = gg.apply(adjust).reset_index(drop = True)
 #%%
 
 Data["ind_stock_account"] = Data["ind_stock_account"] * Data["UnadjustedPrice"]
@@ -202,13 +205,17 @@ gg = t.groupby(["name", "nEvent"])
 t = gg.filter(lambda x: x.shape[0] > 40)
 print(len(t))
 l = list(t.groupby(["name", "nEvent"]).groups.keys())
-def check(g,l):
+
+
+def check(g, l):
     if g.name in l:
         return g
     # print(g.name)
+
+
 print(len(df))
 gg = df.groupby(["name", "nEvent"])
-df = gg.apply(check,l = l)
+df = gg.apply(check, l=l)
 
 df = df[~df.Period.isnull()]
 print(len(df))
