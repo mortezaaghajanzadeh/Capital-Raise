@@ -4,11 +4,11 @@ from CleaningFunctions import *
 path = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\Capital Rise\\"
 path1 = r"G:\Economics\Finance(Prof.Heidari-Aghajanzadeh)\Data\\"
 #%%
-pdf = pd.read_parquet(path1 + "Cleaned_Stock_Prices_1400_06_16.parquet").reset_index(drop = True)
+pdf = pd.read_parquet(path1 + "Cleaned_Stock_Prices_1400_06_29.parquet").reset_index(drop = True)
 
 
 #%%
-indexes = pd.read_csv(path1 + "IndustryIndexes_1400-06-16.csv").reset_index(drop = True)
+indexes = pd.read_csv(path1 + "IndustryIndexes_1400_06_28.csv").reset_index(drop = True)
 for i in ['industry_index','industry_size']:
     mapdict = dict(zip(indexes.set_index(['group_id','date']).index,indexes[i]))
     pdf[i] = pdf.set_index(['group_id','date']).index.map(mapdict)
@@ -236,9 +236,6 @@ for symbol in list(gg.groups.keys()):
         data = data.append(g)
 
 ndf.to_excel(path + "SDate.xlsx", index=False)
-
-#%%
-
 
 # %%
 #
