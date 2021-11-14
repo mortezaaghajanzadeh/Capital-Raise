@@ -1,34 +1,30 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.5.13)  14 SEP 2021 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.11.6)  14 NOV 2021 17:32
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**"CapitalRaise - Slide.tex"
-(./CapitalRaise - Slide.tex
+**"d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.tex"
+(d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-06>
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamer.cls
+L3 programming layer <2020-03-06> (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2019/09/29 v3.57 A class for typesetting presentations
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
-(c:/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (c:/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count167
 )
 \beamer@tempbox=\box45
 \beamer@tempcount=\count168
 \c@beamerpauses=\count169
-
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
 \beamer@slideinframe=\count170
 \beamer@minimum=\count171
 \beamer@decode@box=\box46
 )
 \beamer@commentbox=\box47
 \beamer@modecount=\count172
-)
-(c:/texlive/2020/texmf-dist/tex/generic/iftex/ifpdf.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-
-(c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+ (c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \headdp=\dimen134
@@ -73,19 +69,15 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \beamer@coveringdepth=\count189
 \beamer@sectionadjust=\count190
 \beamer@tocsectionnumber=\count191
-
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty
-(c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty (c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 ))
 \beamer@paperwidth=\skip48
 \beamer@paperheight=\skip49
-
-(c:/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(c:/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (c:/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count192
@@ -100,57 +92,39 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen156
 \Gm@layoutvoffset=\dimen157
 \Gm@dimlist=\toks16
-)
-(c:/texlive/2020/texmf-dist/tex/latex/base/size11.clo
+) (c:/texlive/2020/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
-)
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
-
-(c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
-
-(c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen158
 \Gin@req@width=\dimen159
-)
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+) (c:/texlive/2020/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks17
 \pgfutil@tempdima=\dimen160
 \pgfutil@tempdimb=\dimen161
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
-) (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+ (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box54
-
-(c:/texlive/2020/texmf-dist/tex/latex/ms/everyshi.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+)) (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2020/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
-))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+)) (c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+ (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks18
 \pgfkeys@temptoks=\toks19
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+ (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks20
 ))
 \pgf@x=\dimen162
@@ -177,24 +151,19 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
 Driver file for pgf: pgfsys-pdftex.def
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+ (c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+ (c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
-)))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+))) (c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfsyssoftpath@smallbuffer@items=\count266
 \pgfsyssoftpath@bigbuffer@items=\count267
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )) (c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -207,43 +176,18 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+ (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen172
 \pgfmath@count=\count268
 \pgfmath@box=\box55
 \pgfmath@toks=\toks24
 \pgfmath@stack@operand=\toks25
 \pgfmath@stack@operation=\toks26
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
-x)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
-.code.tex)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
-ex)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
-de.tex)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
-x)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
-etics.code.tex)))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count269
-))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+)) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@picminx=\dimen173
 \pgf@picmaxx=\dimen174
@@ -259,73 +203,52 @@ File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@yy=\dimen184
 \pgf@zx=\dimen185
 \pgf@zy=\dimen186
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
-e.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@path@lastx=\dimen187
 \pgf@path@lasty=\dimen188
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
-x
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@shorten@end@additional=\dimen189
 \pgf@shorten@start@additional=\dimen190
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box56
 \pgf@hbox=\box57
 \pgf@layerbox@main=\box58
 \pgf@picture@serial@count=\count270
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
-.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgflinewidth=\dimen191
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
-ode.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@pt@x=\dimen192
 \pgf@pt@y=\dimen193
 \pgf@pt@temp=\dimen194
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
-de.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfarrowsep=\dimen195
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@max=\dimen196
 \pgf@sys@shading@range@num=\count271
 \pgf@shadingcount=\count272
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+ (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfexternal@startupbox=\box59
-))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+)) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
-.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -333,60 +256,44 @@ File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 Package: xxcolor 2003/10/24 ver 0.1
 \XC@nummixins=\count273
 \XC@countmixins=\count274
-)
-(c:/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
-
-(c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-))
-(c:/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
+)) (c:/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
-
-(c:/texlive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
-)
+ (c:/texlive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(c:/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(c:/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(c:/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-(c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
 \@linkdim=\dimen197
 \Hy@linkcounter=\count275
 \Hy@pagecounter=\count276
-
-(c:/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
+ (c:/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-)
-(c:/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count277
@@ -401,20 +308,16 @@ Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
 Package hyperref Info: Bookmarks ON on input line 4800.
 \c@Hy@tempcnt=\count278
-
-(c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
 \XeTeXLinkMargin=\dimen198
-
-(c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
+ (c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
+ (c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count279
 \Field@Width=\dimen199
@@ -437,29 +340,20 @@ Package hyperref Message: Stopped early.
 Package hyperref Info: Driver (autodetected): hpdftex.
  (c:/texlive/2020/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
-
-(c:/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
 \Fld@listcount=\count281
 \c@bookmark@seq@number=\count282
-
-(c:/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
-(c:/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (c:/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
-))
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaserequires.sty
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasecompatibility.sty)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasefont.sty
-(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaserequires.sty (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasecompatibility.sty) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasefont.sty (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks27
 \symAMSa=\mathgroup4
@@ -467,33 +361,23 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(c:/texlive/2020/texmf-dist/tex/latex/sansmathaccent/sansmathaccent.sty
+)) (c:/texlive/2020/texmf-dist/tex/latex/sansmathaccent/sansmathaccent.sty
 Package: sansmathaccent 2020/01/31
-
-(c:/texlive/2020/texmf-dist/tex/latex/koma-script/scrlfile.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2020/01/24 v3.29 KOMA-Script package (loading files)
-)))
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty
-(c:/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
+))) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty (c:/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
 Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
-))
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasemisc.sty)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
+)) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasemisc.sty) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
 \beamer@argscount=\count283
 \beamer@lastskipcover=\skip50
 \beamer@trivlistdepth=\count284
-)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasetitle.sty)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasesection.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasetitle.sty) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasesection.sty
 \c@lecture=\count285
 \c@part=\count286
 \c@section=\count287
 \c@subsection=\count288
 \c@subsubsection=\count289
-)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
 \beamer@framebox=\box60
 \beamer@frametitlebox=\box61
 \beamer@zoombox=\box62
@@ -508,30 +392,21 @@ Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
 \beamer@envbody=\toks28
 \framewidth=\dimen258
 \c@framenumber=\count293
-)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
 \beamer@verbatimfileout=\write4
-)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
 \beamer@splitbox=\box63
 \beamer@autobreakcount=\count294
 \beamer@autobreaklastheight=\dimen259
 \beamer@frametitletoks=\toks29
 \beamer@framesubtitletoks=\toks30
-)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
 \beamer@footins=\box64
-)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasecolor.sty)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasecolor.sty) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
 \beamer@frameboxcopy=\box65
-)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasetoc.sty)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasetoc.sty) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
 \beamer@sbttoks=\toks31
-
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
 \bmb@box=\box66
 \bmb@colorbox=\box67
 \bmb@boxshadow=\box68
@@ -543,9 +418,7 @@ Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
 \bmb@prevheight=\dimen263
 )
 \beamer@blockheadheight=\dimen264
-))
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty
-(c:/texlive/2020/texmf-dist/tex/latex/tools/enumerate.sty
+)) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty (c:/texlive/2020/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks32
 )
@@ -553,29 +426,23 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \c@table=\count296
 \abovecaptionskip=\skip55
 \belowcaptionskip=\skip56
-)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
 \beamer@section@min@dim=\dimen265
-)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
-(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip57
 
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-
-(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks33
 \ex@=\dimen266
-))
-(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen267
-)
-(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count297
@@ -615,8 +482,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks37
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
-)
-(c:/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks38
 \thm@bodyfont=\toks39
@@ -629,29 +495,14 @@ Package: amsthm 2017/10/31 v2.20.4
 \dth@everypar=\toks43
 )
 \c@theorem=\count309
-)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasethemes.sty))
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerthemedefault.sty
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerbasethemes.sty)) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerthemedefault.sty (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
 \beamer@dima=\dimen275
 \beamer@dimb=\dimen276
-)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerthemeCambridgeUS.sty
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty)
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty))
-(c:/texlive/2020/texmf-dist/tex/latex/beamer/beamercolorthemeseahorse.sty)
-(c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerthemeCambridgeUS.sty (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty)) (c:/texlive/2020/texmf-dist/tex/latex/beamer/beamercolorthemeseahorse.sty) (c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write5
-
-Excluding comment 'comment')
-(c:/texlive/2020/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+ Excluding comment 'comment') (c:/texlive/2020/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
-
-(c:/texlive/2020/texmf-dist/tex/latex/ms/everysel.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/ms/everysel.sty
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
 \CenteringLeftskip=\skip63
@@ -668,11 +519,9 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \RaggedLeftParindent=\skip74
 \RaggedRightParindent=\skip75
 \JustifyingParindent=\skip76
-)
-(c:/texlive/2020/texmf-dist/tex/latex/tools/dcolumn.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
-
-(c:/texlive/2020/texmf-dist/tex/latex/tools/array.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen277
 \ar@mcellbox=\box73
@@ -681,8 +530,7 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \extratabsurround=\skip77
 \backup@length=\skip78
 \ar@cellbox=\box74
-))
-(c:/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
+)) (c:/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen279
 \lightrulewidth=\dimen280
@@ -701,25 +549,19 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count312
 \@lastruleclass=\count313
 \@thisrulewidth=\dimen291
-)
-(c:/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
-
-(c:/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)
-(c:/texlive/2020/texmf-dist/tex/latex/placeins/placeins.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
-)
-(c:/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
-
-(c:/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/01/03 v3.4h Customizing captions (AR)
-
-(c:/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
 \captionmargin=\dimen292
@@ -740,53 +582,35 @@ Package caption Info: Hyperref support is turned off
 )
 \c@subfigure=\count316
 \c@subtable=\count317
-)
-(c:/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip79
 \multirow@cntb=\count318
 \multirow@dima=\skip80
 \bigstrutjot=\dimen299
-)
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+ (c:/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfnodeparttextbox=\box75
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
-y
+) (c:/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@nodesepstart=\dimen300
 \pgf@nodesepend=\dimen301
-)
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
-y
+) (c:/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
-)) (c:/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(c:/texlive/2020/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (c:/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/texlive/2020/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+ (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen302
 \pgffor@skip=\dimen303
 \pgffor@stack=\toks45
 \pgffor@toks=\toks46
-))
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+)) (c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
-de.tex
+ (c:/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@plot@mark@count=\count319
 \pgfplotmarksize=\dimen304
@@ -807,31 +631,21 @@ File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikznumberofchildren=\count321
 \tikznumberofcurrentchild=\count322
 \tikz@fig@count=\count323
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+ (c:/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfmatrixcurrentrow=\count324
 \pgfmatrixcurrentcolumn=\count325
 \pgf@matrix@numberofcolumns=\count326
 )
 \tikz@expandcount=\count327
-
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarytopaths.code.tex
+ (c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)))
-(c:/texlive/2020/texmf-dist/tex/latex/appendix/appendix.sty
+))) (c:/texlive/2020/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
 \c@@pps=\count328
 \c@@ppsavesec=\count329
 \c@@ppsaveapp=\count330
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarydecorations.pathreplacing.code.tex
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarydecorations.code.tex
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.t
-ex
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (c:/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen313
 \pgfdecoratedremainingdistance=\dimen314
 \pgfdecoratedinputsegmentcompleteddistance=\dimen315
@@ -842,11 +656,7 @@ ex
 \pgfdecorationsegmentlength=\dimen319
 )
 \tikz@lib@dec@box=\box80
-)
-(c:/texlive/2020/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydec
-orations.pathreplacing.code.tex))
-(c:/texlive/2020/texmf-dist/tex/latex/appendixnumberbeamer/appendixnumberbeamer
-.sty) (c:/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (c:/texlive/2020/texmf-dist/tex/latex/appendixnumberbeamer/appendixnumberbeamer.sty) (c:/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@col@width=\dimen320
 \TX@old@table=\dimen321
@@ -857,20 +667,17 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@ftn=\toks47
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 37.
-
-(c:/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip81
 \bibsep=\skip82
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count333
-)
-(c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+) (c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count334
 \l__pdf_internal_box=\box81
-)
-(./CapitalRaise - Slide.aux)
+) (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.aux)
 \openout1 = `"CapitalRaise - Slide.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
@@ -939,32 +746,23 @@ LaTeX Font Info:    ... okay on input line 79.
 \everyMPtoPDFconversion=\toks49
 ) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(c:/texlive/2020/texmf-dist/tex/latex/grfext/grfext.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/grfext/grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
-
-(c:/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-ABD: EveryShipout initializing macros
+ (c:/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box83
 Package hyperref Info: Link coloring ON on input line 79.
-
-(c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
-
-(c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+ (c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count341
@@ -972,8 +770,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 79.
 LaTeX Info: Redefining \pageref on input line 79.
 LaTeX Info: Redefining \nameref on input line 79.
-
-(./CapitalRaise - Slide.out) (./CapitalRaise - Slide.out)
+ (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.out) (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.out)
 \@outlinefile=\write6
 \openout6 = `"CapitalRaise - Slide.out"'.
 
@@ -1021,108 +818,78 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 79.
 LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 79.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 7
-9.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 79.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 7
-9.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 79.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 79.
-
-(c:/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-En
-glish.dict
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 79.
+ (c:/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
-)
-(c:/texlive/2020/texmf-dist/tex/latex/translator/translator-bibliography-dictio
-nary-English.dict
+) (c:/texlive/2020/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
 Dictionary: translator-bibliography-dictionary, Language: English 
-)
-(c:/texlive/2020/texmf-dist/tex/latex/translator/translator-environment-diction
-ary-English.dict
+) (c:/texlive/2020/texmf-dist/tex/latex/translator/translator-environment-dictionary-English.dict
 Dictionary: translator-environment-dictionary, Language: English 
-)
-(c:/texlive/2020/texmf-dist/tex/latex/translator/translator-months-dictionary-E
-nglish.dict
+) (c:/texlive/2020/texmf-dist/tex/latex/translator/translator-months-dictionary-English.dict
 Dictionary: translator-months-dictionary, Language: English 
-)
-(c:/texlive/2020/texmf-dist/tex/latex/translator/translator-numbers-dictionary-
-English.dict
+) (c:/texlive/2020/texmf-dist/tex/latex/translator/translator-numbers-dictionary-English.dict
 Dictionary: translator-numbers-dictionary, Language: English 
-)
-(c:/texlive/2020/texmf-dist/tex/latex/translator/translator-theorem-dictionary-
-English.dict
+) (c:/texlive/2020/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 79.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+ (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.nav) [1
 
-(./CapitalRaise - Slide.nav) [1
-
-{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./CapitalRaise
- - Slide.toc) [2
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc) [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 112
-.
-
-(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 112.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 112
-.
-
-(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+LaTeX Font Info:    Trying to load font information for U+msb on input line 112.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 112.
-
-(c:/texlive/2020/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-)
-[3
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 112.
+ (c:/texlive/2020/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+) [3
 
 ]
 <Output/MedianCapRaiseAdjusted.png, id=215, 1247.66125pt x 907.39pt>
 File: Output/MedianCapRaiseAdjusted.png Graphic file (type png)
 <use Output/MedianCapRaiseAdjusted.png>
-Package pdftex.def Info: Output/MedianCapRaiseAdjusted.png  used on input line 
-125.
+Package pdftex.def Info: Output/MedianCapRaiseAdjusted.png  used on input line 125.
 (pdftex.def)             Requested size: 239.60567pt x 174.24736pt.
  [4
 
- <./Output/MedianCapRaiseAdjusted.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/MedianCapRaiseAdjusted.png (PNG copy)>]
 <Output/MeanCapRaiseAdjusted.png, id=247, 1247.66125pt x 907.39pt>
 File: Output/MeanCapRaiseAdjusted.png Graphic file (type png)
 <use Output/MeanCapRaiseAdjusted.png>
-Package pdftex.def Info: Output/MeanCapRaiseAdjusted.png  used on input line 13
-3.
+Package pdftex.def Info: Output/MeanCapRaiseAdjusted.png  used on input line 133.
 (pdftex.def)             Requested size: 239.60567pt x 174.24736pt.
  [5
 
- <./Output/MeanCapRaiseAdjusted.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/MeanCapRaiseAdjusted.png (PNG copy)>]
 <Output/SumCapRaiseAdjusted.png, id=278, 1247.66125pt x 907.39pt>
 File: Output/SumCapRaiseAdjusted.png Graphic file (type png)
 <use Output/SumCapRaiseAdjusted.png>
-Package pdftex.def Info: Output/SumCapRaiseAdjusted.png  used on input line 141
-.
+Package pdftex.def Info: Output/SumCapRaiseAdjusted.png  used on input line 141.
 (pdftex.def)             Requested size: 239.60567pt x 174.24736pt.
  [6
 
- <./Output/SumCapRaiseAdjusted.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/SumCapRaiseAdjusted.png (PNG copy)>]
 <Output/SumCapRaiseAdjustedEachtype.png, id=310, 1247.66125pt x 907.39pt>
 File: Output/SumCapRaiseAdjustedEachtype.png Graphic file (type png)
 <use Output/SumCapRaiseAdjustedEachtype.png>
-Package pdftex.def Info: Output/SumCapRaiseAdjustedEachtype.png  used on input 
-line 150.
+Package pdftex.def Info: Output/SumCapRaiseAdjustedEachtype.png  used on input line 150.
 (pdftex.def)             Requested size: 239.60567pt x 174.24736pt.
+ [7
 
-[7
-
- <./Output/SumCapRaiseAdjustedEachtype.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/SumCapRaiseAdjustedEachtype.png (PNG copy)>]
 <MedianPercent.png, id=342, 733.74126pt x 532.99126pt>
 File: MedianPercent.png Graphic file (type png)
 <use MedianPercent.png>
@@ -1130,7 +897,7 @@ Package pdftex.def Info: MedianPercent.png  used on input line 158.
 (pdftex.def)             Requested size: 239.60567pt x 174.04965pt.
  [8
 
- <./MedianPercent.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/MedianPercent.png (PNG copy)>]
 <Number.png, id=373, 733.74126pt x 532.99126pt>
 File: Number.png Graphic file (type png)
 <use Number.png>
@@ -1138,7 +905,7 @@ Package pdftex.def Info: Number.png  used on input line 166.
 (pdftex.def)             Requested size: 239.60567pt x 174.04965pt.
  [9
 
- <./Number.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Number.png (PNG copy)>]
 <Number2.png, id=404, 733.74126pt x 532.99126pt>
 File: Number2.png Graphic file (type png)
 <use Number2.png>
@@ -1146,8 +913,7 @@ Package pdftex.def Info: Number2.png  used on input line 175.
 (pdftex.def)             Requested size: 239.60567pt x 174.04965pt.
  [10
 
- <./Number2.png (PNG copy)>]
-(./CapitalRaise - Slide.toc) [11
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Number2.png (PNG copy)>] (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc) [11
 
 ] [12
 
@@ -1165,8 +931,7 @@ Package pdftex.def Info: Number2.png  used on input line 175.
 
 ] [19
 
-]
-(./CapitalRaise - Slide.toc) [20
+] (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc) [20
 
 ] [21
 
@@ -1180,16 +945,15 @@ Package pdftex.def Info: Output/CAR.png  used on input line 715.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [23
 
- <./Output/car.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/CAR.png (PNG copy)>]
 <Output/CARRevaluation.png, id=918, 722.7pt x 524.96124pt>
 File: Output/CARRevaluation.png Graphic file (type png)
 <use Output/CARRevaluation.png>
 Package pdftex.def Info: Output/CARRevaluation.png  used on input line 780.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [24
 
-[24
-
- <./Output/carRevaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/CARRevaluation.png (PNG copy)>]
 <Output/CARSaving.png, id=952, 722.7pt x 524.96124pt>
 File: Output/CARSaving.png Graphic file (type png)
 <use Output/CARSaving.png>
@@ -1197,7 +961,7 @@ Package pdftex.def Info: Output/CARSaving.png  used on input line 836.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [25
 
- <./Output/carSaving.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/CARSaving.png (PNG copy)>]
 <Output/CARCash.png, id=986, 722.7pt x 524.96124pt>
 File: Output/CARCash.png Graphic file (type png)
 <use Output/CARCash.png>
@@ -1205,7 +969,7 @@ Package pdftex.def Info: Output/CARCash.png  used on input line 849.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [26
 
- <./Output/carCash.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/CARCash.png (PNG copy)>]
 <Output/CARHybrid.png, id=1018, 722.7pt x 524.96124pt>
 File: Output/CARHybrid.png Graphic file (type png)
 <use Output/CARHybrid.png>
@@ -1213,7 +977,7 @@ Package pdftex.def Info: Output/CARHybrid.png  used on input line 863.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [27
 
- <./Output/carHybrid.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/CARHybrid.png (PNG copy)>]
 <Output/volume.png, id=1050, 722.7pt x 524.96124pt>
 File: Output/volume.png Graphic file (type png)
 <use Output/volume.png>
@@ -1221,25 +985,23 @@ Package pdftex.def Info: Output/volume.png  used on input line 908.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [28
 
- <./Output/volume.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/volume.png (PNG copy)>]
 <Output/volume_Revaluation.png, id=1084, 722.7pt x 524.96124pt>
 File: Output/volume_Revaluation.png Graphic file (type png)
 <use Output/volume_Revaluation.png>
 Package pdftex.def Info: Output/volume_Revaluation.png  used on input line 917.
-
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [29
 
- <./Output/volume_Revaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/volume_Revaluation.png (PNG copy)>]
 <Output/volume_NoRevaluation.png, id=1115, 722.7pt x 524.96124pt>
 File: Output/volume_NoRevaluation.png Graphic file (type png)
 <use Output/volume_NoRevaluation.png>
-Package pdftex.def Info: Output/volume_NoRevaluation.png  used on input line 92
-6.
+Package pdftex.def Info: Output/volume_NoRevaluation.png  used on input line 926.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [30
 
- <./Output/volume_NoRevaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/volume_NoRevaluation.png (PNG copy)>]
 <Output/Relvolume.png, id=1146, 722.7pt x 524.96124pt>
 File: Output/Relvolume.png Graphic file (type png)
 <use Output/Relvolume.png>
@@ -1247,25 +1009,23 @@ Package pdftex.def Info: Output/Relvolume.png  used on input line 936.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [31
 
- <./Output/relvolume.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/Relvolume.png (PNG copy)>]
 <Output/Relvolume_Revaluation.png, id=1181, 722.7pt x 524.96124pt>
 File: Output/Relvolume_Revaluation.png Graphic file (type png)
 <use Output/Relvolume_Revaluation.png>
-Package pdftex.def Info: Output/Relvolume_Revaluation.png  used on input line 9
-43.
+Package pdftex.def Info: Output/Relvolume_Revaluation.png  used on input line 943.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [32
 
- <./Output/relvolume_Revaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/Relvolume_Revaluation.png (PNG copy)>]
 <Output/Relvolume_NoRevaluation.png, id=1212, 722.7pt x 524.96124pt>
 File: Output/Relvolume_NoRevaluation.png Graphic file (type png)
 <use Output/Relvolume_NoRevaluation.png>
-Package pdftex.def Info: Output/Relvolume_NoRevaluation.png  used on input line
- 950.
+Package pdftex.def Info: Output/Relvolume_NoRevaluation.png  used on input line 950.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [33
 
- <./Output/relvolume_NoRevaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/Relvolume_NoRevaluation.png (PNG copy)>]
 <Output/IndImb.png, id=1243, 722.7pt x 524.96124pt>
 File: Output/IndImb.png Graphic file (type png)
 <use Output/IndImb.png>
@@ -1278,39 +1038,33 @@ Package pdftex.def Info: Output/InsImb.png  used on input line 963.
 (pdftex.def)             Requested size: 154.03183pt x 111.8872pt.
  [34
 
- <./Output/IndImb.png (PNG copy)> <./Output/InsImb.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndImb.png (PNG copy)> <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/InsImb.png (PNG copy)>]
 <Output/IndImb_Revaluation.png, id=1277, 722.7pt x 524.96124pt>
 File: Output/IndImb_Revaluation.png Graphic file (type png)
 <use Output/IndImb_Revaluation.png>
 Package pdftex.def Info: Output/IndImb_Revaluation.png  used on input line 971.
-
 (pdftex.def)             Requested size: 154.03183pt x 111.8872pt.
 <Output/InsImb_Revaluation.png, id=1278, 722.7pt x 524.96124pt>
 File: Output/InsImb_Revaluation.png Graphic file (type png)
 <use Output/InsImb_Revaluation.png>
 Package pdftex.def Info: Output/InsImb_Revaluation.png  used on input line 971.
-
 (pdftex.def)             Requested size: 154.03183pt x 111.8872pt.
  [35
 
- <./Output/IndImb_Revaluation.png (PNG copy)> <./Output/InsImb_Revaluation.png 
-(PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndImb_Revaluation.png (PNG copy)> <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/InsImb_Revaluation.png (PNG copy)>]
 <Output/IndImb_NoRevaluation.png, id=1310, 722.7pt x 524.96124pt>
 File: Output/IndImb_NoRevaluation.png Graphic file (type png)
 <use Output/IndImb_NoRevaluation.png>
-Package pdftex.def Info: Output/IndImb_NoRevaluation.png  used on input line 97
-9.
+Package pdftex.def Info: Output/IndImb_NoRevaluation.png  used on input line 979.
 (pdftex.def)             Requested size: 154.03183pt x 111.8872pt.
 <Output/InsImb_NoRevaluation.png, id=1311, 722.7pt x 524.96124pt>
 File: Output/InsImb_NoRevaluation.png Graphic file (type png)
 <use Output/InsImb_NoRevaluation.png>
-Package pdftex.def Info: Output/InsImb_NoRevaluation.png  used on input line 97
-9.
+Package pdftex.def Info: Output/InsImb_NoRevaluation.png  used on input line 979.
 (pdftex.def)             Requested size: 154.03183pt x 111.8872pt.
  [36
 
- <./Output/IndImb_NoRevaluation.png (PNG copy)> <./Output/InsImb_NoRevaluation.
-png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndImb_NoRevaluation.png (PNG copy)> <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/InsImb_NoRevaluation.png (PNG copy)>]
 <Output/IndInsNav.png, id=1343, 722.7pt x 524.96124pt>
 File: Output/IndInsNav.png Graphic file (type png)
 <use Output/IndInsNav.png>
@@ -1318,48 +1072,41 @@ Package pdftex.def Info: Output/IndInsNav.png  used on input line 987.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [37
 
- <./Output/IndInsNav.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsNav.png (PNG copy)>]
 <Output/IndInsNav_NoRevaluation.png, id=1378, 722.7pt x 524.96124pt>
 File: Output/IndInsNav_NoRevaluation.png Graphic file (type png)
 <use Output/IndInsNav_NoRevaluation.png>
-Package pdftex.def Info: Output/IndInsNav_NoRevaluation.png  used on input line
- 997.
+Package pdftex.def Info: Output/IndInsNav_NoRevaluation.png  used on input line 997.
 (pdftex.def)             Requested size: 154.03183pt x 111.8872pt.
 <Output/IndInsNav_Revaluation.png, id=1379, 722.7pt x 524.96124pt>
 File: Output/IndInsNav_Revaluation.png Graphic file (type png)
 <use Output/IndInsNav_Revaluation.png>
-Package pdftex.def Info: Output/IndInsNav_Revaluation.png  used on input line 9
-97.
+Package pdftex.def Info: Output/IndInsNav_Revaluation.png  used on input line 997.
 (pdftex.def)             Requested size: 154.03183pt x 111.8872pt.
  [38
 
- <./Output/IndInsNav_NoRevaluation.png (PNG copy)> <./Output/IndInsNav_Revaluat
-ion.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsNav_NoRevaluation.png (PNG copy)> <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsNav_Revaluation.png (PNG copy)>]
 <Output/IndInsHerd.png, id=1412, 722.7pt x 524.96124pt>
 File: Output/IndInsHerd.png Graphic file (type png)
 <use Output/IndInsHerd.png>
 Package pdftex.def Info: Output/IndInsHerd.png  used on input line 1007.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [39
 
-[39
-
- <./Output/IndInsHerd.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsHerd.png (PNG copy)>]
 <Output/IndInsHerdRevaluation.png, id=1445, 722.7pt x 524.96124pt>
 File: Output/IndInsHerdRevaluation.png Graphic file (type png)
 <use Output/IndInsHerdRevaluation.png>
-Package pdftex.def Info: Output/IndInsHerdRevaluation.png  used on input line 1
-016.
+Package pdftex.def Info: Output/IndInsHerdRevaluation.png  used on input line 1016.
 (pdftex.def)             Requested size: 154.03183pt x 111.8872pt.
 <Output/IndInsHerdNoRevaluation.png, id=1446, 722.7pt x 524.96124pt>
 File: Output/IndInsHerdNoRevaluation.png Graphic file (type png)
 <use Output/IndInsHerdNoRevaluation.png>
-Package pdftex.def Info: Output/IndInsHerdNoRevaluation.png  used on input line
- 1016.
+Package pdftex.def Info: Output/IndInsHerdNoRevaluation.png  used on input line 1016.
 (pdftex.def)             Requested size: 154.03183pt x 111.8872pt.
  [40
 
- <./Output/IndInsHerdRevaluation.png (PNG copy)> <./Output/IndInsHerdNoRevaluat
-ion.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsHerdRevaluation.png (PNG copy)> <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsHerdNoRevaluation.png (PNG copy)>]
 <Output/weight.png, id=1477, 722.7pt x 524.96124pt>
 File: Output/weight.png Graphic file (type png)
 <use Output/weight.png>
@@ -1367,19 +1114,15 @@ Package pdftex.def Info: Output/weight.png  used on input line 1026.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [41
 
- <./Output/weight.png (PNG copy)>] (./CapitalRaise - Slide.toc) [42
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/weight.png (PNG copy)>] (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc) [42
 
-]
-(./Output/QuantileIndNT_Im.tex) (./Output/QuantileIndNT_Hm.tex)
-(./Output/QuantileInsNT_Im.tex) (./Output/QuantileInsNT_Hm.tex) [43
+] (d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileIndNT_Im.tex) (d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileIndNT_Hm.tex) (d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileInsNT_Im.tex) (d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileInsNT_Hm.tex) [43
 
-]
-(./Output/table1.tex) (./Output/table2.tex) [44
+] (d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/table1.tex) (d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/table2.tex) [44
 
-] (./Output/Grouped.tex)
-(./Output/QuantileExcess.tex) [45
+] (d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/Grouped.tex) (d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileExcess.tex) [45
 
-] (./CapitalRaise - Slide.bbl
+] (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\translate ' on input line 1.
@@ -1412,7 +1155,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1557.
 
-(./CapitalRaise - Slide.toc) [50
+(d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc) [50
 
 ] [51
 
@@ -1424,44 +1167,39 @@ Package pdftex.def Info: Output/car_withoutalpha.png  used on input line 1582.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [52
 
- <./Output/car_withoutalpha.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_withoutalpha.png (PNG copy)>]
 <Output/car_withoutalphaRevaluation.png, id=1865, 722.7pt x 524.96124pt>
 File: Output/car_withoutalphaRevaluation.png Graphic file (type png)
 <use Output/car_withoutalphaRevaluation.png>
-Package pdftex.def Info: Output/car_withoutalphaRevaluation.png  used on input 
-line 1593.
+Package pdftex.def Info: Output/car_withoutalphaRevaluation.png  used on input line 1593.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [53
 
- <./Output/car_withoutalphaRevaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_withoutalphaRevaluation.png (PNG copy)>]
 <Output/car_withoutalphaSaving.png, id=1898, 722.7pt x 524.96124pt>
 File: Output/car_withoutalphaSaving.png Graphic file (type png)
 <use Output/car_withoutalphaSaving.png>
-Package pdftex.def Info: Output/car_withoutalphaSaving.png  used on input line 
-1603.
+Package pdftex.def Info: Output/car_withoutalphaSaving.png  used on input line 1603.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [54
 
- <./Output/car_withoutalphaSaving.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_withoutalphaSaving.png (PNG copy)>]
 <Output/car_withoutalphaCash.png, id=1930, 722.7pt x 524.96124pt>
 File: Output/car_withoutalphaCash.png Graphic file (type png)
 <use Output/car_withoutalphaCash.png>
-Package pdftex.def Info: Output/car_withoutalphaCash.png  used on input line 16
-14.
+Package pdftex.def Info: Output/car_withoutalphaCash.png  used on input line 1614.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [55
 
- <./Output/car_withoutalphaCash.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_withoutalphaCash.png (PNG copy)>]
 <Output/car_withoutalphaHybrid.png, id=1962, 722.7pt x 524.96124pt>
 File: Output/car_withoutalphaHybrid.png Graphic file (type png)
 <use Output/car_withoutalphaHybrid.png>
-Package pdftex.def Info: Output/car_withoutalphaHybrid.png  used on input line 
-1625.
+Package pdftex.def Info: Output/car_withoutalphaHybrid.png  used on input line 1625.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [56
 
- <./Output/car_withoutalphaHybrid.png (PNG copy)>]
-(./CapitalRaise - Slide.toc) [57
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_withoutalphaHybrid.png (PNG copy)>] (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc) [57
 
 ]
 <Output/car_industry.png, id=2033, 722.7pt x 524.96124pt>
@@ -1471,26 +1209,23 @@ Package pdftex.def Info: Output/car_industry.png  used on input line 1639.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [58
 
- <./Output/car_industry.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_industry.png (PNG copy)>]
 <Output/car_industryRevaluation.png, id=2065, 722.7pt x 524.96124pt>
 File: Output/car_industryRevaluation.png Graphic file (type png)
 <use Output/car_industryRevaluation.png>
-Package pdftex.def Info: Output/car_industryRevaluation.png  used on input line
- 1648.
+Package pdftex.def Info: Output/car_industryRevaluation.png  used on input line 1648.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [59
 
-[59
-
- <./Output/car_industryRevaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_industryRevaluation.png (PNG copy)>]
 <Output/car_industrySaving.png, id=2097, 722.7pt x 524.96124pt>
 File: Output/car_industrySaving.png Graphic file (type png)
 <use Output/car_industrySaving.png>
-Package pdftex.def Info: Output/car_industrySaving.png  used on input line 1658
-.
+Package pdftex.def Info: Output/car_industrySaving.png  used on input line 1658.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [60
 
- <./Output/car_industrySaving.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_industrySaving.png (PNG copy)>]
 <Output/car_industryCash.png, id=2130, 722.7pt x 524.96124pt>
 File: Output/car_industryCash.png Graphic file (type png)
 <use Output/car_industryCash.png>
@@ -1498,67 +1233,57 @@ Package pdftex.def Info: Output/car_industryCash.png  used on input line 1669.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [61
 
- <./Output/car_industryCash.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_industryCash.png (PNG copy)>]
 <Output/car_industryHybrid.png, id=2162, 722.7pt x 524.96124pt>
 File: Output/car_industryHybrid.png Graphic file (type png)
 <use Output/car_industryHybrid.png>
-Package pdftex.def Info: Output/car_industryHybrid.png  used on input line 1678
-.
+Package pdftex.def Info: Output/car_industryHybrid.png  used on input line 1678.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [62
 
-[62
-
- <./Output/car_industryHybrid.png (PNG copy)>] (./CapitalRaise - Slide.toc)
-[63
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_industryHybrid.png (PNG copy)>] (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc) [63
 
 ]
 <Output/car_abnormalreturn2.png, id=2233, 722.7pt x 524.96124pt>
 File: Output/car_abnormalreturn2.png Graphic file (type png)
 <use Output/car_abnormalreturn2.png>
-Package pdftex.def Info: Output/car_abnormalreturn2.png  used on input line 169
-0.
+Package pdftex.def Info: Output/car_abnormalreturn2.png  used on input line 1690.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [64
 
- <./Output/car_abnormalreturn2.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_abnormalreturn2.png (PNG copy)>]
 <Output/car_abnormalreturn2Revaluation.png, id=2265, 722.7pt x 524.96124pt>
 File: Output/car_abnormalreturn2Revaluation.png Graphic file (type png)
 <use Output/car_abnormalreturn2Revaluation.png>
-Package pdftex.def Info: Output/car_abnormalreturn2Revaluation.png  used on inp
-ut line 1699.
+Package pdftex.def Info: Output/car_abnormalreturn2Revaluation.png  used on input line 1699.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [65
 
- <./Output/car_abnormalreturn2Revaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_abnormalreturn2Revaluation.png (PNG copy)>]
 <Output/car_abnormalreturn2Saving.png, id=2297, 722.7pt x 524.96124pt>
 File: Output/car_abnormalreturn2Saving.png Graphic file (type png)
 <use Output/car_abnormalreturn2Saving.png>
-Package pdftex.def Info: Output/car_abnormalreturn2Saving.png  used on input li
-ne 1709.
+Package pdftex.def Info: Output/car_abnormalreturn2Saving.png  used on input line 1709.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [66
 
- <./Output/car_abnormalreturn2Saving.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_abnormalreturn2Saving.png (PNG copy)>]
 <Output/car_abnormalreturn2Cash.png, id=2330, 722.7pt x 524.96124pt>
 File: Output/car_abnormalreturn2Cash.png Graphic file (type png)
 <use Output/car_abnormalreturn2Cash.png>
-Package pdftex.def Info: Output/car_abnormalreturn2Cash.png  used on input line
- 1720.
+Package pdftex.def Info: Output/car_abnormalreturn2Cash.png  used on input line 1720.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [67
 
- <./Output/car_abnormalreturn2Cash.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_abnormalreturn2Cash.png (PNG copy)>]
 <Output/car_abnormalreturn2Hybrid.png, id=2362, 722.7pt x 524.96124pt>
 File: Output/car_abnormalreturn2Hybrid.png Graphic file (type png)
 <use Output/car_abnormalreturn2Hybrid.png>
-Package pdftex.def Info: Output/car_abnormalreturn2Hybrid.png  used on input li
-ne 1729.
+Package pdftex.def Info: Output/car_abnormalreturn2Hybrid.png  used on input line 1729.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [68
 
-[68
-
- <./Output/car_abnormalreturn2Hybrid.png (PNG copy)>]
-(./CapitalRaise - Slide.toc) [69
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_abnormalreturn2Hybrid.png (PNG copy)>] (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc) [69
 
 ]
 <Output/car_marketmodel.png, id=2433, 722.7pt x 524.96124pt>
@@ -1568,94 +1293,81 @@ Package pdftex.def Info: Output/car_marketmodel.png  used on input line 1744.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [70
 
- <./Output/car_marketmodel.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel.png (PNG copy)>]
 <Output/car_marketmodelRevaluation.png, id=2465, 722.7pt x 524.96124pt>
 File: Output/car_marketmodelRevaluation.png Graphic file (type png)
 <use Output/car_marketmodelRevaluation.png>
-Package pdftex.def Info: Output/car_marketmodelRevaluation.png  used on input l
-ine 1753.
+Package pdftex.def Info: Output/car_marketmodelRevaluation.png  used on input line 1753.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [71
 
- <./Output/car_marketmodelRevaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodelRevaluation.png (PNG copy)>]
 <Output/car_marketmodelSaving.png, id=2497, 722.7pt x 524.96124pt>
 File: Output/car_marketmodelSaving.png Graphic file (type png)
 <use Output/car_marketmodelSaving.png>
-Package pdftex.def Info: Output/car_marketmodelSaving.png  used on input line 1
-763.
+Package pdftex.def Info: Output/car_marketmodelSaving.png  used on input line 1763.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [72
 
- <./Output/car_marketmodelSaving.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodelSaving.png (PNG copy)>]
 <Output/car_marketmodelCash.png, id=2530, 722.7pt x 524.96124pt>
 File: Output/car_marketmodelCash.png Graphic file (type png)
 <use Output/car_marketmodelCash.png>
-Package pdftex.def Info: Output/car_marketmodelCash.png  used on input line 177
-4.
+Package pdftex.def Info: Output/car_marketmodelCash.png  used on input line 1774.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [73
 
- <./Output/car_marketmodelCash.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodelCash.png (PNG copy)>]
 <Output/car_marketmodelHybrid.png, id=2562, 722.7pt x 524.96124pt>
 File: Output/car_marketmodelHybrid.png Graphic file (type png)
 <use Output/car_marketmodelHybrid.png>
-Package pdftex.def Info: Output/car_marketmodelHybrid.png  used on input line 1
-783.
+Package pdftex.def Info: Output/car_marketmodelHybrid.png  used on input line 1783.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [74
 
- <./Output/car_marketmodelHybrid.png (PNG copy)>]
-(./CapitalRaise - Slide.toc) [75
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodelHybrid.png (PNG copy)>] (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc) [75
 
 ]
 <Output/car_marketmodel_industry.png, id=2633, 722.7pt x 524.96124pt>
 File: Output/car_marketmodel_industry.png Graphic file (type png)
 <use Output/car_marketmodel_industry.png>
-Package pdftex.def Info: Output/car_marketmodel_industry.png  used on input lin
-e 1796.
+Package pdftex.def Info: Output/car_marketmodel_industry.png  used on input line 1796.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [76
 
- <./Output/car_marketmodel_industry.png (PNG copy)>]
-<Output/car_marketmodel_industryRevaluation.png, id=2665, 722.7pt x 524.96124pt
->
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel_industry.png (PNG copy)>]
+<Output/car_marketmodel_industryRevaluation.png, id=2665, 722.7pt x 524.96124pt>
 File: Output/car_marketmodel_industryRevaluation.png Graphic file (type png)
 <use Output/car_marketmodel_industryRevaluation.png>
-Package pdftex.def Info: Output/car_marketmodel_industryRevaluation.png  used o
-n input line 1805.
+Package pdftex.def Info: Output/car_marketmodel_industryRevaluation.png  used on input line 1805.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [77
 
- <./Output/car_marketmodel_industryRevaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel_industryRevaluation.png (PNG copy)>]
 <Output/car_marketmodel_industrySaving.png, id=2697, 722.7pt x 524.96124pt>
 File: Output/car_marketmodel_industrySaving.png Graphic file (type png)
 <use Output/car_marketmodel_industrySaving.png>
-Package pdftex.def Info: Output/car_marketmodel_industrySaving.png  used on inp
-ut line 1815.
+Package pdftex.def Info: Output/car_marketmodel_industrySaving.png  used on input line 1815.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [78
 
-[78
-
- <./Output/car_marketmodel_industrySaving.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel_industrySaving.png (PNG copy)>]
 <Output/car_marketmodel_industryCash.png, id=2729, 722.7pt x 524.96124pt>
 File: Output/car_marketmodel_industryCash.png Graphic file (type png)
 <use Output/car_marketmodel_industryCash.png>
-Package pdftex.def Info: Output/car_marketmodel_industryCash.png  used on input
- line 1826.
+Package pdftex.def Info: Output/car_marketmodel_industryCash.png  used on input line 1826.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [79
 
- <./Output/car_marketmodel_industryCash.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel_industryCash.png (PNG copy)>]
 <Output/car_marketmodel_industryHybrid.png, id=2762, 722.7pt x 524.96124pt>
 File: Output/car_marketmodel_industryHybrid.png Graphic file (type png)
 <use Output/car_marketmodel_industryHybrid.png>
-Package pdftex.def Info: Output/car_marketmodel_industryHybrid.png  used on inp
-ut line 1835.
+Package pdftex.def Info: Output/car_marketmodel_industryHybrid.png  used on input line 1835.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [80
 
- <./Output/car_marketmodel_industryHybrid.png (PNG copy)>] (./CapitalRaise - Sl
-ide.toc) [81
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel_industryHybrid.png (PNG copy)>] (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc) [81
 
 ]
 <Output/car_4factor.png, id=2832, 722.7pt x 524.96124pt>
@@ -1665,26 +1377,23 @@ Package pdftex.def Info: Output/car_4factor.png  used on input line 1848.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [82
 
- <./Output/car_4factor.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_4factor.png (PNG copy)>]
 <Output/car_4factorRevaluation.png, id=2865, 722.7pt x 524.96124pt>
 File: Output/car_4factorRevaluation.png Graphic file (type png)
 <use Output/car_4factorRevaluation.png>
-Package pdftex.def Info: Output/car_4factorRevaluation.png  used on input line 
-1858.
+Package pdftex.def Info: Output/car_4factorRevaluation.png  used on input line 1858.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [83
 
- <./Output/car_4factorRevaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_4factorRevaluation.png (PNG copy)>]
 <Output/car_4factorSaving.png, id=2897, 722.7pt x 524.96124pt>
 File: Output/car_4factorSaving.png Graphic file (type png)
 <use Output/car_4factorSaving.png>
 Package pdftex.def Info: Output/car_4factorSaving.png  used on input line 1869.
-
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [84
 
-[84
-
- <./Output/car_4factorSaving.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_4factorSaving.png (PNG copy)>]
 <Output/car_4factorCash.png, id=2929, 722.7pt x 524.96124pt>
 File: Output/car_4factorCash.png Graphic file (type png)
 <use Output/car_4factorCash.png>
@@ -1692,17 +1401,15 @@ Package pdftex.def Info: Output/car_4factorCash.png  used on input line 1879.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [85
 
- <./Output/car_4factorCash.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_4factorCash.png (PNG copy)>]
 <Output/car_4factorHybrid.png, id=2962, 722.7pt x 524.96124pt>
 File: Output/car_4factorHybrid.png Graphic file (type png)
 <use Output/car_4factorHybrid.png>
 Package pdftex.def Info: Output/car_4factorHybrid.png  used on input line 1890.
-
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [86
 
- <./Output/car_4factorHybrid.png (PNG copy)>]
-(./CapitalRaise - Slide.toc) [87
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_4factorHybrid.png (PNG copy)>] (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc) [87
 
 ]
 <Output/car_market.png, id=3032, 722.7pt x 524.96124pt>
@@ -1712,17 +1419,15 @@ Package pdftex.def Info: Output/car_market.png  used on input line 1902.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [88
 
- <./Output/car_market.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_market.png (PNG copy)>]
 <Output/car_marketRevaluation.png, id=3065, 722.7pt x 524.96124pt>
 File: Output/car_marketRevaluation.png Graphic file (type png)
 <use Output/car_marketRevaluation.png>
-Package pdftex.def Info: Output/car_marketRevaluation.png  used on input line 1
-912.
+Package pdftex.def Info: Output/car_marketRevaluation.png  used on input line 1912.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
+ [89
 
-[89
-
- <./Output/car_marketRevaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketRevaluation.png (PNG copy)>]
 <Output/car_marketSaving.png, id=3097, 722.7pt x 524.96124pt>
 File: Output/car_marketSaving.png Graphic file (type png)
 <use Output/car_marketSaving.png>
@@ -1730,7 +1435,7 @@ Package pdftex.def Info: Output/car_marketSaving.png  used on input line 1923.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [90
 
- <./Output/car_marketSaving.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketSaving.png (PNG copy)>]
 <Output/car_marketCash.png, id=3129, 722.7pt x 524.96124pt>
 File: Output/car_marketCash.png Graphic file (type png)
 <use Output/car_marketCash.png>
@@ -1738,7 +1443,7 @@ Package pdftex.def Info: Output/car_marketCash.png  used on input line 1933.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [91
 
- <./Output/car_marketCash.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketCash.png (PNG copy)>]
 <Output/car_marketHybrid.png, id=3161, 722.7pt x 524.96124pt>
 File: Output/car_marketHybrid.png Graphic file (type png)
 <use Output/car_marketHybrid.png>
@@ -1746,55 +1451,49 @@ Package pdftex.def Info: Output/car_marketHybrid.png  used on input line 1943.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [92
 
- <./Output/car_marketHybrid.png (PNG copy)>] (./CapitalRaise - Slide.toc) [93
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketHybrid.png (PNG copy)>] (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc) [93
 
 ]
 <Output/car_marketindustry.png, id=3232, 722.7pt x 524.96124pt>
 File: Output/car_marketindustry.png Graphic file (type png)
 <use Output/car_marketindustry.png>
-Package pdftex.def Info: Output/car_marketindustry.png  used on input line 1954
-.
+Package pdftex.def Info: Output/car_marketindustry.png  used on input line 1954.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [94
 
- <./Output/car_marketindustry.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketindustry.png (PNG copy)>]
 <Output/car_marketindustryRevaluation.png, id=3264, 722.7pt x 524.96124pt>
 File: Output/car_marketindustryRevaluation.png Graphic file (type png)
 <use Output/car_marketindustryRevaluation.png>
-Package pdftex.def Info: Output/car_marketindustryRevaluation.png  used on inpu
-t line 1964.
+Package pdftex.def Info: Output/car_marketindustryRevaluation.png  used on input line 1964.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [95
 
- <./Output/car_marketindustryRevaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketindustryRevaluation.png (PNG copy)>]
 <Output/car_marketindustrySaving.png, id=3297, 722.7pt x 524.96124pt>
 File: Output/car_marketindustrySaving.png Graphic file (type png)
 <use Output/car_marketindustrySaving.png>
-Package pdftex.def Info: Output/car_marketindustrySaving.png  used on input lin
-e 1975.
+Package pdftex.def Info: Output/car_marketindustrySaving.png  used on input line 1975.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [96
 
- <./Output/car_marketindustrySaving.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketindustrySaving.png (PNG copy)>]
 <Output/car_marketindustryCash.png, id=3329, 722.7pt x 524.96124pt>
 File: Output/car_marketindustryCash.png Graphic file (type png)
 <use Output/car_marketindustryCash.png>
-Package pdftex.def Info: Output/car_marketindustryCash.png  used on input line 
-1985.
+Package pdftex.def Info: Output/car_marketindustryCash.png  used on input line 1985.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
-[97
+ [97
 
- <./Output/car_marketindustryCash.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketindustryCash.png (PNG copy)>]
 <Output/car_marketindustryHybrid.png, id=3361, 722.7pt x 524.96124pt>
 File: Output/car_marketindustryHybrid.png Graphic file (type png)
 <use Output/car_marketindustryHybrid.png>
-Package pdftex.def Info: Output/car_marketindustryHybrid.png  used on input lin
-e 1995.
+Package pdftex.def Info: Output/car_marketindustryHybrid.png  used on input line 1995.
 (pdftex.def)             Requested size: 222.48985pt x 161.61487pt.
  [98
 
- <./Output/car_marketindustryHybrid.png (PNG copy)>] (./CapitalRaise - Slide.to
-c) [99
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketindustryHybrid.png (PNG copy)>] (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc) [99
 
 ]
 <Output/Amihud.png, id=3431, 722.7pt x 524.96124pt>
@@ -1804,26 +1503,23 @@ Package pdftex.def Info: Output/Amihud.png  used on input line 2008.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [100
 
- <./Output/Amihud.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/Amihud.png (PNG copy)>]
 <Output/Amihud_Revaluation.png, id=3462, 722.7pt x 524.96124pt>
 File: Output/Amihud_Revaluation.png Graphic file (type png)
 <use Output/Amihud_Revaluation.png>
-Package pdftex.def Info: Output/Amihud_Revaluation.png  used on input line 2018
-.
+Package pdftex.def Info: Output/Amihud_Revaluation.png  used on input line 2018.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
  [101
 
- <./Output/Amihud_Revaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/Amihud_Revaluation.png (PNG copy)>]
 <Output/Amihud_NoRevaluation.png, id=3493, 722.7pt x 524.96124pt>
 File: Output/Amihud_NoRevaluation.png Graphic file (type png)
 <use Output/Amihud_NoRevaluation.png>
-Package pdftex.def Info: Output/Amihud_NoRevaluation.png  used on input line 20
-26.
+Package pdftex.def Info: Output/Amihud_NoRevaluation.png  used on input line 2026.
 (pdftex.def)             Requested size: 239.60567pt x 174.04678pt.
+ [102
 
-[102
-
- <./Output/Amihud_NoRevaluation.png (PNG copy)>]
+ <d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/Amihud_NoRevaluation.png (PNG copy)>]
 \tf@nav=\write7
 \openout7 = `"CapitalRaise - Slide.nav"'.
 
@@ -1835,39 +1531,22 @@ Package pdftex.def Info: Output/Amihud_NoRevaluation.png  used on input line 20
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2032.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 2032.
-
-(./CapitalRaise - Slide.aux)
+ (d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2032.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2032.
-
 Package rerunfilecheck Info: File `"CapitalRaise - Slide".out' has not changed.
-
 (rerunfilecheck)             Checksum: 9594C3DE09020E76DE4A2212BC89704E;1204.
  ) 
 Here is how much of TeX's memory you used:
- 25090 strings out of 480608
- 500608 string characters out of 5907536
+ 25092 strings out of 480608
+ 503323 string characters out of 5907536
  724815 words of memory out of 5000000
  39901 multiletter control sequences out of 15000+600000
  546252 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,18n,67p,811b,900s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2020/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmss12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmss8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.
-pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:
-/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive
-/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb><c:/texlive/2020/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2020/texmf-dist/fonts/type1
-/public/amsfonts/symbols/msam10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/pub
-lic/amsfonts/symbols/msam7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/c
-m-super/sfss0600.pfb>
-Output written on "CapitalRaise - Slide.pdf" (102 pages, 6817893 bytes).
+ 58i,18n,67p,857b,900s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb>
+Output written on "d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.pdf" (102 pages, 6818506 bytes).
 PDF statistics:
  3656 PDF objects out of 4296 (max. 8388607)
  3413 compressed objects within 35 object streams

@@ -345,6 +345,12 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.out
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.out
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.out
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.out
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.out
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.out
 OUTPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.out
 INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
@@ -358,11 +364,15 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator-numbers-diction
 INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator-numbers-dictionary-English.dict
 INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.nav
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.nav
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
@@ -409,19 +419,25 @@ INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Number.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Number2.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Number2.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Number2.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/ecss0600.tfm
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi10.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
@@ -429,9 +445,6 @@ INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi9.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/ecss0600.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/CAR.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/CAR.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/CAR.png
@@ -486,12 +499,47 @@ INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/InsImb_NoRevaluation.
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsNav.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsNav.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsNav.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsNav_NoRevaluation.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsNav_NoRevaluation.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsNav_NoRevaluation.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsNav_Revaluation.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsNav_Revaluation.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsNav_Revaluation.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsHerd.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsHerd.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsHerd.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsHerdRevaluation.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsHerdRevaluation.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsHerdRevaluation.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsHerdNoRevaluation.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsHerdNoRevaluation.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/IndInsHerdNoRevaluation.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/weight.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/weight.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/weight.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileIndNT_Im.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileIndNT_Im.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileIndNT_Hm.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileIndNT_Hm.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileInsNT_Im.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileInsNT_Im.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileInsNT_Hm.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileInsNT_Hm.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/table1.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/table1.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/table2.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/table2.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/Grouped.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/Grouped.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileExcess.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/QuantileExcess.tex
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.bbl
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.bbl
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_withoutalpha.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_withoutalpha.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_withoutalpha.png
@@ -507,6 +555,8 @@ INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_withoutalphaCash.
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_withoutalphaHybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_withoutalphaHybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_withoutalphaHybrid.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_industry.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_industry.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_industry.png
@@ -522,6 +572,8 @@ INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_industryCash.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_industryHybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_industryHybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_industryHybrid.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_abnormalreturn2.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_abnormalreturn2.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_abnormalreturn2.png
@@ -537,6 +589,8 @@ INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_abnormalreturn2Ca
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_abnormalreturn2Hybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_abnormalreturn2Hybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_abnormalreturn2Hybrid.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel.png
@@ -552,6 +606,8 @@ INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodelCash.p
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodelHybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodelHybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodelHybrid.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel_industry.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel_industry.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel_industry.png
@@ -567,6 +623,8 @@ INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel_indus
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel_industryHybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel_industryHybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketmodel_industryHybrid.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_4factor.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_4factor.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_4factor.png
@@ -582,6 +640,8 @@ INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_4factorCash.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_4factorHybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_4factorHybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_4factorHybrid.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_market.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_market.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_market.png
@@ -597,6 +657,8 @@ INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketCash.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketHybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketHybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketHybrid.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketindustry.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketindustry.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketindustry.png
@@ -612,6 +674,8 @@ INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketindustryCas
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketindustryHybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketindustryHybrid.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/car_marketindustryHybrid.png
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
+INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.toc
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/Amihud.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/Amihud.png
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/Output/Amihud.png
@@ -628,11 +692,8 @@ INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.aux
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.out
 INPUT d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.out
 INPUT c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
-INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
-INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
@@ -642,9 +703,6 @@ INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb
-INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb
