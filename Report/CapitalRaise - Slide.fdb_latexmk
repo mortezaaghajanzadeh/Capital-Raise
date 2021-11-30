@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex CapitalRaise - Slide"] 1636898422 "CapitalRaise - Slide.aux" "CapitalRaise - Slide.bbl" "CapitalRaise - Slide" 1636898555
+["bibtex CapitalRaise - Slide"] 1636898422 "CapitalRaise - Slide.aux" "CapitalRaise - Slide.bbl" "CapitalRaise - Slide" 1637587838
   "CapitalRaise - Slide.aux" 1636898554 44273 faf50b7e5d1e069e5ff756b9236d3ff8 "pdflatex"
   "Ref.bib" 1631530038 12643 3593d62edd7e573bf655f591c1799b6f ""
   "c:/texlive/2020/texmf-dist/bibtex/bst/base/apalike.bst" 1636202615 24635 604dafcc79f521a11ea73e506e1fbd98 ""
   (generated)
-  "CapitalRaise - Slide.blg"
   "CapitalRaise - Slide.bbl"
-["pdflatex"] 1636898543 "d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.tex" "d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.pdf" "CapitalRaise - Slide" 1636898555
+  "CapitalRaise - Slide.blg"
+["pdflatex"] 1636898543 "d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.tex" "d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.pdf" "CapitalRaise - Slide" 1637587838
   "CapitalRaise - Slide.aux" 1636898554 44273 faf50b7e5d1e069e5ff756b9236d3ff8 "pdflatex"
   "CapitalRaise - Slide.bbl" 1636898423 7425 e6fa634b41f0049279243e3b542b0647 "bibtex CapitalRaise - Slide"
   "CapitalRaise - Slide.nav" 1636898554 13370 26133acbf39e2149d16f087c06ce7676 "pdflatex"
@@ -342,12 +342,12 @@
   "d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.aux" 1636898554 44273 faf50b7e5d1e069e5ff756b9236d3ff8 ""
   "d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.tex" 1636898540 68800 2fb08ac9a67cfd468ab5b51a71c9096b ""
   (generated)
+  "CapitalRaise - Slide.nav"
+  "CapitalRaise - Slide.toc"
   "d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.log"
-  "CapitalRaise - Slide.snm"
-  "CapitalRaise - Slide.aux"
-  "CapitalRaise - Slide.log"
   "CapitalRaise - Slide.out"
   "d:/Dropbox/Capital Raise/Capital-Raise/Report/CapitalRaise - Slide.pdf"
-  "CapitalRaise - Slide.toc"
+  "CapitalRaise - Slide.log"
   "CapitalRaise - Slide.pdf"
-  "CapitalRaise - Slide.nav"
+  "CapitalRaise - Slide.snm"
+  "CapitalRaise - Slide.aux"
